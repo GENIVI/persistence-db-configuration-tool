@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Persistence Resource Configuration Tool Model
+Bundle-SymbolicName: com.xse.optstack.persconftool.model;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: .
+Require-Bundle: org.eclipse.emf.ecore;visibility:=reexport
+Bundle-Vendor: Mentor Graphics Development GmbH
+Bundle-Localization: plugin
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: com.xse.optstack.persconf,
+ com.xse.optstack.persconf.impl,
+ com.xse.optstack.persconf.util

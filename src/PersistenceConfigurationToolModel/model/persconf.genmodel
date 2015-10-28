@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/PersistenceConfigurationToolModel/src" editDirectory="/PersistenceConfigurationToolModel/src"
+    editorDirectory="/PersistenceConfigurationToolModel/src" modelPluginID="com.xse.optstack.persconftool.model"
+    modelName="Persconf" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0"
+    copyrightFields="false" language="" importOrganizing="true">
+  <foreignModel>persconf.ecore</foreignModel>
+  <genPackages prefix="Persconf" basePackage="com.xse.optstack" disposableProviderFactory="true"
+      ecorePackage="persconf.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="persconf.ecore#//EGroupType">
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EGroupType/APPLICATION"/>
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EGroupType/SHARED"/>
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EGroupType/PUBLIC"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="persconf.ecore#//EPolicy">
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EPolicy/NA"/>
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EPolicy/CACHED"/>
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EPolicy/WRITETHROUGH"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="persconf.ecore#//EPermission">
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EPermission/WO"/>
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EPermission/RO"/>
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EPermission/RW"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="persconf.ecore#//EStorage">
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EStorage/LOCAL"/>
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EStorage/SHARED"/>
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EStorage/HWINFO"/>
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EStorage/EARLY"/>
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EStorage/EMERGENCY"/>
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EStorage/SECURE"/>
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EStorage/CUSTOM1"/>
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EStorage/CUSTOM2"/>
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EStorage/CUSTOM3"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="persconf.ecore#//EInstallRule">
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EInstallRule/NEW_INSTALL"/>
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EInstallRule/UNINSTALL"/>
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EInstallRule/DONT_TOUCH"/>
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EInstallRule/UPDATE_ALL"/>
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EInstallRule/UPDATE_ALL_SKIP_DEFAULT_FACTORY"/>
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EInstallRule/UPDATE_ALL_SKIP_DEFAULT_CONFIG"/>
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EInstallRule/UPDATE_ALL_SKIP_DEFAULT_ALL"/>
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EInstallRule/UPDATE_DEFAULT_FACTORY"/>
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EInstallRule/UPDATE_DEFAULT_CONFIG"/>
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EInstallRule/UPDATE_DEFAULT_ALL"/>
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EInstallRule/UNINSTALL_NON_DEFAULT"/>
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EInstallRule/UPDATES_SET_OF_RESOURCES"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="persconf.ecore#//EInstallException">
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EInstallException/UPDATE"/>
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EInstallException/DONT_TOUCH"/>
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EInstallException/DELETE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="persconf.ecore#//EDefaultDataType">
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EDefaultDataType/FILE"/>
+      <genEnumLiterals ecoreEnumLiteral="persconf.ecore#//EDefaultDataType/KEY_VALUE"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="persconf.ecore#//EInstallExceptionObject"/>
+    <genClasses ecoreClass="persconf.ecore#//EApplicationGroup">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference persconf.ecore#//EApplicationGroup/applications"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute persconf.ecore#//EApplicationGroup/type"/>
+    </genClasses>
+    <genClasses ecoreClass="persconf.ecore#//EApplication">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute persconf.ecore#//EApplication/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute persconf.ecore#//EApplication/version"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference persconf.ecore#//EApplication/resources"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference persconf.ecore#//EApplication/group"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute persconf.ecore#//EApplication/installRule"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute persconf.ecore#//EApplication/size"/>
+    </genClasses>
+    <genClasses ecoreClass="persconf.ecore#//EConfiguration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute persconf.ecore#//EConfiguration/policy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute persconf.ecore#//EConfiguration/permission"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute persconf.ecore#//EConfiguration/storage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute persconf.ecore#//EConfiguration/responsible"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute persconf.ecore#//EConfiguration/custom_name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute persconf.ecore#//EConfiguration/customID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute persconf.ecore#//EConfiguration/max_size"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute persconf.ecore#//EConfiguration/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference persconf.ecore#//EConfiguration/factoryDefault"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference persconf.ecore#//EConfiguration/configDefault"/>
+    </genClasses>
+    <genClasses ecoreClass="persconf.ecore#//EDefaultData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute persconf.ecore#//EDefaultData/size"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute persconf.ecore#//EDefaultData/data"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute persconf.ecore#//EDefaultData/localResourcePath"/>
+    </genClasses>
+    <genClasses ecoreClass="persconf.ecore#//EResource">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute persconf.ecore#//EResource/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference persconf.ecore#//EResource/configuration"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute persconf.ecore#//EResource/installException"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

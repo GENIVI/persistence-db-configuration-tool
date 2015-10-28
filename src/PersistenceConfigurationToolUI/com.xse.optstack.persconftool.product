@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="Persistence Resource Configuration Tool" uid="com.xse.optstack.persconftool.product.definition" id="com.xse.optstack.persconftool.ui.product" application="com.xse.optstack.persconftool.ui.application" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="true">
+
+   <aboutInfo>
+      <image path="/PersistenceConfigurationToolUI/icons/about_mentor.png"/>
+      <text>
+         Persistence Resource Configuration Tool 1.0.0
+
+© 2015 Mentor Graphics Corporation
+All rights reserved.
+
+THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY
+INFORMATION WHICH ARE THE PROPERTY OF MENTOR
+GRAPHICS CORPORATION OR ITS LICENSORS AND IS
+SUBJECT TO LICENSE TERMS.
+
+© Copyright Eclipse contributors and others 2000, 2015.  All rights reserved. Eclipse and the Eclipse logo are trademarks of the Eclipse Foundation, Inc., https://www.eclipse.org/. The Eclipse logo cannot be altered without Eclipse&apos;s permission. Eclipse logos are provided for use under the Eclipse logo and trademark guidelines, https://www.eclipse.org/logotm/. Oracle and Java are trademarks or registered trademarks of Oracle and/or its affiliates. Other names may be trademarks of their respective owners.
+
+This product includes software developed by other open source projects including the Apache Software Foundation, https://www.apache.org/.
+      </text>
+   </aboutInfo>
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <vmArgs>-Dosgi.requiredJavaVersion=1.8
+      </vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
+   </launcherArgs>
+
+   <windowImages i16="/PersistenceConfigurationToolUI/icons/pers_conf_16.png" i32="/PersistenceConfigurationToolUI/icons/pers_conf_32.png" i48="/PersistenceConfigurationToolUI/icons/pers_conf_48.png" i64="/PersistenceConfigurationToolUI/icons/pers_conf_64.png" i128="/PersistenceConfigurationToolUI/icons/pers_conf_128.png" i256="/PersistenceConfigurationToolUI/icons/pers_conf_256.png"/>
+
+   <launcher name="persresconf">
+      <solaris/>
+      <win useIco="false">
+         <bmp
+            winSmallHigh="/PersistenceConfigurationToolUI/icons/pers_conf_16.bmp"
+            winSmallLow="/PersistenceConfigurationToolUI/icons/pers_conf_16_8.bmp"
+            winMediumHigh="/PersistenceConfigurationToolUI/icons/pers_conf_32.bmp"
+            winMediumLow="/PersistenceConfigurationToolUI/icons/pers_conf_32_8.bmp"
+            winLargeHigh="/PersistenceConfigurationToolUI/icons/pers_conf_48.bmp"
+            winLargeLow="/PersistenceConfigurationToolUI/icons/pers_conf_48_8.bmp"
+            winExtraLargeHigh="/PersistenceConfigurationToolUI/icons/pers_conf_256.bmp"/>
+      </win>
+   </launcher>
+
+
+   <vm>
+   </vm>
+
+   <license>
+        <text>
+   © 2014-2015 Mentor Graphics Corporation
+All Rights Reserved
+THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY
+INFORMATION WHICH ARE THE PROPERTY OF MENTOR
+GRAPHICS CORPORATION OR ITS LICENSORS AND IS
+SUBJECT TO LICENSE TERMS.
+         </text>
+   </license>
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="org.eclipse.e4.rcp"/>
+      <feature id="org.eclipse.emf.ecore"/>
+      <feature id="org.eclipse.emf.common"/>
+      <feature id="com.xse.optstack.persconftool.platform.feature"/>
+      <feature id="com.xse.optstack.persconftool.feature"/>
+   </features>
+
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+      <file path="/PersistenceConfigurationToolUI/css/default.css"/>
+   </cssInfo>
+
+</product>

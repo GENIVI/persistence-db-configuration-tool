@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.xse.optstack.persconftool.feature"
+      label="Persistence Resource Configuration Tool"
+      version="1.0.0.qualifier"
+      provider-name="Mentor Graphics Development GmbH"
+      plugin="com.xse.optstack.persconftool.ui">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright>
+      © 2015 Mentor Graphics Corporation
+All Rights Reserved
+THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY
+INFORMATION WHICH ARE THE PROPERTY OF MENTOR
+GRAPHICS CORPORATION OR ITS LICENSORS AND IS
+SUBJECT TO LICENSE TERMS.
+   </copyright>
+
+   <license url="http://www.xs-embedded.de">
+      [Enter License Description here.]
+   </license>
+
+   <requires>
+      <import feature="com.xse.optstack.persconftool.platform.feature" version="1.0.0.qualifier"/>
+      <import feature="org.eclipse.e4.rcp" version="1.3.100.v20140909-1633"/>
+   </requires>
+
+   <plugin
+         id="com.xse.optstack.persconftool.base"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.xse.optstack.persconftool.model"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.xse.optstack.persconftool.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="com.xse.eclipseui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

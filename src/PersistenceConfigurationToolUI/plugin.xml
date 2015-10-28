@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="com.xse.optstack.persconftool.ui.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="com.xse.optstack.persconftool.ui.application"
+            name="Persistence Resource Configuration Tool">
+         <property
+               name="appName"
+               value="Persistence Resource Configuration Tool">
+         </property>
+         <property
+               name="applicationXMI"
+               value="platform:/plugin/com.xse.optstack.persconftool.ui/Application.e4xmi">
+         </property>
+         <property
+               name="aboutText"
+               value="Persistence Resource Configuration Tool 1.0.0&#x0A;&#x0A;© 2015 Mentor Graphics Corporation&#x0A;All rights reserved.&#x0A;&#x0A;THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY&#x0A;INFORMATION WHICH ARE THE PROPERTY OF MENTOR&#x0A;GRAPHICS CORPORATION OR ITS LICENSORS AND IS&#x0A;SUBJECT TO LICENSE TERMS.&#x0A;&#x0A;© Copyright Eclipse contributors and others 2000, 2015.  All rights reserved. Eclipse and the Eclipse logo are trademarks of the Eclipse Foundation, Inc., https://www.eclipse.org/. The Eclipse logo cannot be altered without Eclipse&apos;s permission. Eclipse logos are provided for use under the Eclipse logo and trademark guidelines, https://www.eclipse.org/logotm/. Oracle and Java are trademarks or registered trademarks of Oracle and/or its affiliates. Other names may be trademarks of their respective owners.&#x0A;&#x0A;This product includes software developed by other open source projects including the Apache Software Foundation, https://www.apache.org/.">
+         </property>
+         <property
+               name="windowImages"
+               value="icons/pers_conf_16.png,icons/pers_conf_32.png,icons/pers_conf_48.png,icons/pers_conf_64.png,icons/pers_conf_128.png,icons/pers_conf_256.png">
+         </property>
+         <property
+               name="aboutImage"
+               value="icons/about_mentor.png">
+         </property>
+         <property
+               name="applicationCSS"
+               value="platform:/plugin/com.xse.optstack.persconftool.ui/css/default.css">
+         </property>
+      </product>
+   </extension>
+   <extension
+         id="PersistenceConfigurationToolUI.fragment"
+         point="org.eclipse.e4.workbench.model">
+      <processor
+            apply="always"
+            beforefragment="true"
+            class="com.xse.optstack.persconftool.ui.ForceMainMenuProcessor">
+      </processor>
+      <fragment
+            apply="always"
+            uri="fragment.e4xmi">
+      </fragment>
+   </extension>
+
+</plugin>

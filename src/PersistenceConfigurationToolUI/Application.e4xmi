@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_hwUa8GXMEeSjjvGXsSO7DQ" elementId="org.eclipse.e4.ide.application" bindingContexts="_hwUa-WXMEeSjjvGXsSO7DQ">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_hwUa8WXMEeSjjvGXsSO7DQ" elementId="com.xse.optstack.persconftool.ui.window.main" label="Persistence Resource Configuration Tool" iconURI="platform:/plugin/com.xse.optstack.persconftool.ui/icons/pers_conf_32.png">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_hwVCFGXMEeSjjvGXsSO7DQ" elementId="com.xse.optstack.persconftool.perspectiveStack">
+      <children xsi:type="advanced:Perspective" xmi:id="_hwVCFWXMEeSjjvGXsSO7DQ" elementId="com.xse.optstack.persconftool.ui.perspective" label="Persistence Resource Configuration Tool">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_w-gFMHosEeSZa7ox1WnYhw" elementId="com.xse.optstack.persconftool.partsashcontainer.main">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_hwVCFmXMEeSjjvGXsSO7DQ" elementId="com.xse.optstack.persconftool.partsashcontainer.configviews" containerData="2000" horizontal="true">
+            <children xsi:type="basic:PartStack" xmi:id="_hwVCF2XMEeSjjvGXsSO7DQ" containerData="4200">
+              <children xsi:type="basic:Part" xmi:id="_hwVCGGXMEeSjjvGXsSO7DQ" elementId="com.xse.optstack.persconftool.part.applications" contributionURI="bundleclass://com.xse.optstack.persconftool.ui/com.xse.optstack.persconftool.ui.applications.ApplicationsPart" label="Applications" iconURI="platform:/plugin/com.xse.optstack.persconftool.ui/icons/defaultview_misc.gif" bindingContexts="_0iIpsCFREeWEiPvSbOc_yQ">
+                <menus xsi:type="menu:PopupMenu" xmi:id="_VeVDcGZREeSjjvGXsSO7DQ" elementId="com.xse.optstack.persconftool.part.applications.popupmenu">
+                  <children xsi:type="menu:HandledMenuItem" xmi:id="_WxpsgGZREeSjjvGXsSO7DQ" elementId="persistenceconfigurationtool.handledmenuitem.applications.add" label="Add" iconURI="platform:/plugin/com.xse.optstack.persconftool.ui/icons/add.gif" command="_U7PZ8GZQEeSjjvGXsSO7DQ"/>
+                  <children xsi:type="menu:HandledMenuItem" xmi:id="_x8tTUGZ3EeSEQsNHYgLx9w" elementId="persistenceconfigurationtool.handledmenuitem.remove" label="Remove" iconURI="platform:/plugin/com.xse.optstack.persconftool.ui/icons/delete.gif" command="_Sm3R0GZ3EeSEQsNHYgLx9w"/>
+                  <children xsi:type="menu:HandledMenuItem" xmi:id="_yN4i4GZ3EeSEQsNHYgLx9w" elementId="persistenceconfigurationtool.handledmenuitem.edit" label="Rename" iconURI="platform:/plugin/com.xse.optstack.persconftool.ui/icons/edit.gif" command="_WOvXcGZ3EeSEQsNHYgLx9w"/>
+                </menus>
+                <toolbar xmi:id="_XwP8kGZuEeSEQsNHYgLx9w" elementId="persistenceconfigurationtool.toolbar.0">
+                  <children xsi:type="menu:HandledToolItem" xmi:id="_YZK9wGZuEeSEQsNHYgLx9w" elementId="persistenceconfigurationtool.handledtoolitem.addApplication" label="Add" iconURI="platform:/plugin/com.xse.optstack.persconftool.ui/icons/add.gif" tooltip="Add Application" command="_U7PZ8GZQEeSjjvGXsSO7DQ"/>
+                  <children xsi:type="menu:HandledToolItem" xmi:id="_rpQYQGZ3EeSEQsNHYgLx9w" elementId="persistenceconfigurationtool.handledtoolitem.delete" label="Remove" iconURI="platform:/plugin/com.xse.optstack.persconftool.ui/icons/delete.gif" tooltip="Remove Application" command="_Sm3R0GZ3EeSEQsNHYgLx9w"/>
+                  <children xsi:type="menu:HandledToolItem" xmi:id="_r8LUQGZ3EeSEQsNHYgLx9w" elementId="persistenceconfigurationtool.handledtoolitem.rename" label="Rename" iconURI="platform:/plugin/com.xse.optstack.persconftool.ui/icons/edit.gif" tooltip="Rename Application" command="_WOvXcGZ3EeSEQsNHYgLx9w"/>
+                  <children xsi:type="menu:ToolBarSeparator" xmi:id="_0OuC8IE2EeSUH5JHs2tTIQ" elementId="persistenceconfigurationtoolui.toolbarseparator.0"/>
+                  <children xsi:type="menu:DirectToolItem" xmi:id="_siIf0IE4EeSUH5JHs2tTIQ" elementId="persistenceconfigurationtoolui.directtoolitem.expandAll" label="Expand All" iconURI="platform:/plugin/com.xse.optstack.persconftool.ui/icons/expand_all.gif" tooltip="Expand All" contributionURI="bundleclass://com.xse.optstack.persconftool.ui/com.xse.optstack.persconftool.ui.applications.ExpandAllHandler"/>
+                  <children xsi:type="menu:DirectToolItem" xmi:id="_4bSKAIE2EeSUH5JHs2tTIQ" elementId="persistenceconfigurationtoolui.directtoolitem.collapseAll" label="Collapse All" iconURI="platform:/plugin/com.xse.optstack.persconftool.ui/icons/collapse_all.gif" tooltip="Collapse All" contributionURI="bundleclass://com.xse.optstack.persconftool.ui/com.xse.optstack.persconftool.ui.applications.CollapseAllHandler"/>
+                </toolbar>
+              </children>
+            </children>
+            <children xsi:type="basic:PartStack" xmi:id="_r9OhkGXREeSjjvGXsSO7DQ" elementId="" containerData="3000">
+              <children xsi:type="basic:Part" xmi:id="_KJtuUGXSEeSjjvGXsSO7DQ" elementId="com.xse.optstack.persconftool.part.resources" contributionURI="bundleclass://com.xse.optstack.persconftool.ui/com.xse.optstack.persconftool.ui.resources.ResourcesPart" label="Resources" iconURI="platform:/plugin/com.xse.optstack.persconftool.ui/icons/resource.gif" bindingContexts="_OSxfACDKEeWEiPvSbOc_yQ">
+                <menus xsi:type="menu:PopupMenu" xmi:id="_opQzAGZsEeSEQsNHYgLx9w" elementId="com.xse.optstack.persconftool.part.resources.popupmenu">
+                  <children xsi:type="menu:HandledMenuItem" xmi:id="_wq4gEGZsEeSEQsNHYgLx9w" elementId="persistenceconfigurationtool.handledmenuitem.resources.add" label="Add" iconURI="platform:/plugin/com.xse.optstack.persconftool.ui/icons/add.gif" command="_r2C4EGZsEeSEQsNHYgLx9w"/>
+                  <children xsi:type="menu:HandledMenuItem" xmi:id="_23nrQHO2EeSyF_dktyOANg" elementId="persistenceconfigurationtoolui.handledmenuitem.remove" label="Remove" iconURI="platform:/plugin/com.xse.optstack.persconftool.ui/icons/delete.gif" command="_RD5nYHO2EeSyF_dktyOANg"/>
+                  <children xsi:type="menu:HandledMenuItem" xmi:id="_3QuHwHO2EeSyF_dktyOANg" elementId="persistenceconfigurationtoolui.handledmenuitem.rename" label="Rename" iconURI="platform:/plugin/com.xse.optstack.persconftool.ui/icons/edit.gif" command="_T6-iMHO2EeSyF_dktyOANg"/>
+                </menus>
+                <toolbar xmi:id="_kwoGwGmcEeSndJSOMht8jA" elementId="persistenceconfigurationtoolui.toolbar.0">
+                  <children xsi:type="menu:HandledToolItem" xmi:id="_oYnhIGmcEeSndJSOMht8jA" elementId="persistenceconfigurationtool.handledtoolitem.addApplication" label="Add" iconURI="platform:/plugin/com.xse.optstack.persconftool.ui/icons/add.gif" tooltip="Add Resource" command="_r2C4EGZsEeSEQsNHYgLx9w"/>
+                  <children xsi:type="menu:HandledToolItem" xmi:id="_fn1K4HO2EeSyF_dktyOANg" elementId="persistenceconfigurationtoolui.handledtoolitem.remove" label="Remove" iconURI="platform:/plugin/com.xse.optstack.persconftool.ui/icons/delete.gif" tooltip="Remove Resource" command="_RD5nYHO2EeSyF_dktyOANg"/>
+                  <children xsi:type="menu:HandledToolItem" xmi:id="_gPkgUHO2EeSyF_dktyOANg" elementId="persistenceconfigurationtoolui.handledtoolitem.rename" label="Rename" iconURI="platform:/plugin/com.xse.optstack.persconftool.ui/icons/edit.gif" tooltip="Rename Resource" command="_T6-iMHO2EeSyF_dktyOANg"/>
+                </toolbar>
+              </children>
+            </children>
+            <children xsi:type="basic:PartSashContainer" xmi:id="_sqvu4GXREeSjjvGXsSO7DQ" elementId="com.xse.optstack.persconftool.partsashcontainer.configuration" containerData="3500">
+              <children xsi:type="basic:PartStack" xmi:id="_zk42gGXREeSjjvGXsSO7DQ" elementId="persistenceconfigurationtool.partstack.1" containerData="4000">
+                <children xsi:type="basic:Part" xmi:id="_VA9ksGXSEeSjjvGXsSO7DQ" elementId="com.xse.optstack.persconftool.part.configuration" contributionURI="bundleclass://com.xse.optstack.persconftool.ui/com.xse.optstack.persconftool.ui.configuration.ConfigurationPart" label="Configuration" iconURI="platform:/plugin/com.xse.optstack.persconftool.ui/icons/configuration.gif"/>
+              </children>
+              <children xsi:type="basic:PartStack" xmi:id="_0EZdAGXREeSjjvGXsSO7DQ" elementId="persistenceconfigurationtool.partstack.2" containerData="1500">
+                <children xsi:type="basic:Part" xmi:id="_VTp3MGXSEeSjjvGXsSO7DQ" elementId="com.xse.optstack.persconftool.part.factoryDefault" contributionURI="bundleclass://com.xse.optstack.persconftool.ui/com.xse.optstack.persconftool.ui.defaultdata.FactoryDefaultPart" label="Default" iconURI="platform:/plugin/com.xse.optstack.persconftool.ui/icons/defaults_ps.gif"/>
+              </children>
+              <children xsi:type="basic:PartStack" xmi:id="_1C9-EGXREeSjjvGXsSO7DQ" elementId="persistenceconfigurationtool.partstack.3" containerData="1500">
+                <children xsi:type="basic:Part" xmi:id="_VjcmsGXSEeSjjvGXsSO7DQ" elementId="com.xse.optstack.persconftool.part.customDefault" contributionURI="bundleclass://com.xse.optstack.persconftool.ui/com.xse.optstack.persconftool.ui.defaultdata.CustomDefaultPart" label="Configurable Default" iconURI="platform:/plugin/com.xse.optstack.persconftool.ui/icons/defaults_ps.gif"/>
+              </children>
+            </children>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="__UnPIHosEeSZa7ox1WnYhw" elementId="persistenceconfigurationtoolui.partstack.0" containerData="800">
+            <children xsi:type="advanced:Placeholder" xmi:id="_rA7fEHoiEeSNKM5uz3zwXQ" elementId="persistenceconfigurationtoolui.placeholder.0" ref="_mOJskHoiEeSNKM5uz3zwXQ"/>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_hwVCDWXMEeSjjvGXsSO7DQ" elementId="org.eclipse.ui.main.menu"/>
+    <sharedElements xsi:type="basic:Part" xmi:id="_mOJskHoiEeSNKM5uz3zwXQ" elementId="org.eclipse.pde.runtime.LogView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Error Log" iconURI="platform:/plugin/org.eclipse.ui.views.log/icons/eview16/error_log.gif">
+      <tags>View</tags>
+      <tags>categoryTag:org.eclipse.ui</tags>
+      <menus xmi:id="_mOJskXoiEeSNKM5uz3zwXQ" elementId="org.eclipse.pde.runtime.LogView">
+        <tags>ViewMenu</tags>
+      </menus>
+      <toolbar xmi:id="_mOJsknoiEeSNKM5uz3zwXQ" elementId="org.eclipse.pde.runtime.LogView"/>
+    </sharedElements>
+    <trimBars xmi:id="_hwVpEGXMEeSjjvGXsSO7DQ">
+      <children xsi:type="menu:ToolBar" xmi:id="_hwVpEWXMEeSjjvGXsSO7DQ" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_3pUEQGaMEeSEQsNHYgLx9w" elementId="persistenceconfigurationtool.handledtoolitem.new" label="New" iconURI="platform:/plugin/com.xse.optstack.persconftool.ui/icons/new.gif" tooltip="New" command="_d0c74GaIEeSEQsNHYgLx9w"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_hwVpEmXMEeSjjvGXsSO7DQ" elementId="id.open" label="Open" iconURI="platform:/plugin/com.xse.optstack.persconftool.ui/icons/folder_opened.gif" tooltip="Open" command="_hwVCBGXMEeSjjvGXsSO7DQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_hwVpE2XMEeSjjvGXsSO7DQ" elementId="id.save" label="Save" iconURI="platform:/plugin/com.xse.optstack.persconftool.ui/icons/save_edit.png" tooltip="Save" command="_KbHlUHo0EeSZa7ox1WnYhw"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_hwVCAWXMEeSjjvGXsSO7DQ" elementId="com.xse.optstack.persconftool.handler.quitCommand" contributionURI="bundleclass://com.xse.optstack.persconftool.ui/com.xse.optstack.persconftool.ui.handlers.QuitHandler" command="_hwVCAGXMEeSjjvGXsSO7DQ"/>
+  <handlers xmi:id="_hwVCBWXMEeSjjvGXsSO7DQ" elementId="com.xse.optstack.persconftool.handler.openCommand" contributionURI="bundleclass://com.xse.optstack.persconftool.ui/com.xse.optstack.persconftool.ui.handlers.OpenHandler" command="_hwVCBGXMEeSjjvGXsSO7DQ"/>
+  <handlers xmi:id="_OUXHwHo0EeSZa7ox1WnYhw" elementId="com.xse.optstack.persconftool.handler.saveCommand" contributionURI="bundleclass://com.xse.optstack.persconftool.ui/com.xse.optstack.persconftool.ui.handlers.SaveHandler" command="_KbHlUHo0EeSZa7ox1WnYhw"/>
+  <handlers xmi:id="_sjrD0GZQEeSjjvGXsSO7DQ" elementId="com.xse.optstack.persconftool.handler.applications.add" contributionURI="bundleclass://com.xse.optstack.persconftool.ui/com.xse.optstack.persconftool.ui.applications.AddApplicationHandler" command="_U7PZ8GZQEeSjjvGXsSO7DQ"/>
+  <handlers xmi:id="_iYR8IGZ3EeSEQsNHYgLx9w" elementId="com.xse.optstack.persconftool.handler.applications.remove" contributionURI="bundleclass://com.xse.optstack.persconftool.ui/com.xse.optstack.persconftool.ui.applications.RemoveApplicationHandler" command="_Sm3R0GZ3EeSEQsNHYgLx9w"/>
+  <handlers xmi:id="_j4LooGZ3EeSEQsNHYgLx9w" elementId="com.xse.optstack.persconftool.handler.applications.edit" contributionURI="bundleclass://com.xse.optstack.persconftool.ui/com.xse.optstack.persconftool.ui.applications.EditApplicationHandler" command="_WOvXcGZ3EeSEQsNHYgLx9w"/>
+  <handlers xmi:id="_h8yqQGaIEeSEQsNHYgLx9w" elementId="com.xse.optstack.persconftool.handler.configurations.new" contributionURI="bundleclass://com.xse.optstack.persconftool.ui/com.xse.optstack.persconftool.ui.handlers.NewPersConfSetupHandler" command="_d0c74GaIEeSEQsNHYgLx9w"/>
+  <handlers xmi:id="_wXZ8oGmcEeSndJSOMht8jA" elementId="com.xse.optstack.persconftool.handler.resources.add" contributionURI="bundleclass://com.xse.optstack.persconftool.ui/com.xse.optstack.persconftool.ui.resources.AddResourceHandler" command="_r2C4EGZsEeSEQsNHYgLx9w"/>
+  <handlers xmi:id="_Gi5RUHO3EeSyF_dktyOANg" elementId="com.xse.optstack.persconftool.handler.resources.remove" contributionURI="bundleclass://com.xse.optstack.persconftool.ui/com.xse.optstack.persconftool.ui.resources.RemoveResourceHandler" command="_RD5nYHO2EeSyF_dktyOANg"/>
+  <handlers xmi:id="_GxixUHO3EeSyF_dktyOANg" elementId="com.xse.optstack.persconftool.handler.resources.edit" contributionURI="bundleclass://com.xse.optstack.persconftool.ui/com.xse.optstack.persconftool.ui.resources.EditResourceHandler" command="_T6-iMHO2EeSyF_dktyOANg"/>
+  <bindingTables xmi:id="_hwVCAmXMEeSjjvGXsSO7DQ" bindingContext="_hwUa-WXMEeSjjvGXsSO7DQ">
+    <bindings xmi:id="_hwVCA2XMEeSjjvGXsSO7DQ" keySequence="M1+Q" command="_hwVCAGXMEeSjjvGXsSO7DQ">
+      <tags>type:user</tags>
+    </bindings>
+    <bindings xmi:id="_hwVCBmXMEeSjjvGXsSO7DQ" keySequence="M1+O" command="_hwVCBGXMEeSjjvGXsSO7DQ">
+      <tags>type:user</tags>
+    </bindings>
+    <bindings xmi:id="_hwVCDGXMEeSjjvGXsSO7DQ" keySequence="M1+A" command="_hwVCCmXMEeSjjvGXsSO7DQ">
+      <tags>type:user</tags>
+    </bindings>
+  </bindingTables>
+  <bindingTables xmi:id="_F2l84CDKEeWEiPvSbOc_yQ" elementId="persistenceconfigurationtoolui.bindingtable.0" bindingContext="_OSxfACDKEeWEiPvSbOc_yQ">
+    <bindings xmi:id="_ffmXYCDKEeWEiPvSbOc_yQ" elementId="" keySequence="M1+D" command="_RD5nYHO2EeSyF_dktyOANg">
+      <tags>type:user</tags>
+    </bindings>
+    <bindings xmi:id="_E4Es4CDPEeWEiPvSbOc_yQ" elementId="" keySequence="M1+A" command="_r2C4EGZsEeSEQsNHYgLx9w">
+      <tags>type:user</tags>
+    </bindings>
+    <bindings xmi:id="_GjbbcCDPEeWEiPvSbOc_yQ" elementId="" keySequence="M1+R" command="_T6-iMHO2EeSyF_dktyOANg">
+      <tags>type:user</tags>
+    </bindings>
+  </bindingTables>
+  <bindingTables xmi:id="_TInDwCFSEeWEiPvSbOc_yQ" elementId="persistenceconfigurationtoolui.bindingtable.1" bindingContext="_0iIpsCFREeWEiPvSbOc_yQ">
+    <bindings xmi:id="_Ujtv0CFSEeWEiPvSbOc_yQ" elementId="persistenceconfigurationtoolui.keybinding.0" keySequence="M1+D" command="_Sm3R0GZ3EeSEQsNHYgLx9w">
+      <tags>type:user</tags>
+    </bindings>
+    <bindings xmi:id="_U2L_4CFSEeWEiPvSbOc_yQ" elementId="persistenceconfigurationtoolui.keybinding.1" keySequence="M1+A" command="_U7PZ8GZQEeSjjvGXsSO7DQ">
+      <tags>type:user</tags>
+    </bindings>
+    <bindings xmi:id="_VdJ5QCFSEeWEiPvSbOc_yQ" elementId="persistenceconfigurationtoolui.keybinding.2" keySequence="M1+R" command="_WOvXcGZ3EeSEQsNHYgLx9w">
+      <tags>type:user</tags>
+    </bindings>
+  </bindingTables>
+  <rootContext xmi:id="_hwUa-WXMEeSjjvGXsSO7DQ" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_hwUa-mXMEeSjjvGXsSO7DQ" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_hwUa-2XMEeSjjvGXsSO7DQ" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <rootContext xmi:id="_OSxfACDKEeWEiPvSbOc_yQ" elementId="com.xse.optstack.persconftool.ui.contexts.resourcesview" name="In Resources View"/>
+  <rootContext xmi:id="_0iIpsCFREeWEiPvSbOc_yQ" elementId="com.xse.optstack.persconftool.ui.contexts.applicatinosview" name="In Applications View"/>
+  <descriptors xmi:id="_kAe7IHoiEeSNKM5uz3zwXQ" elementId="org.eclipse.pde.runtime.LogView" label="%views.errorLog.name" iconURI="platform:/plugin/org.eclipse.ui.views.log/$nl$/icons/eview16/error_log.gif" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <menus xmi:id="_kAe7IXoiEeSNKM5uz3zwXQ" elementId="org.eclipse.pde.runtime.LogView">
+      <tags>ViewMenu</tags>
+    </menus>
+    <toolbar xmi:id="_kAe7InoiEeSNKM5uz3zwXQ" elementId="org.eclipse.pde.runtime.LogView"/>
+  </descriptors>
+  <commands xmi:id="_hwVCAGXMEeSjjvGXsSO7DQ" elementId="com.xse.optstack.persconftool.commands.quit" commandName="quitCommand"/>
+  <commands xmi:id="_hwVCBGXMEeSjjvGXsSO7DQ" elementId="com.xse.optstack.persconftool.open" commandName="openCommand"/>
+  <commands xmi:id="_KbHlUHo0EeSZa7ox1WnYhw" elementId="com.xse.optstack.persconftool.commands.save" commandName="saveCommand"/>
+  <commands xmi:id="_hwVCCmXMEeSjjvGXsSO7DQ" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <commands xmi:id="_U7PZ8GZQEeSjjvGXsSO7DQ" elementId="com.xse.optstack.persconftool.command.applications.add" commandName="addApplicationCommand"/>
+  <commands xmi:id="_Sm3R0GZ3EeSEQsNHYgLx9w" elementId="com.xse.optstack.persconftool.command.applications.remove" commandName="removeApplicationCommand"/>
+  <commands xmi:id="_WOvXcGZ3EeSEQsNHYgLx9w" elementId="com.xse.optstack.persconftool.command.applications.edit" commandName="editApplicationCommand"/>
+  <commands xmi:id="_d0c74GaIEeSEQsNHYgLx9w" elementId="com.xse.optstack.persconftool.command.setup.new" commandName="newSetupCommand"/>
+  <commands xmi:id="_r2C4EGZsEeSEQsNHYgLx9w" elementId="com.xse.optstack.persconftool.command.resources.add" commandName="addResourceCommand"/>
+  <commands xmi:id="_RD5nYHO2EeSyF_dktyOANg" elementId="com.xse.optstack.persconftool.command.resources.remove" commandName="removeResourceCommand"/>
+  <commands xmi:id="_T6-iMHO2EeSyF_dktyOANg" elementId="com.xse.optstack.persconftool.command.resources.edit" commandName="editResourceCommand"/>
+  <addons xmi:id="_hwUa8mXMEeSjjvGXsSO7DQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_hwUa82XMEeSjjvGXsSO7DQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_hwUa9GXMEeSjjvGXsSO7DQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_hwUa9WXMEeSjjvGXsSO7DQ" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_hwUa9mXMEeSjjvGXsSO7DQ" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_hwUa92XMEeSjjvGXsSO7DQ" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_hwUa-GXMEeSjjvGXsSO7DQ" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+  <addons xmi:id="_grxo8IFQEeSageqa0maOFg" elementId="persistenceconfigurationtoolui.addon.0" contributionURI="bundleclass://com.xse.optstack.persconftool.ui/com.xse.optstack.persconftool.ui.SaveHandlerAddon"/>
+</application:Application>

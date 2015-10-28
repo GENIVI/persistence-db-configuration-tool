@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- <Configuration status="TRACE" strict="true" packages="com.xse.commons.logging"> -->
+<Configuration packages="com.xse.commons.logging">
+
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5p %c: %m%n" />
+        </Console>
+
+        <RollingFile name="logFile" filename="logs/persconftool.log"
+            filePattern="logs/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p %c: %m%n
+                </Pattern>
+            </PatternLayout>
+            <Policies>
+                <SizeBasedTriggeringPolicy
+                    size="2 MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="10" />
+        </RollingFile>
+
+        <DynamicLogAppender name="eclipseLog"
+            appenderId="EclipseLog">
+            <ThresholdFilter level="DEBUG" onMatch="ACCEPT"
+                onMismatch="DENY" />
+        </DynamicLogAppender>
+        <DynamicLogAppender name="dynamic">
+            <ThresholdFilter level="TRACE" onMatch="ACCEPT"
+                onMismatch="DENY" />
+        </DynamicLogAppender>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="org.apache.log4j.xml" />
+        <Root level="TRACE">
+            <AppenderRef ref="console" />
+            <AppenderRef ref="logFile" />
+            <AppenderRef ref="eclipseLog" level="INFO" />
+            <!-- <AppenderRef ref="dynamic" /> -->
+        </Root>
+    </Loggers>
+
+</Configuration>

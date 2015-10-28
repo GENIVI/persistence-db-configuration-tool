@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_aldPgHpAEeSZa7ox1WnYhw">
+  <imports xsi:type="commands:Command" xmi:id="_112ekHpAEeSZa7ox1WnYhw" elementId="com.xse.optstack.persconftool.command.setup.new" commandName="newSetupCommand"/>
+  <imports xsi:type="commands:Command" xmi:id="_112ekXpAEeSZa7ox1WnYhw" elementId="com.xse.optstack.persconftool.open" commandName="openCommand"/>
+  <imports xsi:type="commands:Command" xmi:id="_112eknpAEeSZa7ox1WnYhw" elementId="com.xse.optstack.persconftool.commands.save" commandName="saveCommand"/>
+  <imports xsi:type="commands:Command" xmi:id="_xBOn0HrWEeSZa7ox1WnYhw" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <imports xsi:type="commands:Command" xmi:id="_Q_tPECC5EeWEiPvSbOc_yQ" elementId="com.xse.optstack.persconftool.commands.quit"/>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_112elHpAEeSZa7ox1WnYhw" featurename="children" parentElementId="org.eclipse.ui.main.menu">
+    <elements xsi:type="menu:Menu" xmi:id="_112elXpAEeSZa7ox1WnYhw" elementId="com.xse.file.menu" label="File">
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_112elnpAEeSZa7ox1WnYhw" elementId="persistenceconfigurationtool.handledmenuitem.new" label="New" iconURI="platform:/plugin/com.xse.optstack.persconftool.ui/icons/new.gif" command="_112ekHpAEeSZa7ox1WnYhw"/>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_112el3pAEeSZa7ox1WnYhw" label="Open" iconURI="platform:/plugin/com.xse.optstack.persconftool.ui/icons/folder_opened.gif" command="_112ekXpAEeSZa7ox1WnYhw"/>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_112emHpAEeSZa7ox1WnYhw" label="Save" iconURI="platform:/plugin/com.xse.optstack.persconftool.ui/icons/save_edit.png" command="_112eknpAEeSZa7ox1WnYhw"/>
+      <children xsi:type="menu:MenuSeparator" xmi:id="_112emXpAEeSZa7ox1WnYhw" elementId="persistenceconfigurationtool.menuseparator.0"/>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_112emnpAEeSZa7ox1WnYhw" label="Exit" command="_Q_tPECC5EeWEiPvSbOc_yQ"/>
+    </elements>
+    <elements xsi:type="menu:Menu" xmi:id="_hvxP8HrWEeSZa7ox1WnYhw" elementId="com.xse.help.menu" label="Help">
+      <children xsi:type="menu:DirectMenuItem" xmi:id="_QRvE8IE7EeSUH5JHs2tTIQ" elementId="persistenceconfigurationtoolui.directmenuitem.showView" label="Show Error Log" iconURI="platform:/plugin/com.xse.optstack.persconftool.ui/icons/error_log.gif" tooltip="Show Error Log" contributionURI="bundleclass://com.xse.optstack.persconftool.ui/com.xse.optstack.persconftool.ui.handlers.ShowErrorLogHandler"/>
+      <children xsi:type="menu:MenuSeparator" xmi:id="_hGphsIE9EeSUH5JHs2tTIQ" elementId="persistenceconfigurationtoolui.menuseparator.0"/>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_qRxGMHrWEeSZa7ox1WnYhw" elementId="persistenceconfigurationtoolui.handledmenuitem.about" label="About" command="_xBOn0HrWEeSZa7ox1WnYhw"/>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>

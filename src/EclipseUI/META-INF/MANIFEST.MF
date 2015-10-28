@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: OPTstack Eclipse UI
+Bundle-SymbolicName: com.xse.eclipseui;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.xse.eclipseui.Activator
+Require-Bundle: org.eclipse.ui;bundle-version="3.107.0",
+ org.eclipse.core.runtime;bundle-version="3.11.0",
+ org.eclipse.ui.forms;bundle-version="3.5.200",
+ org.eclipse.jdt.annotation;bundle-version="2.0.0";resolution:=optional,
+ com.google.guava;bundle-version="15.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Export-Package: com.xse.eclipseui,
+ com.xse.eclipseui.dialog,
+ com.xse.eclipseui.logging,
+ com.xse.eclipseui.table,
+ com.xse.eclipseui.tree,
+ com.xse.eclipseui.util,
+ com.xse.eclipseui.widgets,
+ com.xse.eclipseui.widgets.validators
+Bundle-Vendor: Mentor Graphics Development GmbH
+Bundle-ClassPath: .,
+ lib/log4j-api-2.1.jar,
+ lib/log4j-core-2.1.jar
+Import-Package: org.apache.commons.io
