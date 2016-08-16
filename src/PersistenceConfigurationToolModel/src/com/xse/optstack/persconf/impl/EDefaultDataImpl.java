@@ -26,12 +26,12 @@ import com.xse.optstack.persconf.PersconfPackage;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * <ul>
- * <li>{@link com.xse.optstack.persconf.impl.EDefaultDataImpl#getSize <em>Size</em>}</li>
- * <li>{@link com.xse.optstack.persconf.impl.EDefaultDataImpl#getData <em>Data</em>}</li>
- * <li>{@link com.xse.optstack.persconf.impl.EDefaultDataImpl#getLocalResourcePath <em>Local Resource Path</em>}</li>
- * </ul>
  * </p>
+ * <ul>
+ *   <li>{@link com.xse.optstack.persconf.impl.EDefaultDataImpl#getSize <em>Size</em>}</li>
+ *   <li>{@link com.xse.optstack.persconf.impl.EDefaultDataImpl#getData <em>Data</em>}</li>
+ *   <li>{@link com.xse.optstack.persconf.impl.EDefaultDataImpl#getLocalResourcePath <em>Local Resource Path</em>}</li>
+ * </ul>
  *
  * @generated
  */
@@ -40,7 +40,6 @@ public class EDefaultDataImpl extends MinimalEObjectImpl.Container implements ED
      * The default value of the '{@link #getSize() <em>Size</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #getSize()
      * @generated
      * @ordered
@@ -51,7 +50,6 @@ public class EDefaultDataImpl extends MinimalEObjectImpl.Container implements ED
      * The cached value of the '{@link #getSize() <em>Size</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #getSize()
      * @generated
      * @ordered
@@ -62,7 +60,6 @@ public class EDefaultDataImpl extends MinimalEObjectImpl.Container implements ED
      * The default value of the '{@link #getData() <em>Data</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #getData()
      * @generated
      * @ordered
@@ -73,7 +70,6 @@ public class EDefaultDataImpl extends MinimalEObjectImpl.Container implements ED
      * The cached value of the '{@link #getData() <em>Data</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #getData()
      * @generated
      * @ordered
@@ -84,7 +80,6 @@ public class EDefaultDataImpl extends MinimalEObjectImpl.Container implements ED
      * The default value of the '{@link #getLocalResourcePath() <em>Local Resource Path</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #getLocalResourcePath()
      * @generated
      * @ordered
@@ -95,7 +90,6 @@ public class EDefaultDataImpl extends MinimalEObjectImpl.Container implements ED
      * The cached value of the '{@link #getLocalResourcePath() <em>Local Resource Path</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #getLocalResourcePath()
      * @generated
      * @ordered
@@ -105,7 +99,6 @@ public class EDefaultDataImpl extends MinimalEObjectImpl.Container implements ED
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     protected EDefaultDataImpl() {
@@ -115,7 +108,6 @@ public class EDefaultDataImpl extends MinimalEObjectImpl.Container implements ED
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
@@ -126,97 +118,87 @@ public class EDefaultDataImpl extends MinimalEObjectImpl.Container implements ED
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public String getSize() {
-        return this.size;
+        return size;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
-    public void setSize(final String newSize) {
-        final String oldSize = this.size;
-        this.size = newSize;
-        if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.SET, PersconfPackage.EDEFAULT_DATA__SIZE, oldSize, this.size));
-        }
+    public void setSize(String newSize) {
+        String oldSize = size;
+        size = newSize;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, PersconfPackage.EDEFAULT_DATA__SIZE, oldSize, size));
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public String getData() {
-        return this.data;
+        return data;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
-    public void setData(final String newData) {
-        final String oldData = this.data;
-        this.data = newData;
-        if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.SET, PersconfPackage.EDEFAULT_DATA__DATA, oldData, this.data));
-        }
+    public void setData(String newData) {
+        String oldData = data;
+        data = newData;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, PersconfPackage.EDEFAULT_DATA__DATA, oldData, data));
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public String getLocalResourcePath() {
-        return this.localResourcePath;
+        return localResourcePath;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
-    public void setLocalResourcePath(final String newLocalResourcePath) {
-        final String oldLocalResourcePath = this.localResourcePath;
-        this.localResourcePath = newLocalResourcePath;
-        if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.SET, PersconfPackage.EDEFAULT_DATA__LOCAL_RESOURCE_PATH,
-                    oldLocalResourcePath, this.localResourcePath));
-        }
+    public void setLocalResourcePath(String newLocalResourcePath) {
+        String oldLocalResourcePath = localResourcePath;
+        localResourcePath = newLocalResourcePath;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, PersconfPackage.EDEFAULT_DATA__LOCAL_RESOURCE_PATH,
+                    oldLocalResourcePath, localResourcePath));
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
-    public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
+    public Object eGet(int featureID, boolean resolve, boolean coreType) {
         switch (featureID) {
         case PersconfPackage.EDEFAULT_DATA__SIZE:
-            return this.getSize();
+            return getSize();
         case PersconfPackage.EDEFAULT_DATA__DATA:
-            return this.getData();
+            return getData();
         case PersconfPackage.EDEFAULT_DATA__LOCAL_RESOURCE_PATH:
-            return this.getLocalResourcePath();
+            return getLocalResourcePath();
         }
         return super.eGet(featureID, resolve, coreType);
     }
@@ -224,20 +206,19 @@ public class EDefaultDataImpl extends MinimalEObjectImpl.Container implements ED
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
-    public void eSet(final int featureID, final Object newValue) {
+    public void eSet(int featureID, Object newValue) {
         switch (featureID) {
         case PersconfPackage.EDEFAULT_DATA__SIZE:
-            this.setSize((String) newValue);
+            setSize((String) newValue);
             return;
         case PersconfPackage.EDEFAULT_DATA__DATA:
-            this.setData((String) newValue);
+            setData((String) newValue);
             return;
         case PersconfPackage.EDEFAULT_DATA__LOCAL_RESOURCE_PATH:
-            this.setLocalResourcePath((String) newValue);
+            setLocalResourcePath((String) newValue);
             return;
         }
         super.eSet(featureID, newValue);
@@ -246,20 +227,19 @@ public class EDefaultDataImpl extends MinimalEObjectImpl.Container implements ED
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
-    public void eUnset(final int featureID) {
+    public void eUnset(int featureID) {
         switch (featureID) {
         case PersconfPackage.EDEFAULT_DATA__SIZE:
-            this.setSize(SIZE_EDEFAULT);
+            setSize(SIZE_EDEFAULT);
             return;
         case PersconfPackage.EDEFAULT_DATA__DATA:
-            this.setData(DATA_EDEFAULT);
+            setData(DATA_EDEFAULT);
             return;
         case PersconfPackage.EDEFAULT_DATA__LOCAL_RESOURCE_PATH:
-            this.setLocalResourcePath(LOCAL_RESOURCE_PATH_EDEFAULT);
+            setLocalResourcePath(LOCAL_RESOURCE_PATH_EDEFAULT);
             return;
         }
         super.eUnset(featureID);
@@ -268,19 +248,18 @@ public class EDefaultDataImpl extends MinimalEObjectImpl.Container implements ED
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
-    public boolean eIsSet(final int featureID) {
+    public boolean eIsSet(int featureID) {
         switch (featureID) {
         case PersconfPackage.EDEFAULT_DATA__SIZE:
-            return SIZE_EDEFAULT == null ? this.size != null : !SIZE_EDEFAULT.equals(this.size);
+            return SIZE_EDEFAULT == null ? size != null : !SIZE_EDEFAULT.equals(size);
         case PersconfPackage.EDEFAULT_DATA__DATA:
-            return DATA_EDEFAULT == null ? this.data != null : !DATA_EDEFAULT.equals(this.data);
+            return DATA_EDEFAULT == null ? data != null : !DATA_EDEFAULT.equals(data);
         case PersconfPackage.EDEFAULT_DATA__LOCAL_RESOURCE_PATH:
-            return LOCAL_RESOURCE_PATH_EDEFAULT == null ? this.localResourcePath != null : !LOCAL_RESOURCE_PATH_EDEFAULT
-                    .equals(this.localResourcePath);
+            return LOCAL_RESOURCE_PATH_EDEFAULT == null ? localResourcePath != null
+                    : !LOCAL_RESOURCE_PATH_EDEFAULT.equals(localResourcePath);
         }
         return super.eIsSet(featureID);
     }
@@ -288,22 +267,20 @@ public class EDefaultDataImpl extends MinimalEObjectImpl.Container implements ED
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public String toString() {
-        if (this.eIsProxy()) {
+        if (eIsProxy())
             return super.toString();
-        }
 
-        final StringBuffer result = new StringBuffer(super.toString());
+        StringBuffer result = new StringBuffer(super.toString());
         result.append(" (size: ");
-        result.append(this.size);
+        result.append(size);
         result.append(", data: ");
-        result.append(this.data);
+        result.append(data);
         result.append(", localResourcePath: ");
-        result.append(this.localResourcePath);
+        result.append(localResourcePath);
         result.append(')');
         return result.toString();
     }

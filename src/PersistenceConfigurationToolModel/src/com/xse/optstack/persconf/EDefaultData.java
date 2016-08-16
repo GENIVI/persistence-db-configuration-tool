@@ -21,12 +21,12 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * <ul>
- * <li>{@link com.xse.optstack.persconf.EDefaultData#getSize <em>Size</em>}</li>
- * <li>{@link com.xse.optstack.persconf.EDefaultData#getData <em>Data</em>}</li>
- * <li>{@link com.xse.optstack.persconf.EDefaultData#getLocalResourcePath <em>Local Resource Path</em>}</li>
- * </ul>
  * </p>
+ * <ul>
+ *   <li>{@link com.xse.optstack.persconf.EDefaultData#getSize <em>Size</em>}</li>
+ *   <li>{@link com.xse.optstack.persconf.EDefaultData#getData <em>Data</em>}</li>
+ *   <li>{@link com.xse.optstack.persconf.EDefaultData#getLocalResourcePath <em>Local Resource Path</em>}</li>
+ * </ul>
  *
  * @see com.xse.optstack.persconf.PersconfPackage#getEDefaultData()
  * @model
@@ -40,7 +40,6 @@ public interface EDefaultData extends EObject {
      * If the meaning of the '<em>Size</em>' attribute isn't clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @return the value of the '<em>Size</em>' attribute.
      * @see #setSize(String)
      * @see com.xse.optstack.persconf.PersconfPackage#getEDefaultData_Size()
@@ -53,9 +52,7 @@ public interface EDefaultData extends EObject {
      * Sets the value of the '{@link com.xse.optstack.persconf.EDefaultData#getSize <em>Size</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
-     * @param value
-     *            the new value of the '<em>Size</em>' attribute.
+     * @param value the new value of the '<em>Size</em>' attribute.
      * @see #getSize()
      * @generated
      */
@@ -68,7 +65,6 @@ public interface EDefaultData extends EObject {
      * If the meaning of the '<em>Data</em>' attribute isn't clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @return the value of the '<em>Data</em>' attribute.
      * @see #setData(String)
      * @see com.xse.optstack.persconf.PersconfPackage#getEDefaultData_Data()
@@ -81,9 +77,7 @@ public interface EDefaultData extends EObject {
      * Sets the value of the '{@link com.xse.optstack.persconf.EDefaultData#getData <em>Data</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
-     * @param value
-     *            the new value of the '<em>Data</em>' attribute.
+     * @param value the new value of the '<em>Data</em>' attribute.
      * @see #getData()
      * @generated
      */
@@ -97,7 +91,6 @@ public interface EDefaultData extends EObject {
      * description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @return the value of the '<em>Local Resource Path</em>' attribute.
      * @see #setLocalResourcePath(String)
      * @see com.xse.optstack.persconf.PersconfPackage#getEDefaultData_LocalResourcePath()
@@ -107,13 +100,10 @@ public interface EDefaultData extends EObject {
     String getLocalResourcePath();
 
     /**
-     * Sets the value of the '{@link com.xse.optstack.persconf.EDefaultData#getLocalResourcePath
-     * <em>Local Resource Path</em>}' attribute.
+     * Sets the value of the '{@link com.xse.optstack.persconf.EDefaultData#getLocalResourcePath <em>Local Resource Path</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
-     * @param value
-     *            the new value of the '<em>Local Resource Path</em>' attribute.
+     * @param value the new value of the '<em>Local Resource Path</em>' attribute.
      * @see #getLocalResourcePath()
      * @generated
      */

@@ -23,7 +23,6 @@ import org.eclipse.emf.common.util.Enumerator;
  * A representation of the literals of the enumeration '<em><b>EInstall Rule</b></em>',
  * and utility methods for working with them.
  * <!-- end-user-doc -->
- * 
  * @see com.xse.optstack.persconf.PersconfPackage#getEInstallRule()
  * @model
  * @generated
@@ -33,7 +32,6 @@ public enum EInstallRule implements Enumerator {
      * The '<em><b>NEW INSTALL</b></em>' literal object.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #NEW_INSTALL_VALUE
      * @generated
      * @ordered
@@ -44,7 +42,6 @@ public enum EInstallRule implements Enumerator {
      * The '<em><b>UNINSTALL</b></em>' literal object.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #UNINSTALL_VALUE
      * @generated
      * @ordered
@@ -55,7 +52,6 @@ public enum EInstallRule implements Enumerator {
      * The '<em><b>DONT TOUCH</b></em>' literal object.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #DONT_TOUCH_VALUE
      * @generated
      * @ordered
@@ -66,7 +62,6 @@ public enum EInstallRule implements Enumerator {
      * The '<em><b>UPDATE ALL</b></em>' literal object.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #UPDATE_ALL_VALUE
      * @generated
      * @ordered
@@ -77,7 +72,6 @@ public enum EInstallRule implements Enumerator {
      * The '<em><b>UPDATE ALL SKIP DEFAULT FACTORY</b></em>' literal object.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #UPDATE_ALL_SKIP_DEFAULT_FACTORY_VALUE
      * @generated
      * @ordered
@@ -88,7 +82,6 @@ public enum EInstallRule implements Enumerator {
      * The '<em><b>UPDATE ALL SKIP DEFAULT CONFIG</b></em>' literal object.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #UPDATE_ALL_SKIP_DEFAULT_CONFIG_VALUE
      * @generated
      * @ordered
@@ -99,7 +92,6 @@ public enum EInstallRule implements Enumerator {
      * The '<em><b>UPDATE ALL SKIP DEFAULT ALL</b></em>' literal object.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #UPDATE_ALL_SKIP_DEFAULT_ALL_VALUE
      * @generated
      * @ordered
@@ -110,7 +102,6 @@ public enum EInstallRule implements Enumerator {
      * The '<em><b>UPDATE DEFAULT FACTORY</b></em>' literal object.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #UPDATE_DEFAULT_FACTORY_VALUE
      * @generated
      * @ordered
@@ -121,7 +112,6 @@ public enum EInstallRule implements Enumerator {
      * The '<em><b>UPDATE DEFAULT CONFIG</b></em>' literal object.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #UPDATE_DEFAULT_CONFIG_VALUE
      * @generated
      * @ordered
@@ -132,7 +122,6 @@ public enum EInstallRule implements Enumerator {
      * The '<em><b>UPDATE DEFAULT ALL</b></em>' literal object.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #UPDATE_DEFAULT_ALL_VALUE
      * @generated
      * @ordered
@@ -143,7 +132,6 @@ public enum EInstallRule implements Enumerator {
      * The '<em><b>UNINSTALL NON DEFAULT</b></em>' literal object.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #UNINSTALL_NON_DEFAULT_VALUE
      * @generated
      * @ordered
@@ -154,7 +142,6 @@ public enum EInstallRule implements Enumerator {
      * The '<em><b>UPDATES SET OF RESOURCES</b></em>' literal object.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #UPDATES_SET_OF_RESOURCES_VALUE
      * @generated
      * @ordered
@@ -169,7 +156,6 @@ public enum EInstallRule implements Enumerator {
      * description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @see #NEW_INSTALL
      * @model literal="NewInstall"
      * @generated
@@ -185,7 +171,6 @@ public enum EInstallRule implements Enumerator {
      * description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @see #UNINSTALL
      * @model literal="Uninstall"
      * @generated
@@ -201,7 +186,6 @@ public enum EInstallRule implements Enumerator {
      * description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @see #DONT_TOUCH
      * @model literal="DontTouch"
      * @generated
@@ -217,7 +201,6 @@ public enum EInstallRule implements Enumerator {
      * description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @see #UPDATE_ALL
      * @model literal="UpdateAll"
      * @generated
@@ -233,7 +216,6 @@ public enum EInstallRule implements Enumerator {
      * should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @see #UPDATE_ALL_SKIP_DEFAULT_FACTORY
      * @model literal="UpdateAllSkipDefaultFactory"
      * @generated
@@ -249,7 +231,6 @@ public enum EInstallRule implements Enumerator {
      * should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @see #UPDATE_ALL_SKIP_DEFAULT_CONFIG
      * @model literal="UpdateAllSkipDefaultConfig"
      * @generated
@@ -265,7 +246,6 @@ public enum EInstallRule implements Enumerator {
      * be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @see #UPDATE_ALL_SKIP_DEFAULT_ALL
      * @model literal="UpdateAllSkipDefaultAll"
      * @generated
@@ -281,7 +261,6 @@ public enum EInstallRule implements Enumerator {
      * more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @see #UPDATE_DEFAULT_FACTORY
      * @model literal="UpdateDefaultFactory"
      * @generated
@@ -297,7 +276,6 @@ public enum EInstallRule implements Enumerator {
      * of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @see #UPDATE_DEFAULT_CONFIG
      * @model literal="UpdateDefaultConfig"
      * @generated
@@ -313,7 +291,6 @@ public enum EInstallRule implements Enumerator {
      * a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @see #UPDATE_DEFAULT_ALL
      * @model literal="UpdateDefaultAll"
      * @generated
@@ -329,7 +306,6 @@ public enum EInstallRule implements Enumerator {
      * of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @see #UNINSTALL_NON_DEFAULT
      * @model literal="UninstallNonDefault"
      * @generated
@@ -345,7 +321,6 @@ public enum EInstallRule implements Enumerator {
      * more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @see #UPDATES_SET_OF_RESOURCES
      * @model literal="UpdateSetOfResources"
      * @generated
@@ -357,18 +332,17 @@ public enum EInstallRule implements Enumerator {
      * An array of all the '<em><b>EInstall Rule</b></em>' enumerators.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
-    private static final EInstallRule[] VALUES_ARRAY = new EInstallRule[] { NEW_INSTALL, UNINSTALL, DONT_TOUCH, UPDATE_ALL,
-            UPDATE_ALL_SKIP_DEFAULT_FACTORY, UPDATE_ALL_SKIP_DEFAULT_CONFIG, UPDATE_ALL_SKIP_DEFAULT_ALL, UPDATE_DEFAULT_FACTORY,
-            UPDATE_DEFAULT_CONFIG, UPDATE_DEFAULT_ALL, UNINSTALL_NON_DEFAULT, UPDATES_SET_OF_RESOURCES, };
+    private static final EInstallRule[] VALUES_ARRAY = new EInstallRule[] { NEW_INSTALL, UNINSTALL, DONT_TOUCH,
+            UPDATE_ALL, UPDATE_ALL_SKIP_DEFAULT_FACTORY, UPDATE_ALL_SKIP_DEFAULT_CONFIG, UPDATE_ALL_SKIP_DEFAULT_ALL,
+            UPDATE_DEFAULT_FACTORY, UPDATE_DEFAULT_CONFIG, UPDATE_DEFAULT_ALL, UNINSTALL_NON_DEFAULT,
+            UPDATES_SET_OF_RESOURCES, };
 
     /**
      * A public read-only list of all the '<em><b>EInstall Rule</b></em>' enumerators.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     public static final List<EInstallRule> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
@@ -377,11 +351,13 @@ public enum EInstallRule implements Enumerator {
      * Returns the '<em><b>EInstall Rule</b></em>' literal with the specified literal value.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
+     * @param literal the literal.
+     * @return the matching enumerator or <code>null</code>.
      * @generated
      */
-    public static EInstallRule get(final String literal) {
-        for (final EInstallRule result : VALUES_ARRAY) {
+    public static EInstallRule get(String literal) {
+        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+            EInstallRule result = VALUES_ARRAY[i];
             if (result.toString().equals(literal)) {
                 return result;
             }
@@ -393,11 +369,13 @@ public enum EInstallRule implements Enumerator {
      * Returns the '<em><b>EInstall Rule</b></em>' literal with the specified name.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
+     * @param name the name.
+     * @return the matching enumerator or <code>null</code>.
      * @generated
      */
-    public static EInstallRule getByName(final String name) {
-        for (final EInstallRule result : VALUES_ARRAY) {
+    public static EInstallRule getByName(String name) {
+        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+            EInstallRule result = VALUES_ARRAY[i];
             if (result.getName().equals(name)) {
                 return result;
             }
@@ -409,10 +387,11 @@ public enum EInstallRule implements Enumerator {
      * Returns the '<em><b>EInstall Rule</b></em>' literal with the specified integer value.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
+     * @param value the integer value.
+     * @return the matching enumerator or <code>null</code>.
      * @generated
      */
-    public static EInstallRule get(final int value) {
+    public static EInstallRule get(int value) {
         switch (value) {
         case NEW_INSTALL_VALUE:
             return NEW_INSTALL;
@@ -445,7 +424,6 @@ public enum EInstallRule implements Enumerator {
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     private final int value;
@@ -453,7 +431,6 @@ public enum EInstallRule implements Enumerator {
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     private final String name;
@@ -461,7 +438,6 @@ public enum EInstallRule implements Enumerator {
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     private final String literal;
@@ -470,10 +446,9 @@ public enum EInstallRule implements Enumerator {
      * Only this class can construct instances.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
-    private EInstallRule(final int value, final String name, final String literal) {
+    private EInstallRule(int value, String name, String literal) {
         this.value = value;
         this.name = name;
         this.literal = literal;
@@ -482,46 +457,42 @@ public enum EInstallRule implements Enumerator {
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public int getValue() {
-        return this.value;
+        return value;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public String getName() {
-        return this.name;
+        return name;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public String getLiteral() {
-        return this.literal;
+        return literal;
     }
 
     /**
      * Returns the literal value of the enumerator, which is its string representation.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public String toString() {
-        return this.literal;
+        return literal;
     }
 
 } //EInstallRule

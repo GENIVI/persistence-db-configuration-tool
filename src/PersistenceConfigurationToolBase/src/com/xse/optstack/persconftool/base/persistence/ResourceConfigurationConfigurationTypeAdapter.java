@@ -20,6 +20,7 @@ import com.google.gson.JsonSerializationContext;
 import com.google.gson.JsonSerializer;
 import com.xse.eclipseui.util.StringUtils;
 import com.xse.optstack.persconf.EConfiguration;
+import com.xse.optstack.persconf.EDefaultDataType;
 import com.xse.optstack.persconf.PersconfPackage;
 
 /**
@@ -55,7 +56,9 @@ public class ResourceConfigurationConfigurationTypeAdapter implements JsonSerial
             obj.add(PersconfPackage.Literals.ECONFIGURATION__CUSTOM_NAME.getName(), context.serialize(PersConfDefinitions.NA_NAME));
         }
 
-        obj.add(PersconfPackage.Literals.ECONFIGURATION__TYPE.getName(), context.serialize(src.getType()));
+        if(src.getType() != EDefaultDataType.NA) {
+        	obj.add(PersconfPackage.Literals.ECONFIGURATION__TYPE.getName(), context.serialize(src.getType()));
+        }
 
         if (!StringUtils.isEmpty(src.getCustomID())) {
             obj.add(PersconfPackage.Literals.ECONFIGURATION__CUSTOM_ID.getName(), context.serialize(src.getCustomID()));

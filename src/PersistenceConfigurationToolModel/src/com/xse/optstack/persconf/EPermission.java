@@ -23,7 +23,6 @@ import org.eclipse.emf.common.util.Enumerator;
  * A representation of the literals of the enumeration '<em><b>EPermission</b></em>',
  * and utility methods for working with them.
  * <!-- end-user-doc -->
- * 
  * @see com.xse.optstack.persconf.PersconfPackage#getEPermission()
  * @model
  * @generated
@@ -33,7 +32,6 @@ public enum EPermission implements Enumerator {
      * The '<em><b>WO</b></em>' literal object.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #WO_VALUE
      * @generated
      * @ordered
@@ -44,7 +42,6 @@ public enum EPermission implements Enumerator {
      * The '<em><b>RO</b></em>' literal object.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #RO_VALUE
      * @generated
      * @ordered
@@ -55,7 +52,6 @@ public enum EPermission implements Enumerator {
      * The '<em><b>RW</b></em>' literal object.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #RW_VALUE
      * @generated
      * @ordered
@@ -70,7 +66,6 @@ public enum EPermission implements Enumerator {
      * here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @see #WO
      * @model
      * @generated
@@ -86,7 +81,6 @@ public enum EPermission implements Enumerator {
      * here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @see #RO
      * @model
      * @generated
@@ -102,7 +96,6 @@ public enum EPermission implements Enumerator {
      * here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @see #RW
      * @model
      * @generated
@@ -114,7 +107,6 @@ public enum EPermission implements Enumerator {
      * An array of all the '<em><b>EPermission</b></em>' enumerators.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     private static final EPermission[] VALUES_ARRAY = new EPermission[] { WO, RO, RW, };
@@ -123,7 +115,6 @@ public enum EPermission implements Enumerator {
      * A public read-only list of all the '<em><b>EPermission</b></em>' enumerators.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     public static final List<EPermission> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
@@ -132,11 +123,13 @@ public enum EPermission implements Enumerator {
      * Returns the '<em><b>EPermission</b></em>' literal with the specified literal value.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
+     * @param literal the literal.
+     * @return the matching enumerator or <code>null</code>.
      * @generated
      */
-    public static EPermission get(final String literal) {
-        for (final EPermission result : VALUES_ARRAY) {
+    public static EPermission get(String literal) {
+        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+            EPermission result = VALUES_ARRAY[i];
             if (result.toString().equals(literal)) {
                 return result;
             }
@@ -148,11 +141,13 @@ public enum EPermission implements Enumerator {
      * Returns the '<em><b>EPermission</b></em>' literal with the specified name.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
+     * @param name the name.
+     * @return the matching enumerator or <code>null</code>.
      * @generated
      */
-    public static EPermission getByName(final String name) {
-        for (final EPermission result : VALUES_ARRAY) {
+    public static EPermission getByName(String name) {
+        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+            EPermission result = VALUES_ARRAY[i];
             if (result.getName().equals(name)) {
                 return result;
             }
@@ -164,10 +159,11 @@ public enum EPermission implements Enumerator {
      * Returns the '<em><b>EPermission</b></em>' literal with the specified integer value.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
+     * @param value the integer value.
+     * @return the matching enumerator or <code>null</code>.
      * @generated
      */
-    public static EPermission get(final int value) {
+    public static EPermission get(int value) {
         switch (value) {
         case WO_VALUE:
             return WO;
@@ -182,7 +178,6 @@ public enum EPermission implements Enumerator {
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     private final int value;
@@ -190,7 +185,6 @@ public enum EPermission implements Enumerator {
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     private final String name;
@@ -198,7 +192,6 @@ public enum EPermission implements Enumerator {
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     private final String literal;
@@ -207,10 +200,9 @@ public enum EPermission implements Enumerator {
      * Only this class can construct instances.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
-    private EPermission(final int value, final String name, final String literal) {
+    private EPermission(int value, String name, String literal) {
         this.value = value;
         this.name = name;
         this.literal = literal;
@@ -219,46 +211,42 @@ public enum EPermission implements Enumerator {
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public int getValue() {
-        return this.value;
+        return value;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public String getName() {
-        return this.name;
+        return name;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public String getLiteral() {
-        return this.literal;
+        return literal;
     }
 
     /**
      * Returns the literal value of the enumerator, which is its string representation.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public String toString() {
-        return this.literal;
+        return literal;
     }
 
 } //EPermission

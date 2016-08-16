@@ -45,7 +45,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="EConfiguration">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="policy" lowerBound="1"
-        eType="#//EPolicy"/>
+        eType="#//EPolicy" defaultValueLiteral="NA"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="permission" lowerBound="1"
         eType="#//EPermission"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="storage" lowerBound="1"
@@ -98,5 +98,6 @@
   <eClassifiers xsi:type="ecore:EEnum" name="EDefaultDataType">
     <eLiterals name="FILE" literal="file"/>
     <eLiterals name="KEY_VALUE" value="1" literal="key"/>
+    <eLiterals name="NA" value="2" literal="na"/>
   </eClassifiers>
 </ecore:EPackage>

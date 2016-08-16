@@ -23,7 +23,6 @@ import org.eclipse.emf.common.util.Enumerator;
  * A representation of the literals of the enumeration '<em><b>EStorage</b></em>',
  * and utility methods for working with them.
  * <!-- end-user-doc -->
- * 
  * @see com.xse.optstack.persconf.PersconfPackage#getEStorage()
  * @model
  * @generated
@@ -33,7 +32,6 @@ public enum EStorage implements Enumerator {
      * The '<em><b>LOCAL</b></em>' literal object.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #LOCAL_VALUE
      * @generated
      * @ordered
@@ -44,7 +42,6 @@ public enum EStorage implements Enumerator {
      * The '<em><b>SHARED</b></em>' literal object.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #SHARED_VALUE
      * @generated
      * @ordered
@@ -55,7 +52,6 @@ public enum EStorage implements Enumerator {
      * The '<em><b>HWINFO</b></em>' literal object.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #HWINFO_VALUE
      * @generated
      * @ordered
@@ -66,7 +62,6 @@ public enum EStorage implements Enumerator {
      * The '<em><b>EARLY</b></em>' literal object.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #EARLY_VALUE
      * @generated
      * @ordered
@@ -77,43 +72,42 @@ public enum EStorage implements Enumerator {
      * The '<em><b>EMERGENCY</b></em>' literal object.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #EMERGENCY_VALUE
      * @generated
      * @ordered
      */
-    EMERGENCY(4, "EMERGENCY", "emergency"), /**
+    EMERGENCY(4, "EMERGENCY", "emergency"),
+    /**
      * The '<em><b>SECURE</b></em>' literal object.
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * 
+    * <!-- end-user-doc -->
      * @see #SECURE_VALUE
      * @generated
      * @ordered
      */
-    SECURE(5, "SECURE", "secure"), /**
+    SECURE(5, "SECURE", "secure"),
+    /**
      * The '<em><b>CUSTOM1</b></em>' literal object.
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * 
+    * <!-- end-user-doc -->
      * @see #CUSTOM1_VALUE
      * @generated
      * @ordered
      */
-    CUSTOM1(6, "CUSTOM1", "custom1"), /**
+    CUSTOM1(6, "CUSTOM1", "custom1"),
+    /**
      * The '<em><b>CUSTOM2</b></em>' literal object.
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * 
+    * <!-- end-user-doc -->
      * @see #CUSTOM2_VALUE
      * @generated
      * @ordered
      */
-    CUSTOM2(7, "CUSTOM2", "custom2"), /**
+    CUSTOM2(7, "CUSTOM2", "custom2"),
+    /**
      * The '<em><b>CUSTOM3</b></em>' literal object.
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * 
+    * <!-- end-user-doc -->
      * @see #CUSTOM3_VALUE
      * @generated
      * @ordered
@@ -128,7 +122,6 @@ public enum EStorage implements Enumerator {
      * description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @see #LOCAL
      * @model literal="local"
      * @generated
@@ -144,7 +137,6 @@ public enum EStorage implements Enumerator {
      * description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @see #SHARED
      * @model literal="shared"
      * @generated
@@ -160,7 +152,6 @@ public enum EStorage implements Enumerator {
      * description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @see #HWINFO
      * @model literal="hwinfo"
      * @generated
@@ -176,7 +167,6 @@ public enum EStorage implements Enumerator {
      * description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @see #EARLY
      * @model literal="early"
      * @generated
@@ -192,7 +182,6 @@ public enum EStorage implements Enumerator {
      * description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @see #EMERGENCY
      * @model literal="emergency"
      * @generated
@@ -208,7 +197,6 @@ public enum EStorage implements Enumerator {
      * description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @see #SECURE
      * @model literal="secure"
      * @generated
@@ -224,7 +212,6 @@ public enum EStorage implements Enumerator {
      * description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @see #CUSTOM1
      * @model literal="custom1"
      * @generated
@@ -240,7 +227,6 @@ public enum EStorage implements Enumerator {
      * description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @see #CUSTOM2
      * @model literal="custom2"
      * @generated
@@ -256,7 +242,6 @@ public enum EStorage implements Enumerator {
      * description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @see #CUSTOM3
      * @model literal="custom3"
      * @generated
@@ -268,17 +253,15 @@ public enum EStorage implements Enumerator {
      * An array of all the '<em><b>EStorage</b></em>' enumerators.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
-    private static final EStorage[] VALUES_ARRAY = new EStorage[] { LOCAL, SHARED, HWINFO, EARLY, EMERGENCY, SECURE, CUSTOM1, CUSTOM2,
-            CUSTOM3, };
+    private static final EStorage[] VALUES_ARRAY = new EStorage[] { LOCAL, SHARED, HWINFO, EARLY, EMERGENCY, SECURE,
+            CUSTOM1, CUSTOM2, CUSTOM3, };
 
     /**
      * A public read-only list of all the '<em><b>EStorage</b></em>' enumerators.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     public static final List<EStorage> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
@@ -287,11 +270,13 @@ public enum EStorage implements Enumerator {
      * Returns the '<em><b>EStorage</b></em>' literal with the specified literal value.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
+     * @param literal the literal.
+     * @return the matching enumerator or <code>null</code>.
      * @generated
      */
-    public static EStorage get(final String literal) {
-        for (final EStorage result : VALUES_ARRAY) {
+    public static EStorage get(String literal) {
+        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+            EStorage result = VALUES_ARRAY[i];
             if (result.toString().equals(literal)) {
                 return result;
             }
@@ -303,11 +288,13 @@ public enum EStorage implements Enumerator {
      * Returns the '<em><b>EStorage</b></em>' literal with the specified name.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
+     * @param name the name.
+     * @return the matching enumerator or <code>null</code>.
      * @generated
      */
-    public static EStorage getByName(final String name) {
-        for (final EStorage result : VALUES_ARRAY) {
+    public static EStorage getByName(String name) {
+        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+            EStorage result = VALUES_ARRAY[i];
             if (result.getName().equals(name)) {
                 return result;
             }
@@ -319,10 +306,11 @@ public enum EStorage implements Enumerator {
      * Returns the '<em><b>EStorage</b></em>' literal with the specified integer value.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
+     * @param value the integer value.
+     * @return the matching enumerator or <code>null</code>.
      * @generated
      */
-    public static EStorage get(final int value) {
+    public static EStorage get(int value) {
         switch (value) {
         case LOCAL_VALUE:
             return LOCAL;
@@ -349,7 +337,6 @@ public enum EStorage implements Enumerator {
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     private final int value;
@@ -357,7 +344,6 @@ public enum EStorage implements Enumerator {
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     private final String name;
@@ -365,7 +351,6 @@ public enum EStorage implements Enumerator {
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     private final String literal;
@@ -374,10 +359,9 @@ public enum EStorage implements Enumerator {
      * Only this class can construct instances.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
-    private EStorage(final int value, final String name, final String literal) {
+    private EStorage(int value, String name, String literal) {
         this.value = value;
         this.name = name;
         this.literal = literal;
@@ -386,46 +370,42 @@ public enum EStorage implements Enumerator {
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public int getValue() {
-        return this.value;
+        return value;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public String getName() {
-        return this.name;
+        return name;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public String getLiteral() {
-        return this.literal;
+        return literal;
     }
 
     /**
      * Returns the literal value of the enumerator, which is its string representation.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public String toString() {
-        return this.literal;
+        return literal;
     }
 
 } //EStorage

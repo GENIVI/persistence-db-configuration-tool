@@ -38,7 +38,6 @@ import com.xse.optstack.persconf.PersconfPackage;
  * <!-- begin-user-doc -->
  * An implementation of the model <b>Factory</b>.
  * <!-- end-user-doc -->
- * 
  * @generated
  */
 public class PersconfFactoryImpl extends EFactoryImpl implements PersconfFactory {
@@ -46,16 +45,16 @@ public class PersconfFactoryImpl extends EFactoryImpl implements PersconfFactory
      * Creates the default factory implementation.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     public static PersconfFactory init() {
         try {
-            final PersconfFactory thePersconfFactory = (PersconfFactory) EPackage.Registry.INSTANCE.getEFactory(PersconfPackage.eNS_URI);
+            PersconfFactory thePersconfFactory = (PersconfFactory) EPackage.Registry.INSTANCE
+                    .getEFactory(PersconfPackage.eNS_URI);
             if (thePersconfFactory != null) {
                 return thePersconfFactory;
             }
-        } catch (final Exception exception) {
+        } catch (Exception exception) {
             EcorePlugin.INSTANCE.log(exception);
         }
         return new PersconfFactoryImpl();
@@ -65,7 +64,6 @@ public class PersconfFactoryImpl extends EFactoryImpl implements PersconfFactory
      * Creates an instance of the factory.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     public PersconfFactoryImpl() {
@@ -75,22 +73,21 @@ public class PersconfFactoryImpl extends EFactoryImpl implements PersconfFactory
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
-    public EObject create(final EClass eClass) {
+    public EObject create(EClass eClass) {
         switch (eClass.getClassifierID()) {
         case PersconfPackage.EAPPLICATION_GROUP:
-            return this.createEApplicationGroup();
+            return createEApplicationGroup();
         case PersconfPackage.EAPPLICATION:
-            return this.createEApplication();
+            return createEApplication();
         case PersconfPackage.ECONFIGURATION:
-            return this.createEConfiguration();
+            return createEConfiguration();
         case PersconfPackage.EDEFAULT_DATA:
-            return this.createEDefaultData();
+            return createEDefaultData();
         case PersconfPackage.ERESOURCE:
-            return this.createEResource();
+            return createEResource();
         default:
             throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
         }
@@ -99,28 +96,27 @@ public class PersconfFactoryImpl extends EFactoryImpl implements PersconfFactory
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
-    public Object createFromString(final EDataType eDataType, final String initialValue) {
+    public Object createFromString(EDataType eDataType, String initialValue) {
         switch (eDataType.getClassifierID()) {
         case PersconfPackage.EGROUP_TYPE:
-            return this.createEGroupTypeFromString(eDataType, initialValue);
+            return createEGroupTypeFromString(eDataType, initialValue);
         case PersconfPackage.EPOLICY:
-            return this.createEPolicyFromString(eDataType, initialValue);
+            return createEPolicyFromString(eDataType, initialValue);
         case PersconfPackage.EPERMISSION:
-            return this.createEPermissionFromString(eDataType, initialValue);
+            return createEPermissionFromString(eDataType, initialValue);
         case PersconfPackage.ESTORAGE:
-            return this.createEStorageFromString(eDataType, initialValue);
+            return createEStorageFromString(eDataType, initialValue);
         case PersconfPackage.EINSTALL_RULE:
-            return this.createEInstallRuleFromString(eDataType, initialValue);
+            return createEInstallRuleFromString(eDataType, initialValue);
         case PersconfPackage.EINSTALL_EXCEPTION:
-            return this.createEInstallExceptionFromString(eDataType, initialValue);
+            return createEInstallExceptionFromString(eDataType, initialValue);
         case PersconfPackage.EDEFAULT_DATA_TYPE:
-            return this.createEDefaultDataTypeFromString(eDataType, initialValue);
+            return createEDefaultDataTypeFromString(eDataType, initialValue);
         case PersconfPackage.EINSTALL_EXCEPTION_OBJECT:
-            return this.createEInstallExceptionObjectFromString(eDataType, initialValue);
+            return createEInstallExceptionObjectFromString(eDataType, initialValue);
         default:
             throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
         }
@@ -129,28 +125,27 @@ public class PersconfFactoryImpl extends EFactoryImpl implements PersconfFactory
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
-    public String convertToString(final EDataType eDataType, final Object instanceValue) {
+    public String convertToString(EDataType eDataType, Object instanceValue) {
         switch (eDataType.getClassifierID()) {
         case PersconfPackage.EGROUP_TYPE:
-            return this.convertEGroupTypeToString(eDataType, instanceValue);
+            return convertEGroupTypeToString(eDataType, instanceValue);
         case PersconfPackage.EPOLICY:
-            return this.convertEPolicyToString(eDataType, instanceValue);
+            return convertEPolicyToString(eDataType, instanceValue);
         case PersconfPackage.EPERMISSION:
-            return this.convertEPermissionToString(eDataType, instanceValue);
+            return convertEPermissionToString(eDataType, instanceValue);
         case PersconfPackage.ESTORAGE:
-            return this.convertEStorageToString(eDataType, instanceValue);
+            return convertEStorageToString(eDataType, instanceValue);
         case PersconfPackage.EINSTALL_RULE:
-            return this.convertEInstallRuleToString(eDataType, instanceValue);
+            return convertEInstallRuleToString(eDataType, instanceValue);
         case PersconfPackage.EINSTALL_EXCEPTION:
-            return this.convertEInstallExceptionToString(eDataType, instanceValue);
+            return convertEInstallExceptionToString(eDataType, instanceValue);
         case PersconfPackage.EDEFAULT_DATA_TYPE:
-            return this.convertEDefaultDataTypeToString(eDataType, instanceValue);
+            return convertEDefaultDataTypeToString(eDataType, instanceValue);
         case PersconfPackage.EINSTALL_EXCEPTION_OBJECT:
-            return this.convertEInstallExceptionObjectToString(eDataType, instanceValue);
+            return convertEInstallExceptionObjectToString(eDataType, instanceValue);
         default:
             throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
         }
@@ -159,273 +154,243 @@ public class PersconfFactoryImpl extends EFactoryImpl implements PersconfFactory
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public EApplicationGroup createEApplicationGroup() {
-        final EApplicationGroupImpl eApplicationGroup = new EApplicationGroupImpl();
+        EApplicationGroupImpl eApplicationGroup = new EApplicationGroupImpl();
         return eApplicationGroup;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public EApplication createEApplication() {
-        final EApplicationImpl eApplication = new EApplicationImpl();
+        EApplicationImpl eApplication = new EApplicationImpl();
         return eApplication;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public EConfiguration createEConfiguration() {
-        final EConfigurationImpl eConfiguration = new EConfigurationImpl();
+        EConfigurationImpl eConfiguration = new EConfigurationImpl();
         return eConfiguration;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public EDefaultData createEDefaultData() {
-        final EDefaultDataImpl eDefaultData = new EDefaultDataImpl();
+        EDefaultDataImpl eDefaultData = new EDefaultDataImpl();
         return eDefaultData;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public EResource createEResource() {
-        final EResourceImpl eResource = new EResourceImpl();
+        EResourceImpl eResource = new EResourceImpl();
         return eResource;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
-    public EGroupType createEGroupTypeFromString(final EDataType eDataType, final String initialValue) {
-        final EGroupType result = EGroupType.get(initialValue);
-        if (result == null) {
-            throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName()
-                    + "'");
-        }
+    public EGroupType createEGroupTypeFromString(EDataType eDataType, String initialValue) {
+        EGroupType result = EGroupType.get(initialValue);
+        if (result == null)
+            throw new IllegalArgumentException(
+                    "The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
         return result;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
-    public String convertEGroupTypeToString(final EDataType eDataType, final Object instanceValue) {
+    public String convertEGroupTypeToString(EDataType eDataType, Object instanceValue) {
         return instanceValue == null ? null : instanceValue.toString();
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
-    public EPolicy createEPolicyFromString(final EDataType eDataType, final String initialValue) {
-        final EPolicy result = EPolicy.get(initialValue);
-        if (result == null) {
-            throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName()
-                    + "'");
-        }
+    public EPolicy createEPolicyFromString(EDataType eDataType, String initialValue) {
+        EPolicy result = EPolicy.get(initialValue);
+        if (result == null)
+            throw new IllegalArgumentException(
+                    "The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
         return result;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
-    public String convertEPolicyToString(final EDataType eDataType, final Object instanceValue) {
+    public String convertEPolicyToString(EDataType eDataType, Object instanceValue) {
         return instanceValue == null ? null : instanceValue.toString();
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
-    public EPermission createEPermissionFromString(final EDataType eDataType, final String initialValue) {
-        final EPermission result = EPermission.get(initialValue);
-        if (result == null) {
-            throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName()
-                    + "'");
-        }
+    public EPermission createEPermissionFromString(EDataType eDataType, String initialValue) {
+        EPermission result = EPermission.get(initialValue);
+        if (result == null)
+            throw new IllegalArgumentException(
+                    "The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
         return result;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
-    public String convertEPermissionToString(final EDataType eDataType, final Object instanceValue) {
+    public String convertEPermissionToString(EDataType eDataType, Object instanceValue) {
         return instanceValue == null ? null : instanceValue.toString();
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
-    public EStorage createEStorageFromString(final EDataType eDataType, final String initialValue) {
-        final EStorage result = EStorage.get(initialValue);
-        if (result == null) {
-            throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName()
-                    + "'");
-        }
+    public EStorage createEStorageFromString(EDataType eDataType, String initialValue) {
+        EStorage result = EStorage.get(initialValue);
+        if (result == null)
+            throw new IllegalArgumentException(
+                    "The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
         return result;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
-    public String convertEStorageToString(final EDataType eDataType, final Object instanceValue) {
+    public String convertEStorageToString(EDataType eDataType, Object instanceValue) {
         return instanceValue == null ? null : instanceValue.toString();
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
-    public EInstallRule createEInstallRuleFromString(final EDataType eDataType, final String initialValue) {
-        final EInstallRule result = EInstallRule.get(initialValue);
-        if (result == null) {
-            throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName()
-                    + "'");
-        }
+    public EInstallRule createEInstallRuleFromString(EDataType eDataType, String initialValue) {
+        EInstallRule result = EInstallRule.get(initialValue);
+        if (result == null)
+            throw new IllegalArgumentException(
+                    "The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
         return result;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
-    public String convertEInstallRuleToString(final EDataType eDataType, final Object instanceValue) {
+    public String convertEInstallRuleToString(EDataType eDataType, Object instanceValue) {
         return instanceValue == null ? null : instanceValue.toString();
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
-    public EInstallException createEInstallExceptionFromString(final EDataType eDataType, final String initialValue) {
-        final EInstallException result = EInstallException.get(initialValue);
-        if (result == null) {
-            throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName()
-                    + "'");
-        }
+    public EInstallException createEInstallExceptionFromString(EDataType eDataType, String initialValue) {
+        EInstallException result = EInstallException.get(initialValue);
+        if (result == null)
+            throw new IllegalArgumentException(
+                    "The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
         return result;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
-    public String convertEInstallExceptionToString(final EDataType eDataType, final Object instanceValue) {
+    public String convertEInstallExceptionToString(EDataType eDataType, Object instanceValue) {
         return instanceValue == null ? null : instanceValue.toString();
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
-    public EDefaultDataType createEDefaultDataTypeFromString(final EDataType eDataType, final String initialValue) {
-        final EDefaultDataType result = EDefaultDataType.get(initialValue);
-        if (result == null) {
-            throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName()
-                    + "'");
-        }
+    public EDefaultDataType createEDefaultDataTypeFromString(EDataType eDataType, String initialValue) {
+        EDefaultDataType result = EDefaultDataType.get(initialValue);
+        if (result == null)
+            throw new IllegalArgumentException(
+                    "The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
         return result;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
-    public String convertEDefaultDataTypeToString(final EDataType eDataType, final Object instanceValue) {
+    public String convertEDefaultDataTypeToString(EDataType eDataType, Object instanceValue) {
         return instanceValue == null ? null : instanceValue.toString();
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
-    public EInstallException createEInstallExceptionObjectFromString(final EDataType eDataType, final String initialValue) {
-        return this.createEInstallExceptionFromString(PersconfPackage.Literals.EINSTALL_EXCEPTION, initialValue);
+    public EInstallException createEInstallExceptionObjectFromString(EDataType eDataType, String initialValue) {
+        return createEInstallExceptionFromString(PersconfPackage.Literals.EINSTALL_EXCEPTION, initialValue);
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
-    public String convertEInstallExceptionObjectToString(final EDataType eDataType, final Object instanceValue) {
-        return this.convertEInstallExceptionToString(PersconfPackage.Literals.EINSTALL_EXCEPTION, instanceValue);
+    public String convertEInstallExceptionObjectToString(EDataType eDataType, Object instanceValue) {
+        return convertEInstallExceptionToString(PersconfPackage.Literals.EINSTALL_EXCEPTION, instanceValue);
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public PersconfPackage getPersconfPackage() {
-        return (PersconfPackage) this.getEPackage();
+        return (PersconfPackage) getEPackage();
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @deprecated
      * @generated
      */

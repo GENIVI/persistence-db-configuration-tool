@@ -23,7 +23,6 @@ import org.eclipse.emf.common.util.Enumerator;
  * A representation of the literals of the enumeration '<em><b>EDefault Data Type</b></em>',
  * and utility methods for working with them.
  * <!-- end-user-doc -->
- * 
  * @see com.xse.optstack.persconf.PersconfPackage#getEDefaultDataType()
  * @model
  * @generated
@@ -33,7 +32,6 @@ public enum EDefaultDataType implements Enumerator {
      * The '<em><b>FILE</b></em>' literal object.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #FILE_VALUE
      * @generated
      * @ordered
@@ -44,12 +42,20 @@ public enum EDefaultDataType implements Enumerator {
      * The '<em><b>KEY VALUE</b></em>' literal object.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #KEY_VALUE_VALUE
      * @generated
      * @ordered
      */
-    KEY_VALUE(1, "KEY_VALUE", "key");
+    KEY_VALUE(1, "KEY_VALUE", "key"),
+    /**
+    * The '<em><b>NA</b></em>' literal object.
+    * <!-- begin-user-doc -->
+    * <!-- end-user-doc -->
+    * @see #NA_VALUE
+    * @generated
+    * @ordered
+    */
+    NA(2, "NA", "na");
 
     /**
      * The '<em><b>FILE</b></em>' literal value.
@@ -59,7 +65,6 @@ public enum EDefaultDataType implements Enumerator {
      * here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @see #FILE
      * @model literal="file"
      * @generated
@@ -71,11 +76,10 @@ public enum EDefaultDataType implements Enumerator {
      * The '<em><b>KEY VALUE</b></em>' literal value.
      * <!-- begin-user-doc -->
      * <p>
-     * If the meaning of '<em><b>KEY VALUE</b></em>' literal object isn't clear, there really should be more of a
-     * description here...
+     * If the meaning of '<em><b>KEY VALUE</b></em>' literal object isn't clear,
+     * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @see #KEY_VALUE
      * @model literal="key"
      * @generated
@@ -84,19 +88,32 @@ public enum EDefaultDataType implements Enumerator {
     public static final int KEY_VALUE_VALUE = 1;
 
     /**
+     * The '<em><b>NA</b></em>' literal value.
+     * <!-- begin-user-doc -->
+     * <p>
+     * If the meaning of '<em><b>NA</b></em>' literal object isn't clear,
+     * there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
+     * @see #NA
+     * @model literal="na"
+     * @generated
+     * @ordered
+     */
+    public static final int NA_VALUE = 2;
+
+    /**
      * An array of all the '<em><b>EDefault Data Type</b></em>' enumerators.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
-    private static final EDefaultDataType[] VALUES_ARRAY = new EDefaultDataType[] { FILE, KEY_VALUE, };
+    private static final EDefaultDataType[] VALUES_ARRAY = new EDefaultDataType[] { FILE, KEY_VALUE, NA, };
 
     /**
      * A public read-only list of all the '<em><b>EDefault Data Type</b></em>' enumerators.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     public static final List<EDefaultDataType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
@@ -105,11 +122,13 @@ public enum EDefaultDataType implements Enumerator {
      * Returns the '<em><b>EDefault Data Type</b></em>' literal with the specified literal value.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
+     * @param literal the literal.
+     * @return the matching enumerator or <code>null</code>.
      * @generated
      */
-    public static EDefaultDataType get(final String literal) {
-        for (final EDefaultDataType result : VALUES_ARRAY) {
+    public static EDefaultDataType get(String literal) {
+        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+            EDefaultDataType result = VALUES_ARRAY[i];
             if (result.toString().equals(literal)) {
                 return result;
             }
@@ -121,11 +140,13 @@ public enum EDefaultDataType implements Enumerator {
      * Returns the '<em><b>EDefault Data Type</b></em>' literal with the specified name.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
+     * @param name the name.
+     * @return the matching enumerator or <code>null</code>.
      * @generated
      */
-    public static EDefaultDataType getByName(final String name) {
-        for (final EDefaultDataType result : VALUES_ARRAY) {
+    public static EDefaultDataType getByName(String name) {
+        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+            EDefaultDataType result = VALUES_ARRAY[i];
             if (result.getName().equals(name)) {
                 return result;
             }
@@ -137,15 +158,18 @@ public enum EDefaultDataType implements Enumerator {
      * Returns the '<em><b>EDefault Data Type</b></em>' literal with the specified integer value.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
+     * @param value the integer value.
+     * @return the matching enumerator or <code>null</code>.
      * @generated
      */
-    public static EDefaultDataType get(final int value) {
+    public static EDefaultDataType get(int value) {
         switch (value) {
         case FILE_VALUE:
             return FILE;
         case KEY_VALUE_VALUE:
             return KEY_VALUE;
+        case NA_VALUE:
+            return NA;
         }
         return null;
     }
@@ -153,7 +177,6 @@ public enum EDefaultDataType implements Enumerator {
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     private final int value;
@@ -161,7 +184,6 @@ public enum EDefaultDataType implements Enumerator {
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     private final String name;
@@ -169,7 +191,6 @@ public enum EDefaultDataType implements Enumerator {
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     private final String literal;
@@ -178,10 +199,9 @@ public enum EDefaultDataType implements Enumerator {
      * Only this class can construct instances.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
-    private EDefaultDataType(final int value, final String name, final String literal) {
+    private EDefaultDataType(int value, String name, String literal) {
         this.value = value;
         this.name = name;
         this.literal = literal;
@@ -190,46 +210,42 @@ public enum EDefaultDataType implements Enumerator {
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public int getValue() {
-        return this.value;
+        return value;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public String getName() {
-        return this.name;
+        return name;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public String getLiteral() {
-        return this.literal;
+        return literal;
     }
 
     /**
      * Returns the literal value of the enumerator, which is its string representation.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public String toString() {
-        return this.literal;
+        return literal;
     }
 
 } //EDefaultDataType

@@ -21,12 +21,12 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * <ul>
- * <li>{@link com.xse.optstack.persconf.EResource#getName <em>Name</em>}</li>
- * <li>{@link com.xse.optstack.persconf.EResource#getConfiguration <em>Configuration</em>}</li>
- * <li>{@link com.xse.optstack.persconf.EResource#getInstallException <em>Install Exception</em>}</li>
- * </ul>
  * </p>
+ * <ul>
+ *   <li>{@link com.xse.optstack.persconf.EResource#getName <em>Name</em>}</li>
+ *   <li>{@link com.xse.optstack.persconf.EResource#getConfiguration <em>Configuration</em>}</li>
+ *   <li>{@link com.xse.optstack.persconf.EResource#getInstallException <em>Install Exception</em>}</li>
+ * </ul>
  *
  * @see com.xse.optstack.persconf.PersconfPackage#getEResource()
  * @model
@@ -40,7 +40,6 @@ public interface EResource extends EObject {
      * If the meaning of the '<em>Name</em>' attribute isn't clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @return the value of the '<em>Name</em>' attribute.
      * @see #setName(String)
      * @see com.xse.optstack.persconf.PersconfPackage#getEResource_Name()
@@ -53,9 +52,7 @@ public interface EResource extends EObject {
      * Sets the value of the '{@link com.xse.optstack.persconf.EResource#getName <em>Name</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
-     * @param value
-     *            the new value of the '<em>Name</em>' attribute.
+     * @param value the new value of the '<em>Name</em>' attribute.
      * @see #getName()
      * @generated
      */
@@ -69,7 +66,6 @@ public interface EResource extends EObject {
      * description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @return the value of the '<em>Configuration</em>' reference.
      * @see #setConfiguration(EConfiguration)
      * @see com.xse.optstack.persconf.PersconfPackage#getEResource_Configuration()
@@ -79,13 +75,10 @@ public interface EResource extends EObject {
     EConfiguration getConfiguration();
 
     /**
-     * Sets the value of the '{@link com.xse.optstack.persconf.EResource#getConfiguration <em>Configuration</em>}'
-     * reference.
+     * Sets the value of the '{@link com.xse.optstack.persconf.EResource#getConfiguration <em>Configuration</em>}' reference.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
-     * @param value
-     *            the new value of the '<em>Configuration</em>' reference.
+     * @param value the new value of the '<em>Configuration</em>' reference.
      * @see #getConfiguration()
      * @generated
      */
@@ -99,7 +92,6 @@ public interface EResource extends EObject {
      * description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @return the value of the '<em>Install Exception</em>' attribute.
      * @see #setInstallException(EInstallException)
      * @see com.xse.optstack.persconf.PersconfPackage#getEResource_InstallException()
@@ -109,13 +101,10 @@ public interface EResource extends EObject {
     EInstallException getInstallException();
 
     /**
-     * Sets the value of the '{@link com.xse.optstack.persconf.EResource#getInstallException <em>Install Exception</em>}
-     * ' attribute.
+     * Sets the value of the '{@link com.xse.optstack.persconf.EResource#getInstallException <em>Install Exception</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
-     * @param value
-     *            the new value of the '<em>Install Exception</em>' attribute.
+     * @param value the new value of the '<em>Install Exception</em>' attribute.
      * @see #getInstallException()
      * @generated
      */

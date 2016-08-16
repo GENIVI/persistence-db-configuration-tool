@@ -37,15 +37,15 @@ import com.xse.optstack.persconf.PersconfPackage;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * <ul>
- * <li>{@link com.xse.optstack.persconf.impl.EApplicationImpl#getName <em>Name</em>}</li>
- * <li>{@link com.xse.optstack.persconf.impl.EApplicationImpl#getVersion <em>Version</em>}</li>
- * <li>{@link com.xse.optstack.persconf.impl.EApplicationImpl#getResources <em>Resources</em>}</li>
- * <li>{@link com.xse.optstack.persconf.impl.EApplicationImpl#getGroup <em>Group</em>}</li>
- * <li>{@link com.xse.optstack.persconf.impl.EApplicationImpl#getInstallRule <em>Install Rule</em>}</li>
- * <li>{@link com.xse.optstack.persconf.impl.EApplicationImpl#getSize <em>Size</em>}</li>
- * </ul>
  * </p>
+ * <ul>
+ *   <li>{@link com.xse.optstack.persconf.impl.EApplicationImpl#getName <em>Name</em>}</li>
+ *   <li>{@link com.xse.optstack.persconf.impl.EApplicationImpl#getVersion <em>Version</em>}</li>
+ *   <li>{@link com.xse.optstack.persconf.impl.EApplicationImpl#getResources <em>Resources</em>}</li>
+ *   <li>{@link com.xse.optstack.persconf.impl.EApplicationImpl#getGroup <em>Group</em>}</li>
+ *   <li>{@link com.xse.optstack.persconf.impl.EApplicationImpl#getInstallRule <em>Install Rule</em>}</li>
+ *   <li>{@link com.xse.optstack.persconf.impl.EApplicationImpl#getSize <em>Size</em>}</li>
+ * </ul>
  *
  * @generated
  */
@@ -54,7 +54,6 @@ public class EApplicationImpl extends MinimalEObjectImpl.Container implements EA
      * The default value of the '{@link #getName() <em>Name</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @see #getName()
      * @generated
      * @ordered
@@ -65,7 +64,6 @@ public class EApplicationImpl extends MinimalEObjectImpl.Container implements EA
      * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @see #getName()
      * @generated
      * @ordered
@@ -76,7 +74,6 @@ public class EApplicationImpl extends MinimalEObjectImpl.Container implements EA
      * The default value of the '{@link #getVersion() <em>Version</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @see #getVersion()
      * @generated
      * @ordered
@@ -87,7 +84,6 @@ public class EApplicationImpl extends MinimalEObjectImpl.Container implements EA
      * The cached value of the '{@link #getVersion() <em>Version</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @see #getVersion()
      * @generated
      * @ordered
@@ -95,11 +91,9 @@ public class EApplicationImpl extends MinimalEObjectImpl.Container implements EA
     protected String version = VERSION_EDEFAULT;
 
     /**
-     * The cached value of the '{@link #getResources() <em>Resources</em>}' containment reference
-     * list.
+     * The cached value of the '{@link #getResources() <em>Resources</em>}' containment reference list.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @see #getResources()
      * @generated
      * @ordered
@@ -110,7 +104,6 @@ public class EApplicationImpl extends MinimalEObjectImpl.Container implements EA
      * The default value of the '{@link #getInstallRule() <em>Install Rule</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @see #getInstallRule()
      * @generated
      * @ordered
@@ -121,7 +114,6 @@ public class EApplicationImpl extends MinimalEObjectImpl.Container implements EA
      * The cached value of the '{@link #getInstallRule() <em>Install Rule</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @see #getInstallRule()
      * @generated
      * @ordered
@@ -132,7 +124,6 @@ public class EApplicationImpl extends MinimalEObjectImpl.Container implements EA
      * The default value of the '{@link #getSize() <em>Size</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @see #getSize()
      * @generated
      * @ordered
@@ -143,7 +134,6 @@ public class EApplicationImpl extends MinimalEObjectImpl.Container implements EA
      * The cached value of the '{@link #getSize() <em>Size</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @see #getSize()
      * @generated
      * @ordered
@@ -153,7 +143,6 @@ public class EApplicationImpl extends MinimalEObjectImpl.Container implements EA
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @generated
      */
     protected EApplicationImpl() {
@@ -163,7 +152,6 @@ public class EApplicationImpl extends MinimalEObjectImpl.Container implements EA
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @generated
      */
     @Override
@@ -174,191 +162,170 @@ public class EApplicationImpl extends MinimalEObjectImpl.Container implements EA
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @generated
      */
     @Override
     public String getName() {
-        return this.name;
+        return name;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @generated
      */
     @Override
-    public void setName(final String newName) {
-        final String oldName = this.name;
-        this.name = newName;
-        if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.SET, PersconfPackage.EAPPLICATION__NAME, oldName, this.name));
-        }
+    public void setName(String newName) {
+        String oldName = name;
+        name = newName;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, PersconfPackage.EAPPLICATION__NAME, oldName, name));
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @generated
      */
     @Override
     public String getVersion() {
-        return this.version;
+        return version;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @generated
      */
     @Override
-    public void setVersion(final String newVersion) {
-        final String oldVersion = this.version;
-        this.version = newVersion;
-        if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.SET, PersconfPackage.EAPPLICATION__VERSION, oldVersion, this.version));
-        }
+    public void setVersion(String newVersion) {
+        String oldVersion = version;
+        version = newVersion;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, PersconfPackage.EAPPLICATION__VERSION, oldVersion,
+                    version));
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @generated
      */
     @Override
     public EList<EResource> getResources() {
-        if (this.resources == null) {
-            this.resources = new EObjectContainmentEList<EResource>(EResource.class, this, PersconfPackage.EAPPLICATION__RESOURCES);
+        if (resources == null) {
+            resources = new EObjectContainmentEList<EResource>(EResource.class, this,
+                    PersconfPackage.EAPPLICATION__RESOURCES);
         }
-        return this.resources;
+        return resources;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @generated
      */
     @Override
     public EApplicationGroup getGroup() {
-        if (this.eContainerFeatureID() != PersconfPackage.EAPPLICATION__GROUP) {
+        if (eContainerFeatureID() != PersconfPackage.EAPPLICATION__GROUP)
             return null;
-        }
-        return (EApplicationGroup) this.eInternalContainer();
+        return (EApplicationGroup) eInternalContainer();
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @generated
      */
-    public NotificationChain basicSetGroup(final EApplicationGroup newGroup, NotificationChain msgs) {
-        msgs = this.eBasicSetContainer((InternalEObject) newGroup, PersconfPackage.EAPPLICATION__GROUP, msgs);
+    public NotificationChain basicSetGroup(EApplicationGroup newGroup, NotificationChain msgs) {
+        msgs = eBasicSetContainer((InternalEObject) newGroup, PersconfPackage.EAPPLICATION__GROUP, msgs);
         return msgs;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @generated
      */
     @Override
-    public void setGroup(final EApplicationGroup newGroup) {
-        if ((newGroup != this.eInternalContainer())
-                || ((this.eContainerFeatureID() != PersconfPackage.EAPPLICATION__GROUP) && (newGroup != null))) {
-            if (EcoreUtil.isAncestor(this, newGroup)) {
-                throw new IllegalArgumentException("Recursive containment not allowed for " + this.toString());
-            }
+    public void setGroup(EApplicationGroup newGroup) {
+        if (newGroup != eInternalContainer()
+                || (eContainerFeatureID() != PersconfPackage.EAPPLICATION__GROUP && newGroup != null)) {
+            if (EcoreUtil.isAncestor(this, newGroup))
+                throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
             NotificationChain msgs = null;
-            if (this.eInternalContainer() != null) {
-                msgs = this.eBasicRemoveFromContainer(msgs);
-            }
-            if (newGroup != null) {
+            if (eInternalContainer() != null)
+                msgs = eBasicRemoveFromContainer(msgs);
+            if (newGroup != null)
                 msgs = ((InternalEObject) newGroup).eInverseAdd(this, PersconfPackage.EAPPLICATION_GROUP__APPLICATIONS,
                         EApplicationGroup.class, msgs);
-            }
-            msgs = this.basicSetGroup(newGroup, msgs);
-            if (msgs != null) {
+            msgs = basicSetGroup(newGroup, msgs);
+            if (msgs != null)
                 msgs.dispatch();
-            }
-        } else if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.SET, PersconfPackage.EAPPLICATION__GROUP, newGroup, newGroup));
-        }
+        } else if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, PersconfPackage.EAPPLICATION__GROUP, newGroup,
+                    newGroup));
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @generated
      */
     @Override
     public EInstallRule getInstallRule() {
-        return this.installRule;
+        return installRule;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @generated
      */
     @Override
-    public void setInstallRule(final EInstallRule newInstallRule) {
-        final EInstallRule oldInstallRule = this.installRule;
-        this.installRule = newInstallRule == null ? INSTALL_RULE_EDEFAULT : newInstallRule;
-        if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.SET, PersconfPackage.EAPPLICATION__INSTALL_RULE, oldInstallRule,
-                    this.installRule));
-        }
+    public void setInstallRule(EInstallRule newInstallRule) {
+        EInstallRule oldInstallRule = installRule;
+        installRule = newInstallRule == null ? INSTALL_RULE_EDEFAULT : newInstallRule;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, PersconfPackage.EAPPLICATION__INSTALL_RULE,
+                    oldInstallRule, installRule));
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @generated
      */
     @Override
     public Integer getSize() {
-        return this.size;
+        return size;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @generated
      */
     @Override
-    public void setSize(final Integer newSize) {
-        final Integer oldSize = this.size;
-        this.size = newSize;
-        if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.SET, PersconfPackage.EAPPLICATION__SIZE, oldSize, this.size));
-        }
+    public void setSize(Integer newSize) {
+        Integer oldSize = size;
+        size = newSize;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, PersconfPackage.EAPPLICATION__SIZE, oldSize, size));
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @generated
      */
     @Override
-    public NotificationChain eInverseAdd(final InternalEObject otherEnd, final int featureID, NotificationChain msgs) {
+    public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
         switch (featureID) {
         case PersconfPackage.EAPPLICATION__GROUP:
-            if (this.eInternalContainer() != null) {
-                msgs = this.eBasicRemoveFromContainer(msgs);
-            }
-            return this.basicSetGroup((EApplicationGroup) otherEnd, msgs);
+            if (eInternalContainer() != null)
+                msgs = eBasicRemoveFromContainer(msgs);
+            return basicSetGroup((EApplicationGroup) otherEnd, msgs);
         }
         return super.eInverseAdd(otherEnd, featureID, msgs);
     }
@@ -366,16 +333,15 @@ public class EApplicationImpl extends MinimalEObjectImpl.Container implements EA
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @generated
      */
     @Override
-    public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID, final NotificationChain msgs) {
+    public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
         switch (featureID) {
         case PersconfPackage.EAPPLICATION__RESOURCES:
-            return ((InternalEList<?>) this.getResources()).basicRemove(otherEnd, msgs);
+            return ((InternalEList<?>) getResources()).basicRemove(otherEnd, msgs);
         case PersconfPackage.EAPPLICATION__GROUP:
-            return this.basicSetGroup(null, msgs);
+            return basicSetGroup(null, msgs);
         }
         return super.eInverseRemove(otherEnd, featureID, msgs);
     }
@@ -383,14 +349,13 @@ public class EApplicationImpl extends MinimalEObjectImpl.Container implements EA
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @generated
      */
     @Override
-    public NotificationChain eBasicRemoveFromContainerFeature(final NotificationChain msgs) {
-        switch (this.eContainerFeatureID()) {
+    public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
+        switch (eContainerFeatureID()) {
         case PersconfPackage.EAPPLICATION__GROUP:
-            return this.eInternalContainer().eInverseRemove(this, PersconfPackage.EAPPLICATION_GROUP__APPLICATIONS,
+            return eInternalContainer().eInverseRemove(this, PersconfPackage.EAPPLICATION_GROUP__APPLICATIONS,
                     EApplicationGroup.class, msgs);
         }
         return super.eBasicRemoveFromContainerFeature(msgs);
@@ -399,24 +364,23 @@ public class EApplicationImpl extends MinimalEObjectImpl.Container implements EA
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @generated
      */
     @Override
-    public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
+    public Object eGet(int featureID, boolean resolve, boolean coreType) {
         switch (featureID) {
         case PersconfPackage.EAPPLICATION__NAME:
-            return this.getName();
+            return getName();
         case PersconfPackage.EAPPLICATION__VERSION:
-            return this.getVersion();
+            return getVersion();
         case PersconfPackage.EAPPLICATION__RESOURCES:
-            return this.getResources();
+            return getResources();
         case PersconfPackage.EAPPLICATION__GROUP:
-            return this.getGroup();
+            return getGroup();
         case PersconfPackage.EAPPLICATION__INSTALL_RULE:
-            return this.getInstallRule();
+            return getInstallRule();
         case PersconfPackage.EAPPLICATION__SIZE:
-            return this.getSize();
+            return getSize();
         }
         return super.eGet(featureID, resolve, coreType);
     }
@@ -424,31 +388,30 @@ public class EApplicationImpl extends MinimalEObjectImpl.Container implements EA
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @generated
      */
     @SuppressWarnings("unchecked")
     @Override
-    public void eSet(final int featureID, final Object newValue) {
+    public void eSet(int featureID, Object newValue) {
         switch (featureID) {
         case PersconfPackage.EAPPLICATION__NAME:
-            this.setName((String) newValue);
+            setName((String) newValue);
             return;
         case PersconfPackage.EAPPLICATION__VERSION:
-            this.setVersion((String) newValue);
+            setVersion((String) newValue);
             return;
         case PersconfPackage.EAPPLICATION__RESOURCES:
-            this.getResources().clear();
-            this.getResources().addAll((Collection<? extends EResource>) newValue);
+            getResources().clear();
+            getResources().addAll((Collection<? extends EResource>) newValue);
             return;
         case PersconfPackage.EAPPLICATION__GROUP:
-            this.setGroup((EApplicationGroup) newValue);
+            setGroup((EApplicationGroup) newValue);
             return;
         case PersconfPackage.EAPPLICATION__INSTALL_RULE:
-            this.setInstallRule((EInstallRule) newValue);
+            setInstallRule((EInstallRule) newValue);
             return;
         case PersconfPackage.EAPPLICATION__SIZE:
-            this.setSize((Integer) newValue);
+            setSize((Integer) newValue);
             return;
         }
         super.eSet(featureID, newValue);
@@ -457,29 +420,28 @@ public class EApplicationImpl extends MinimalEObjectImpl.Container implements EA
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @generated
      */
     @Override
-    public void eUnset(final int featureID) {
+    public void eUnset(int featureID) {
         switch (featureID) {
         case PersconfPackage.EAPPLICATION__NAME:
-            this.setName(NAME_EDEFAULT);
+            setName(NAME_EDEFAULT);
             return;
         case PersconfPackage.EAPPLICATION__VERSION:
-            this.setVersion(VERSION_EDEFAULT);
+            setVersion(VERSION_EDEFAULT);
             return;
         case PersconfPackage.EAPPLICATION__RESOURCES:
-            this.getResources().clear();
+            getResources().clear();
             return;
         case PersconfPackage.EAPPLICATION__GROUP:
-            this.setGroup((EApplicationGroup) null);
+            setGroup((EApplicationGroup) null);
             return;
         case PersconfPackage.EAPPLICATION__INSTALL_RULE:
-            this.setInstallRule(INSTALL_RULE_EDEFAULT);
+            setInstallRule(INSTALL_RULE_EDEFAULT);
             return;
         case PersconfPackage.EAPPLICATION__SIZE:
-            this.setSize(SIZE_EDEFAULT);
+            setSize(SIZE_EDEFAULT);
             return;
         }
         super.eUnset(featureID);
@@ -488,24 +450,23 @@ public class EApplicationImpl extends MinimalEObjectImpl.Container implements EA
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @generated
      */
     @Override
-    public boolean eIsSet(final int featureID) {
+    public boolean eIsSet(int featureID) {
         switch (featureID) {
         case PersconfPackage.EAPPLICATION__NAME:
-            return NAME_EDEFAULT == null ? this.name != null : !NAME_EDEFAULT.equals(this.name);
+            return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
         case PersconfPackage.EAPPLICATION__VERSION:
-            return VERSION_EDEFAULT == null ? this.version != null : !VERSION_EDEFAULT.equals(this.version);
+            return VERSION_EDEFAULT == null ? version != null : !VERSION_EDEFAULT.equals(version);
         case PersconfPackage.EAPPLICATION__RESOURCES:
-            return (this.resources != null) && !this.resources.isEmpty();
+            return resources != null && !resources.isEmpty();
         case PersconfPackage.EAPPLICATION__GROUP:
-            return this.getGroup() != null;
+            return getGroup() != null;
         case PersconfPackage.EAPPLICATION__INSTALL_RULE:
-            return this.installRule != INSTALL_RULE_EDEFAULT;
+            return installRule != INSTALL_RULE_EDEFAULT;
         case PersconfPackage.EAPPLICATION__SIZE:
-            return SIZE_EDEFAULT == null ? this.size != null : !SIZE_EDEFAULT.equals(this.size);
+            return SIZE_EDEFAULT == null ? size != null : !SIZE_EDEFAULT.equals(size);
         }
         return super.eIsSet(featureID);
     }
@@ -513,24 +474,22 @@ public class EApplicationImpl extends MinimalEObjectImpl.Container implements EA
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     *
      * @generated
      */
     @Override
     public String toString() {
-        if (this.eIsProxy()) {
+        if (eIsProxy())
             return super.toString();
-        }
 
-        final StringBuffer result = new StringBuffer(super.toString());
+        StringBuffer result = new StringBuffer(super.toString());
         result.append(" (name: ");
-        result.append(this.name);
+        result.append(name);
         result.append(", version: ");
-        result.append(this.version);
+        result.append(version);
         result.append(", installRule: ");
-        result.append(this.installRule);
+        result.append(installRule);
         result.append(", size: ");
-        result.append(this.size);
+        result.append(size);
         result.append(')');
         return result.toString();
     }

@@ -22,11 +22,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * <ul>
- * <li>{@link com.xse.optstack.persconf.EApplicationGroup#getApplications <em>Applications</em>}</li>
- * <li>{@link com.xse.optstack.persconf.EApplicationGroup#getType <em>Type</em>}</li>
- * </ul>
  * </p>
+ * <ul>
+ *   <li>{@link com.xse.optstack.persconf.EApplicationGroup#getApplications <em>Applications</em>}</li>
+ *   <li>{@link com.xse.optstack.persconf.EApplicationGroup#getType <em>Type</em>}</li>
+ * </ul>
  *
  * @see com.xse.optstack.persconf.PersconfPackage#getEApplicationGroup()
  * @model
@@ -43,7 +43,6 @@ public interface EApplicationGroup extends EObject {
      * of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @return the value of the '<em>Applications</em>' containment reference list.
      * @see com.xse.optstack.persconf.PersconfPackage#getEApplicationGroup_Applications()
      * @see com.xse.optstack.persconf.EApplication#getGroup
@@ -60,7 +59,6 @@ public interface EApplicationGroup extends EObject {
      * If the meaning of the '<em>Type</em>' attribute isn't clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @return the value of the '<em>Type</em>' attribute.
      * @see com.xse.optstack.persconf.EGroupType
      * @see #setType(EGroupType)
@@ -74,9 +72,7 @@ public interface EApplicationGroup extends EObject {
      * Sets the value of the '{@link com.xse.optstack.persconf.EApplicationGroup#getType <em>Type</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
-     * @param value
-     *            the new value of the '<em>Type</em>' attribute.
+     * @param value the new value of the '<em>Type</em>' attribute.
      * @see com.xse.optstack.persconf.EGroupType
      * @see #getType()
      * @generated

@@ -30,7 +30,6 @@ import org.eclipse.emf.ecore.EReference;
  * <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
- * 
  * @see com.xse.optstack.persconf.PersconfFactory
  * @model kind="package"
  * @generated
@@ -40,7 +39,6 @@ public interface PersconfPackage extends EPackage {
      * The package name.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     String eNAME = "persconf";
@@ -49,7 +47,6 @@ public interface PersconfPackage extends EPackage {
      * The package namespace URI.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     String eNS_URI = "http://com/xse/optstack/persconf";
@@ -58,7 +55,6 @@ public interface PersconfPackage extends EPackage {
      * The package namespace name.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     String eNS_PREFIX = "com.xse.optstack.persconf";
@@ -67,7 +63,6 @@ public interface PersconfPackage extends EPackage {
      * The singleton instance of the package.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     PersconfPackage eINSTANCE = com.xse.optstack.persconf.impl.PersconfPackageImpl.init();
@@ -76,7 +71,6 @@ public interface PersconfPackage extends EPackage {
      * The meta object id for the '{@link com.xse.optstack.persconf.impl.EApplicationImpl <em>EApplication</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see com.xse.optstack.persconf.impl.EApplicationImpl
      * @see com.xse.optstack.persconf.impl.PersconfPackageImpl#getEApplication()
      * @generated
@@ -84,11 +78,9 @@ public interface PersconfPackage extends EPackage {
     int EAPPLICATION = 1;
 
     /**
-     * The meta object id for the '{@link com.xse.optstack.persconf.impl.EConfigurationImpl <em>EConfiguration</em>}'
-     * class.
+     * The meta object id for the '{@link com.xse.optstack.persconf.impl.EConfigurationImpl <em>EConfiguration</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see com.xse.optstack.persconf.impl.EConfigurationImpl
      * @see com.xse.optstack.persconf.impl.PersconfPackageImpl#getEConfiguration()
      * @generated
@@ -96,11 +88,9 @@ public interface PersconfPackage extends EPackage {
     int ECONFIGURATION = 2;
 
     /**
-     * The meta object id for the '{@link com.xse.optstack.persconf.impl.EDefaultDataImpl <em>EDefault Data</em>}'
-     * class.
+     * The meta object id for the '{@link com.xse.optstack.persconf.impl.EDefaultDataImpl <em>EDefault Data</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see com.xse.optstack.persconf.impl.EDefaultDataImpl
      * @see com.xse.optstack.persconf.impl.PersconfPackageImpl#getEDefaultData()
      * @generated
@@ -111,7 +101,6 @@ public interface PersconfPackage extends EPackage {
      * The meta object id for the '{@link com.xse.optstack.persconf.EGroupType <em>EGroup Type</em>}' enum.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see com.xse.optstack.persconf.EGroupType
      * @see com.xse.optstack.persconf.impl.PersconfPackageImpl#getEGroupType()
      * @generated
@@ -119,11 +108,9 @@ public interface PersconfPackage extends EPackage {
     int EGROUP_TYPE = 5;
 
     /**
-     * The meta object id for the '{@link com.xse.optstack.persconf.impl.EApplicationGroupImpl
-     * <em>EApplication Group</em>}' class.
+     * The meta object id for the '{@link com.xse.optstack.persconf.impl.EApplicationGroupImpl <em>EApplication Group</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see com.xse.optstack.persconf.impl.EApplicationGroupImpl
      * @see com.xse.optstack.persconf.impl.PersconfPackageImpl#getEApplicationGroup()
      * @generated
@@ -134,7 +121,6 @@ public interface PersconfPackage extends EPackage {
      * The feature id for the '<em><b>Applications</b></em>' containment reference list.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      * @ordered
      */
@@ -144,7 +130,6 @@ public interface PersconfPackage extends EPackage {
      * The feature id for the '<em><b>Type</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      * @ordered
      */
@@ -154,7 +139,6 @@ public interface PersconfPackage extends EPackage {
      * The number of structural features of the '<em>EApplication Group</em>' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      * @ordered
      */
@@ -164,7 +148,6 @@ public interface PersconfPackage extends EPackage {
      * The feature id for the '<em><b>Name</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      * @ordered
      */
@@ -174,7 +157,6 @@ public interface PersconfPackage extends EPackage {
      * The feature id for the '<em><b>Version</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      * @ordered
      */
@@ -184,7 +166,6 @@ public interface PersconfPackage extends EPackage {
      * The feature id for the '<em><b>Resources</b></em>' containment reference list.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      * @ordered
      */
@@ -194,7 +175,6 @@ public interface PersconfPackage extends EPackage {
      * The feature id for the '<em><b>Group</b></em>' container reference.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      * @ordered
      */
@@ -204,7 +184,6 @@ public interface PersconfPackage extends EPackage {
      * The feature id for the '<em><b>Install Rule</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      * @ordered
      */
@@ -214,7 +193,6 @@ public interface PersconfPackage extends EPackage {
      * The feature id for the '<em><b>Size</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      * @ordered
      */
@@ -224,7 +202,6 @@ public interface PersconfPackage extends EPackage {
      * The number of structural features of the '<em>EApplication</em>' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      * @ordered
      */
@@ -234,7 +211,6 @@ public interface PersconfPackage extends EPackage {
      * The feature id for the '<em><b>Policy</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      * @ordered
      */
@@ -244,7 +220,6 @@ public interface PersconfPackage extends EPackage {
      * The feature id for the '<em><b>Permission</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      * @ordered
      */
@@ -254,7 +229,6 @@ public interface PersconfPackage extends EPackage {
      * The feature id for the '<em><b>Storage</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      * @ordered
      */
@@ -264,7 +238,6 @@ public interface PersconfPackage extends EPackage {
      * The feature id for the '<em><b>Responsible</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      * @ordered
      */
@@ -274,7 +247,6 @@ public interface PersconfPackage extends EPackage {
      * The feature id for the '<em><b>Custom name</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      * @ordered
      */
@@ -284,7 +256,6 @@ public interface PersconfPackage extends EPackage {
      * The feature id for the '<em><b>Custom ID</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      * @ordered
      */
@@ -294,7 +265,6 @@ public interface PersconfPackage extends EPackage {
      * The feature id for the '<em><b>Max size</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      * @ordered
      */
@@ -304,7 +274,6 @@ public interface PersconfPackage extends EPackage {
      * The feature id for the '<em><b>Type</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      * @ordered
      */
@@ -314,7 +283,6 @@ public interface PersconfPackage extends EPackage {
      * The feature id for the '<em><b>Factory Default</b></em>' containment reference.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      * @ordered
      */
@@ -324,7 +292,6 @@ public interface PersconfPackage extends EPackage {
      * The feature id for the '<em><b>Config Default</b></em>' containment reference.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      * @ordered
      */
@@ -334,7 +301,6 @@ public interface PersconfPackage extends EPackage {
      * The number of structural features of the '<em>EConfiguration</em>' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      * @ordered
      */
@@ -344,7 +310,6 @@ public interface PersconfPackage extends EPackage {
      * The feature id for the '<em><b>Size</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      * @ordered
      */
@@ -354,7 +319,6 @@ public interface PersconfPackage extends EPackage {
      * The feature id for the '<em><b>Data</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      * @ordered
      */
@@ -364,7 +328,6 @@ public interface PersconfPackage extends EPackage {
      * The feature id for the '<em><b>Local Resource Path</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      * @ordered
      */
@@ -374,7 +337,6 @@ public interface PersconfPackage extends EPackage {
      * The number of structural features of the '<em>EDefault Data</em>' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      * @ordered
      */
@@ -384,7 +346,6 @@ public interface PersconfPackage extends EPackage {
      * The meta object id for the '{@link com.xse.optstack.persconf.impl.EResourceImpl <em>EResource</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see com.xse.optstack.persconf.impl.EResourceImpl
      * @see com.xse.optstack.persconf.impl.PersconfPackageImpl#getEResource()
      * @generated
@@ -395,7 +356,6 @@ public interface PersconfPackage extends EPackage {
      * The feature id for the '<em><b>Name</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      * @ordered
      */
@@ -405,7 +365,6 @@ public interface PersconfPackage extends EPackage {
      * The feature id for the '<em><b>Configuration</b></em>' reference.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      * @ordered
      */
@@ -415,7 +374,6 @@ public interface PersconfPackage extends EPackage {
      * The feature id for the '<em><b>Install Exception</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      * @ordered
      */
@@ -425,7 +383,6 @@ public interface PersconfPackage extends EPackage {
      * The number of structural features of the '<em>EResource</em>' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      * @ordered
      */
@@ -435,7 +392,6 @@ public interface PersconfPackage extends EPackage {
      * The meta object id for the '{@link com.xse.optstack.persconf.EPolicy <em>EPolicy</em>}' enum.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see com.xse.optstack.persconf.EPolicy
      * @see com.xse.optstack.persconf.impl.PersconfPackageImpl#getEPolicy()
      * @generated
@@ -446,7 +402,6 @@ public interface PersconfPackage extends EPackage {
      * The meta object id for the '{@link com.xse.optstack.persconf.EPermission <em>EPermission</em>}' enum.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see com.xse.optstack.persconf.EPermission
      * @see com.xse.optstack.persconf.impl.PersconfPackageImpl#getEPermission()
      * @generated
@@ -457,7 +412,6 @@ public interface PersconfPackage extends EPackage {
      * The meta object id for the '{@link com.xse.optstack.persconf.EStorage <em>EStorage</em>}' enum.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see com.xse.optstack.persconf.EStorage
      * @see com.xse.optstack.persconf.impl.PersconfPackageImpl#getEStorage()
      * @generated
@@ -468,7 +422,6 @@ public interface PersconfPackage extends EPackage {
      * The meta object id for the '{@link com.xse.optstack.persconf.EInstallRule <em>EInstall Rule</em>}' enum.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see com.xse.optstack.persconf.EInstallRule
      * @see com.xse.optstack.persconf.impl.PersconfPackageImpl#getEInstallRule()
      * @generated
@@ -476,11 +429,9 @@ public interface PersconfPackage extends EPackage {
     int EINSTALL_RULE = 9;
 
     /**
-     * The meta object id for the '{@link com.xse.optstack.persconf.EInstallException <em>EInstall Exception</em>}'
-     * enum.
+     * The meta object id for the '{@link com.xse.optstack.persconf.EInstallException <em>EInstall Exception</em>}' enum.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see com.xse.optstack.persconf.EInstallException
      * @see com.xse.optstack.persconf.impl.PersconfPackageImpl#getEInstallException()
      * @generated
@@ -491,7 +442,6 @@ public interface PersconfPackage extends EPackage {
      * The meta object id for the '{@link com.xse.optstack.persconf.EDefaultDataType <em>EDefault Data Type</em>}' enum.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see com.xse.optstack.persconf.EDefaultDataType
      * @see com.xse.optstack.persconf.impl.PersconfPackageImpl#getEDefaultDataType()
      * @generated
@@ -502,7 +452,6 @@ public interface PersconfPackage extends EPackage {
      * The meta object id for the '<em>EInstall Exception Object</em>' data type.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see com.xse.optstack.persconf.EInstallException
      * @see com.xse.optstack.persconf.impl.PersconfPackageImpl#getEInstallExceptionObject()
      * @generated
@@ -513,7 +462,6 @@ public interface PersconfPackage extends EPackage {
      * Returns the meta object for class '{@link com.xse.optstack.persconf.EApplication <em>EApplication</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for class '<em>EApplication</em>'.
      * @see com.xse.optstack.persconf.EApplication
      * @generated
@@ -524,7 +472,6 @@ public interface PersconfPackage extends EPackage {
      * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EApplication#getName <em>Name</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for the attribute '<em>Name</em>'.
      * @see com.xse.optstack.persconf.EApplication#getName()
      * @see #getEApplication()
@@ -533,11 +480,9 @@ public interface PersconfPackage extends EPackage {
     EAttribute getEApplication_Name();
 
     /**
-     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EApplication#getVersion
-     * <em>Version</em>}'.
+     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EApplication#getVersion <em>Version</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for the attribute '<em>Version</em>'.
      * @see com.xse.optstack.persconf.EApplication#getVersion()
      * @see #getEApplication()
@@ -546,11 +491,9 @@ public interface PersconfPackage extends EPackage {
     EAttribute getEApplication_Version();
 
     /**
-     * Returns the meta object for the containment reference list '
-     * {@link com.xse.optstack.persconf.EApplication#getResources <em>Resources</em>}'.
+     * Returns the meta object for the containment reference list '{@link com.xse.optstack.persconf.EApplication#getResources <em>Resources</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for the containment reference list '<em>Resources</em>'.
      * @see com.xse.optstack.persconf.EApplication#getResources()
      * @see #getEApplication()
@@ -559,11 +502,9 @@ public interface PersconfPackage extends EPackage {
     EReference getEApplication_Resources();
 
     /**
-     * Returns the meta object for the container reference '{@link com.xse.optstack.persconf.EApplication#getGroup
-     * <em>Group</em>}'.
+     * Returns the meta object for the container reference '{@link com.xse.optstack.persconf.EApplication#getGroup <em>Group</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for the container reference '<em>Group</em>'.
      * @see com.xse.optstack.persconf.EApplication#getGroup()
      * @see #getEApplication()
@@ -572,11 +513,9 @@ public interface PersconfPackage extends EPackage {
     EReference getEApplication_Group();
 
     /**
-     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EApplication#getInstallRule
-     * <em>Install Rule</em>}'.
+     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EApplication#getInstallRule <em>Install Rule</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for the attribute '<em>Install Rule</em>'.
      * @see com.xse.optstack.persconf.EApplication#getInstallRule()
      * @see #getEApplication()
@@ -588,7 +527,6 @@ public interface PersconfPackage extends EPackage {
      * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EApplication#getSize <em>Size</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for the attribute '<em>Size</em>'.
      * @see com.xse.optstack.persconf.EApplication#getSize()
      * @see #getEApplication()
@@ -600,7 +538,6 @@ public interface PersconfPackage extends EPackage {
      * Returns the meta object for class '{@link com.xse.optstack.persconf.EConfiguration <em>EConfiguration</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for class '<em>EConfiguration</em>'.
      * @see com.xse.optstack.persconf.EConfiguration
      * @generated
@@ -608,11 +545,9 @@ public interface PersconfPackage extends EPackage {
     EClass getEConfiguration();
 
     /**
-     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EConfiguration#getPolicy
-     * <em>Policy</em>}'.
+     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EConfiguration#getPolicy <em>Policy</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for the attribute '<em>Policy</em>'.
      * @see com.xse.optstack.persconf.EConfiguration#getPolicy()
      * @see #getEConfiguration()
@@ -621,11 +556,9 @@ public interface PersconfPackage extends EPackage {
     EAttribute getEConfiguration_Policy();
 
     /**
-     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EConfiguration#getPermission
-     * <em>Permission</em>}'.
+     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EConfiguration#getPermission <em>Permission</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for the attribute '<em>Permission</em>'.
      * @see com.xse.optstack.persconf.EConfiguration#getPermission()
      * @see #getEConfiguration()
@@ -634,11 +567,9 @@ public interface PersconfPackage extends EPackage {
     EAttribute getEConfiguration_Permission();
 
     /**
-     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EConfiguration#getStorage
-     * <em>Storage</em>}'.
+     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EConfiguration#getStorage <em>Storage</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for the attribute '<em>Storage</em>'.
      * @see com.xse.optstack.persconf.EConfiguration#getStorage()
      * @see #getEConfiguration()
@@ -647,11 +578,9 @@ public interface PersconfPackage extends EPackage {
     EAttribute getEConfiguration_Storage();
 
     /**
-     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EConfiguration#getResponsible
-     * <em>Responsible</em>}'.
+     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EConfiguration#getResponsible <em>Responsible</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for the attribute '<em>Responsible</em>'.
      * @see com.xse.optstack.persconf.EConfiguration#getResponsible()
      * @see #getEConfiguration()
@@ -660,11 +589,9 @@ public interface PersconfPackage extends EPackage {
     EAttribute getEConfiguration_Responsible();
 
     /**
-     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EConfiguration#getCustom_name
-     * <em>Custom name</em>}'.
+     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EConfiguration#getCustom_name <em>Custom name</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for the attribute '<em>Custom name</em>'.
      * @see com.xse.optstack.persconf.EConfiguration#getCustom_name()
      * @see #getEConfiguration()
@@ -673,11 +600,9 @@ public interface PersconfPackage extends EPackage {
     EAttribute getEConfiguration_Custom_name();
 
     /**
-     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EConfiguration#getCustomID
-     * <em>Custom ID</em>}'.
+     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EConfiguration#getCustomID <em>Custom ID</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for the attribute '<em>Custom ID</em>'.
      * @see com.xse.optstack.persconf.EConfiguration#getCustomID()
      * @see #getEConfiguration()
@@ -686,11 +611,9 @@ public interface PersconfPackage extends EPackage {
     EAttribute getEConfiguration_CustomID();
 
     /**
-     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EConfiguration#getMax_size
-     * <em>Max size</em>}'.
+     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EConfiguration#getMax_size <em>Max size</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for the attribute '<em>Max size</em>'.
      * @see com.xse.optstack.persconf.EConfiguration#getMax_size()
      * @see #getEConfiguration()
@@ -699,11 +622,9 @@ public interface PersconfPackage extends EPackage {
     EAttribute getEConfiguration_Max_size();
 
     /**
-     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EConfiguration#getType <em>Type</em>}
-     * '.
+     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EConfiguration#getType <em>Type</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for the attribute '<em>Type</em>'.
      * @see com.xse.optstack.persconf.EConfiguration#getType()
      * @see #getEConfiguration()
@@ -712,11 +633,9 @@ public interface PersconfPackage extends EPackage {
     EAttribute getEConfiguration_Type();
 
     /**
-     * Returns the meta object for the containment reference '
-     * {@link com.xse.optstack.persconf.EConfiguration#getFactoryDefault <em>Factory Default</em>}'.
+     * Returns the meta object for the containment reference '{@link com.xse.optstack.persconf.EConfiguration#getFactoryDefault <em>Factory Default</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for the containment reference '<em>Factory Default</em>'.
      * @see com.xse.optstack.persconf.EConfiguration#getFactoryDefault()
      * @see #getEConfiguration()
@@ -725,11 +644,9 @@ public interface PersconfPackage extends EPackage {
     EReference getEConfiguration_FactoryDefault();
 
     /**
-     * Returns the meta object for the containment reference '
-     * {@link com.xse.optstack.persconf.EConfiguration#getConfigDefault <em>Config Default</em>}'.
+     * Returns the meta object for the containment reference '{@link com.xse.optstack.persconf.EConfiguration#getConfigDefault <em>Config Default</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for the containment reference '<em>Config Default</em>'.
      * @see com.xse.optstack.persconf.EConfiguration#getConfigDefault()
      * @see #getEConfiguration()
@@ -741,7 +658,6 @@ public interface PersconfPackage extends EPackage {
      * Returns the meta object for class '{@link com.xse.optstack.persconf.EDefaultData <em>EDefault Data</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for class '<em>EDefault Data</em>'.
      * @see com.xse.optstack.persconf.EDefaultData
      * @generated
@@ -752,7 +668,6 @@ public interface PersconfPackage extends EPackage {
      * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EDefaultData#getSize <em>Size</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for the attribute '<em>Size</em>'.
      * @see com.xse.optstack.persconf.EDefaultData#getSize()
      * @see #getEDefaultData()
@@ -764,7 +679,6 @@ public interface PersconfPackage extends EPackage {
      * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EDefaultData#getData <em>Data</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for the attribute '<em>Data</em>'.
      * @see com.xse.optstack.persconf.EDefaultData#getData()
      * @see #getEDefaultData()
@@ -773,11 +687,9 @@ public interface PersconfPackage extends EPackage {
     EAttribute getEDefaultData_Data();
 
     /**
-     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EDefaultData#getLocalResourcePath
-     * <em>Local Resource Path</em>}'.
+     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EDefaultData#getLocalResourcePath <em>Local Resource Path</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for the attribute '<em>Local Resource Path</em>'.
      * @see com.xse.optstack.persconf.EDefaultData#getLocalResourcePath()
      * @see #getEDefaultData()
@@ -789,7 +701,6 @@ public interface PersconfPackage extends EPackage {
      * Returns the meta object for class '{@link com.xse.optstack.persconf.EResource <em>EResource</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for class '<em>EResource</em>'.
      * @see com.xse.optstack.persconf.EResource
      * @generated
@@ -800,7 +711,6 @@ public interface PersconfPackage extends EPackage {
      * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EResource#getName <em>Name</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for the attribute '<em>Name</em>'.
      * @see com.xse.optstack.persconf.EResource#getName()
      * @see #getEResource()
@@ -809,11 +719,9 @@ public interface PersconfPackage extends EPackage {
     EAttribute getEResource_Name();
 
     /**
-     * Returns the meta object for the reference '{@link com.xse.optstack.persconf.EResource#getConfiguration
-     * <em>Configuration</em>}'.
+     * Returns the meta object for the reference '{@link com.xse.optstack.persconf.EResource#getConfiguration <em>Configuration</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for the reference '<em>Configuration</em>'.
      * @see com.xse.optstack.persconf.EResource#getConfiguration()
      * @see #getEResource()
@@ -822,11 +730,9 @@ public interface PersconfPackage extends EPackage {
     EReference getEResource_Configuration();
 
     /**
-     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EResource#getInstallException
-     * <em>Install Exception</em>}'.
+     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EResource#getInstallException <em>Install Exception</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for the attribute '<em>Install Exception</em>'.
      * @see com.xse.optstack.persconf.EResource#getInstallException()
      * @see #getEResource()
@@ -838,7 +744,6 @@ public interface PersconfPackage extends EPackage {
      * Returns the meta object for enum '{@link com.xse.optstack.persconf.EGroupType <em>EGroup Type</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for enum '<em>EGroup Type</em>'.
      * @see com.xse.optstack.persconf.EGroupType
      * @generated
@@ -846,11 +751,9 @@ public interface PersconfPackage extends EPackage {
     EEnum getEGroupType();
 
     /**
-     * Returns the meta object for class '{@link com.xse.optstack.persconf.EApplicationGroup
-     * <em>EApplication Group</em>}'.
+     * Returns the meta object for class '{@link com.xse.optstack.persconf.EApplicationGroup <em>EApplication Group</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for class '<em>EApplication Group</em>'.
      * @see com.xse.optstack.persconf.EApplicationGroup
      * @generated
@@ -858,11 +761,9 @@ public interface PersconfPackage extends EPackage {
     EClass getEApplicationGroup();
 
     /**
-     * Returns the meta object for the containment reference list '
-     * {@link com.xse.optstack.persconf.EApplicationGroup#getApplications <em>Applications</em>}'.
+     * Returns the meta object for the containment reference list '{@link com.xse.optstack.persconf.EApplicationGroup#getApplications <em>Applications</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for the containment reference list '<em>Applications</em>'.
      * @see com.xse.optstack.persconf.EApplicationGroup#getApplications()
      * @see #getEApplicationGroup()
@@ -871,11 +772,9 @@ public interface PersconfPackage extends EPackage {
     EReference getEApplicationGroup_Applications();
 
     /**
-     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EApplicationGroup#getType
-     * <em>Type</em>}'.
+     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EApplicationGroup#getType <em>Type</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for the attribute '<em>Type</em>'.
      * @see com.xse.optstack.persconf.EApplicationGroup#getType()
      * @see #getEApplicationGroup()
@@ -887,7 +786,6 @@ public interface PersconfPackage extends EPackage {
      * Returns the meta object for enum '{@link com.xse.optstack.persconf.EPolicy <em>EPolicy</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for enum '<em>EPolicy</em>'.
      * @see com.xse.optstack.persconf.EPolicy
      * @generated
@@ -898,7 +796,6 @@ public interface PersconfPackage extends EPackage {
      * Returns the meta object for enum '{@link com.xse.optstack.persconf.EPermission <em>EPermission</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for enum '<em>EPermission</em>'.
      * @see com.xse.optstack.persconf.EPermission
      * @generated
@@ -909,7 +806,6 @@ public interface PersconfPackage extends EPackage {
      * Returns the meta object for enum '{@link com.xse.optstack.persconf.EStorage <em>EStorage</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for enum '<em>EStorage</em>'.
      * @see com.xse.optstack.persconf.EStorage
      * @generated
@@ -920,7 +816,6 @@ public interface PersconfPackage extends EPackage {
      * Returns the meta object for enum '{@link com.xse.optstack.persconf.EInstallRule <em>EInstall Rule</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for enum '<em>EInstall Rule</em>'.
      * @see com.xse.optstack.persconf.EInstallRule
      * @generated
@@ -928,11 +823,9 @@ public interface PersconfPackage extends EPackage {
     EEnum getEInstallRule();
 
     /**
-     * Returns the meta object for enum '{@link com.xse.optstack.persconf.EInstallException <em>EInstall Exception</em>}
-     * '.
+     * Returns the meta object for enum '{@link com.xse.optstack.persconf.EInstallException <em>EInstall Exception</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for enum '<em>EInstall Exception</em>'.
      * @see com.xse.optstack.persconf.EInstallException
      * @generated
@@ -940,11 +833,9 @@ public interface PersconfPackage extends EPackage {
     EEnum getEInstallException();
 
     /**
-     * Returns the meta object for enum '{@link com.xse.optstack.persconf.EDefaultDataType <em>EDefault Data Type</em>}
-     * '.
+     * Returns the meta object for enum '{@link com.xse.optstack.persconf.EDefaultDataType <em>EDefault Data Type</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for enum '<em>EDefault Data Type</em>'.
      * @see com.xse.optstack.persconf.EDefaultDataType
      * @generated
@@ -952,11 +843,9 @@ public interface PersconfPackage extends EPackage {
     EEnum getEDefaultDataType();
 
     /**
-     * Returns the meta object for data type '{@link com.xse.optstack.persconf.EInstallException
-     * <em>EInstall Exception Object</em>}'.
+     * Returns the meta object for data type '{@link com.xse.optstack.persconf.EInstallException <em>EInstall Exception Object</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the meta object for data type '<em>EInstall Exception Object</em>'.
      * @see com.xse.optstack.persconf.EInstallException
      * @model instanceClass="com.xse.optstack.persconf.EInstallException"
@@ -969,7 +858,6 @@ public interface PersconfPackage extends EPackage {
      * Returns the factory that creates the instances of the model.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the factory that creates the instances of the model.
      * @generated
      */
@@ -985,16 +873,13 @@ public interface PersconfPackage extends EPackage {
      * <li>and each data type</li>
      * </ul>
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     interface Literals {
         /**
-         * The meta object literal for the '{@link com.xse.optstack.persconf.impl.EApplicationImpl
-         * <em>EApplication</em>}' class.
+         * The meta object literal for the '{@link com.xse.optstack.persconf.impl.EApplicationImpl <em>EApplication</em>}' class.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @see com.xse.optstack.persconf.impl.EApplicationImpl
          * @see com.xse.optstack.persconf.impl.PersconfPackageImpl#getEApplication()
          * @generated
@@ -1005,7 +890,6 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @generated
          */
         EAttribute EAPPLICATION__NAME = eINSTANCE.getEApplication_Name();
@@ -1014,7 +898,6 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '<em><b>Version</b></em>' attribute feature.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @generated
          */
         EAttribute EAPPLICATION__VERSION = eINSTANCE.getEApplication_Version();
@@ -1023,7 +906,6 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '<em><b>Resources</b></em>' containment reference list feature.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @generated
          */
         EReference EAPPLICATION__RESOURCES = eINSTANCE.getEApplication_Resources();
@@ -1032,7 +914,6 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '<em><b>Group</b></em>' container reference feature.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @generated
          */
         EReference EAPPLICATION__GROUP = eINSTANCE.getEApplication_Group();
@@ -1041,7 +922,6 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '<em><b>Install Rule</b></em>' attribute feature.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @generated
          */
         EAttribute EAPPLICATION__INSTALL_RULE = eINSTANCE.getEApplication_InstallRule();
@@ -1050,17 +930,14 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '<em><b>Size</b></em>' attribute feature.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @generated
          */
         EAttribute EAPPLICATION__SIZE = eINSTANCE.getEApplication_Size();
 
         /**
-         * The meta object literal for the '{@link com.xse.optstack.persconf.impl.EConfigurationImpl
-         * <em>EConfiguration</em>}' class.
+         * The meta object literal for the '{@link com.xse.optstack.persconf.impl.EConfigurationImpl <em>EConfiguration</em>}' class.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @see com.xse.optstack.persconf.impl.EConfigurationImpl
          * @see com.xse.optstack.persconf.impl.PersconfPackageImpl#getEConfiguration()
          * @generated
@@ -1071,7 +948,6 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '<em><b>Policy</b></em>' attribute feature.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @generated
          */
         EAttribute ECONFIGURATION__POLICY = eINSTANCE.getEConfiguration_Policy();
@@ -1080,7 +956,6 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '<em><b>Permission</b></em>' attribute feature.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @generated
          */
         EAttribute ECONFIGURATION__PERMISSION = eINSTANCE.getEConfiguration_Permission();
@@ -1089,7 +964,6 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '<em><b>Storage</b></em>' attribute feature.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @generated
          */
         EAttribute ECONFIGURATION__STORAGE = eINSTANCE.getEConfiguration_Storage();
@@ -1098,7 +972,6 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '<em><b>Responsible</b></em>' attribute feature.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @generated
          */
         EAttribute ECONFIGURATION__RESPONSIBLE = eINSTANCE.getEConfiguration_Responsible();
@@ -1107,7 +980,6 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '<em><b>Custom name</b></em>' attribute feature.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @generated
          */
         EAttribute ECONFIGURATION__CUSTOM_NAME = eINSTANCE.getEConfiguration_Custom_name();
@@ -1116,7 +988,6 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '<em><b>Custom ID</b></em>' attribute feature.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @generated
          */
         EAttribute ECONFIGURATION__CUSTOM_ID = eINSTANCE.getEConfiguration_CustomID();
@@ -1125,7 +996,6 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '<em><b>Max size</b></em>' attribute feature.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @generated
          */
         EAttribute ECONFIGURATION__MAX_SIZE = eINSTANCE.getEConfiguration_Max_size();
@@ -1134,7 +1004,6 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '<em><b>Type</b></em>' attribute feature.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @generated
          */
         EAttribute ECONFIGURATION__TYPE = eINSTANCE.getEConfiguration_Type();
@@ -1143,7 +1012,6 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '<em><b>Factory Default</b></em>' containment reference feature.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @generated
          */
         EReference ECONFIGURATION__FACTORY_DEFAULT = eINSTANCE.getEConfiguration_FactoryDefault();
@@ -1152,17 +1020,14 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '<em><b>Config Default</b></em>' containment reference feature.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @generated
          */
         EReference ECONFIGURATION__CONFIG_DEFAULT = eINSTANCE.getEConfiguration_ConfigDefault();
 
         /**
-         * The meta object literal for the '{@link com.xse.optstack.persconf.impl.EDefaultDataImpl
-         * <em>EDefault Data</em>}' class.
+         * The meta object literal for the '{@link com.xse.optstack.persconf.impl.EDefaultDataImpl <em>EDefault Data</em>}' class.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @see com.xse.optstack.persconf.impl.EDefaultDataImpl
          * @see com.xse.optstack.persconf.impl.PersconfPackageImpl#getEDefaultData()
          * @generated
@@ -1173,7 +1038,6 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '<em><b>Size</b></em>' attribute feature.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @generated
          */
         EAttribute EDEFAULT_DATA__SIZE = eINSTANCE.getEDefaultData_Size();
@@ -1182,7 +1046,6 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '<em><b>Data</b></em>' attribute feature.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @generated
          */
         EAttribute EDEFAULT_DATA__DATA = eINSTANCE.getEDefaultData_Data();
@@ -1191,17 +1054,14 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '<em><b>Local Resource Path</b></em>' attribute feature.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @generated
          */
         EAttribute EDEFAULT_DATA__LOCAL_RESOURCE_PATH = eINSTANCE.getEDefaultData_LocalResourcePath();
 
         /**
-         * The meta object literal for the '{@link com.xse.optstack.persconf.impl.EResourceImpl <em>EResource</em>}'
-         * class.
+         * The meta object literal for the '{@link com.xse.optstack.persconf.impl.EResourceImpl <em>EResource</em>}' class.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @see com.xse.optstack.persconf.impl.EResourceImpl
          * @see com.xse.optstack.persconf.impl.PersconfPackageImpl#getEResource()
          * @generated
@@ -1212,7 +1072,6 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @generated
          */
         EAttribute ERESOURCE__NAME = eINSTANCE.getEResource_Name();
@@ -1221,7 +1080,6 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '<em><b>Configuration</b></em>' reference feature.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @generated
          */
         EReference ERESOURCE__CONFIGURATION = eINSTANCE.getEResource_Configuration();
@@ -1230,7 +1088,6 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '<em><b>Install Exception</b></em>' attribute feature.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @generated
          */
         EAttribute ERESOURCE__INSTALL_EXCEPTION = eINSTANCE.getEResource_InstallException();
@@ -1239,7 +1096,6 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '{@link com.xse.optstack.persconf.EGroupType <em>EGroup Type</em>}' enum.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @see com.xse.optstack.persconf.EGroupType
          * @see com.xse.optstack.persconf.impl.PersconfPackageImpl#getEGroupType()
          * @generated
@@ -1247,11 +1103,9 @@ public interface PersconfPackage extends EPackage {
         EEnum EGROUP_TYPE = eINSTANCE.getEGroupType();
 
         /**
-         * The meta object literal for the '{@link com.xse.optstack.persconf.impl.EApplicationGroupImpl
-         * <em>EApplication Group</em>}' class.
+         * The meta object literal for the '{@link com.xse.optstack.persconf.impl.EApplicationGroupImpl <em>EApplication Group</em>}' class.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @see com.xse.optstack.persconf.impl.EApplicationGroupImpl
          * @see com.xse.optstack.persconf.impl.PersconfPackageImpl#getEApplicationGroup()
          * @generated
@@ -1262,7 +1116,6 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '<em><b>Applications</b></em>' containment reference list feature.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @generated
          */
         EReference EAPPLICATION_GROUP__APPLICATIONS = eINSTANCE.getEApplicationGroup_Applications();
@@ -1271,7 +1124,6 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '<em><b>Type</b></em>' attribute feature.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @generated
          */
         EAttribute EAPPLICATION_GROUP__TYPE = eINSTANCE.getEApplicationGroup_Type();
@@ -1280,7 +1132,6 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '{@link com.xse.optstack.persconf.EPolicy <em>EPolicy</em>}' enum.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @see com.xse.optstack.persconf.EPolicy
          * @see com.xse.optstack.persconf.impl.PersconfPackageImpl#getEPolicy()
          * @generated
@@ -1291,7 +1142,6 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '{@link com.xse.optstack.persconf.EPermission <em>EPermission</em>}' enum.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @see com.xse.optstack.persconf.EPermission
          * @see com.xse.optstack.persconf.impl.PersconfPackageImpl#getEPermission()
          * @generated
@@ -1302,7 +1152,6 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '{@link com.xse.optstack.persconf.EStorage <em>EStorage</em>}' enum.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @see com.xse.optstack.persconf.EStorage
          * @see com.xse.optstack.persconf.impl.PersconfPackageImpl#getEStorage()
          * @generated
@@ -1313,7 +1162,6 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '{@link com.xse.optstack.persconf.EInstallRule <em>EInstall Rule</em>}' enum.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @see com.xse.optstack.persconf.EInstallRule
          * @see com.xse.optstack.persconf.impl.PersconfPackageImpl#getEInstallRule()
          * @generated
@@ -1321,11 +1169,9 @@ public interface PersconfPackage extends EPackage {
         EEnum EINSTALL_RULE = eINSTANCE.getEInstallRule();
 
         /**
-         * The meta object literal for the '{@link com.xse.optstack.persconf.EInstallException
-         * <em>EInstall Exception</em>}' enum.
+         * The meta object literal for the '{@link com.xse.optstack.persconf.EInstallException <em>EInstall Exception</em>}' enum.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @see com.xse.optstack.persconf.EInstallException
          * @see com.xse.optstack.persconf.impl.PersconfPackageImpl#getEInstallException()
          * @generated
@@ -1333,11 +1179,9 @@ public interface PersconfPackage extends EPackage {
         EEnum EINSTALL_EXCEPTION = eINSTANCE.getEInstallException();
 
         /**
-         * The meta object literal for the '{@link com.xse.optstack.persconf.EDefaultDataType
-         * <em>EDefault Data Type</em>}' enum.
+         * The meta object literal for the '{@link com.xse.optstack.persconf.EDefaultDataType <em>EDefault Data Type</em>}' enum.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @see com.xse.optstack.persconf.EDefaultDataType
          * @see com.xse.optstack.persconf.impl.PersconfPackageImpl#getEDefaultDataType()
          * @generated
@@ -1348,7 +1192,6 @@ public interface PersconfPackage extends EPackage {
          * The meta object literal for the '<em>EInstall Exception Object</em>' data type.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
-         * 
          * @see com.xse.optstack.persconf.EInstallException
          * @see com.xse.optstack.persconf.impl.PersconfPackageImpl#getEInstallExceptionObject()
          * @generated

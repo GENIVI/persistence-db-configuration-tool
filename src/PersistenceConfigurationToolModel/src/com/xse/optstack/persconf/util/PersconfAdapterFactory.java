@@ -29,7 +29,6 @@ import com.xse.optstack.persconf.PersconfPackage;
  * The <b>Adapter Factory</b> for the model.
  * It provides an adapter <code>createXXX</code> method for each class of the model.
  * <!-- end-user-doc -->
- * 
  * @see com.xse.optstack.persconf.PersconfPackage
  * @generated
  */
@@ -38,7 +37,6 @@ public class PersconfAdapterFactory extends AdapterFactoryImpl {
      * The cached model package.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     protected static PersconfPackage modelPackage;
@@ -47,7 +45,6 @@ public class PersconfAdapterFactory extends AdapterFactoryImpl {
      * Creates an instance of the adapter factory.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     public PersconfAdapterFactory() {
@@ -62,12 +59,11 @@ public class PersconfAdapterFactory extends AdapterFactoryImpl {
      * This implementation returns <code>true</code> if the object is either the model's package or is an instance
      * object of the model.
      * <!-- end-user-doc -->
-     * 
      * @return whether this factory is applicable for the type of the object.
      * @generated
      */
     @Override
-    public boolean isFactoryForType(final Object object) {
+    public boolean isFactoryForType(Object object) {
         if (object == modelPackage) {
             return true;
         }
@@ -81,38 +77,37 @@ public class PersconfAdapterFactory extends AdapterFactoryImpl {
      * The switch that delegates to the <code>createXXX</code> methods.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     protected PersconfSwitch<Adapter> modelSwitch = new PersconfSwitch<Adapter>() {
         @Override
-        public Adapter caseEApplicationGroup(final EApplicationGroup object) {
-            return PersconfAdapterFactory.this.createEApplicationGroupAdapter();
+        public Adapter caseEApplicationGroup(EApplicationGroup object) {
+            return createEApplicationGroupAdapter();
         }
 
         @Override
-        public Adapter caseEApplication(final EApplication object) {
-            return PersconfAdapterFactory.this.createEApplicationAdapter();
+        public Adapter caseEApplication(EApplication object) {
+            return createEApplicationAdapter();
         }
 
         @Override
-        public Adapter caseEConfiguration(final EConfiguration object) {
-            return PersconfAdapterFactory.this.createEConfigurationAdapter();
+        public Adapter caseEConfiguration(EConfiguration object) {
+            return createEConfigurationAdapter();
         }
 
         @Override
-        public Adapter caseEDefaultData(final EDefaultData object) {
-            return PersconfAdapterFactory.this.createEDefaultDataAdapter();
+        public Adapter caseEDefaultData(EDefaultData object) {
+            return createEDefaultDataAdapter();
         }
 
         @Override
-        public Adapter caseEResource(final EResource object) {
-            return PersconfAdapterFactory.this.createEResourceAdapter();
+        public Adapter caseEResource(EResource object) {
+            return createEResourceAdapter();
         }
 
         @Override
-        public Adapter defaultCase(final EObject object) {
-            return PersconfAdapterFactory.this.createEObjectAdapter();
+        public Adapter defaultCase(EObject object) {
+            return createEObjectAdapter();
         }
     };
 
@@ -120,25 +115,21 @@ public class PersconfAdapterFactory extends AdapterFactoryImpl {
      * Creates an adapter for the <code>target</code>.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
-     * @param target
-     *            the object to adapt.
+     * @param target the object to adapt.
      * @return the adapter for the <code>target</code>.
      * @generated
      */
     @Override
-    public Adapter createAdapter(final Notifier target) {
-        return this.modelSwitch.doSwitch((EObject) target);
+    public Adapter createAdapter(Notifier target) {
+        return modelSwitch.doSwitch((EObject) target);
     }
 
     /**
-     * Creates a new adapter for an object of class '{@link com.xse.optstack.persconf.EApplicationGroup
-     * <em>EApplication Group</em>}'.
+     * Creates a new adapter for an object of class '{@link com.xse.optstack.persconf.EApplicationGroup <em>EApplication Group</em>}'.
      * <!-- begin-user-doc -->
      * This default implementation returns null so that we can easily ignore cases;
      * it's useful to ignore a case when inheritance will catch all the cases anyway.
      * <!-- end-user-doc -->
-     * 
      * @return the new adapter.
      * @see com.xse.optstack.persconf.EApplicationGroup
      * @generated
@@ -148,13 +139,11 @@ public class PersconfAdapterFactory extends AdapterFactoryImpl {
     }
 
     /**
-     * Creates a new adapter for an object of class '{@link com.xse.optstack.persconf.EApplication
-     * <em>EApplication</em>}'.
+     * Creates a new adapter for an object of class '{@link com.xse.optstack.persconf.EApplication <em>EApplication</em>}'.
      * <!-- begin-user-doc -->
      * This default implementation returns null so that we can easily ignore cases;
      * it's useful to ignore a case when inheritance will catch all the cases anyway.
      * <!-- end-user-doc -->
-     * 
      * @return the new adapter.
      * @see com.xse.optstack.persconf.EApplication
      * @generated
@@ -164,13 +153,11 @@ public class PersconfAdapterFactory extends AdapterFactoryImpl {
     }
 
     /**
-     * Creates a new adapter for an object of class '{@link com.xse.optstack.persconf.EConfiguration
-     * <em>EConfiguration</em>}'.
+     * Creates a new adapter for an object of class '{@link com.xse.optstack.persconf.EConfiguration <em>EConfiguration</em>}'.
      * <!-- begin-user-doc -->
      * This default implementation returns null so that we can easily ignore cases;
      * it's useful to ignore a case when inheritance will catch all the cases anyway.
      * <!-- end-user-doc -->
-     * 
      * @return the new adapter.
      * @see com.xse.optstack.persconf.EConfiguration
      * @generated
@@ -180,13 +167,11 @@ public class PersconfAdapterFactory extends AdapterFactoryImpl {
     }
 
     /**
-     * Creates a new adapter for an object of class '{@link com.xse.optstack.persconf.EDefaultData
-     * <em>EDefault Data</em>}'.
+     * Creates a new adapter for an object of class '{@link com.xse.optstack.persconf.EDefaultData <em>EDefault Data</em>}'.
      * <!-- begin-user-doc -->
      * This default implementation returns null so that we can easily ignore cases;
      * it's useful to ignore a case when inheritance will catch all the cases anyway.
      * <!-- end-user-doc -->
-     * 
      * @return the new adapter.
      * @see com.xse.optstack.persconf.EDefaultData
      * @generated
@@ -201,7 +186,6 @@ public class PersconfAdapterFactory extends AdapterFactoryImpl {
      * This default implementation returns null so that we can easily ignore cases;
      * it's useful to ignore a case when inheritance will catch all the cases anyway.
      * <!-- end-user-doc -->
-     * 
      * @return the new adapter.
      * @see com.xse.optstack.persconf.EResource
      * @generated
@@ -215,7 +199,6 @@ public class PersconfAdapterFactory extends AdapterFactoryImpl {
      * <!-- begin-user-doc -->
      * This default implementation returns null.
      * <!-- end-user-doc -->
-     * 
      * @return the new adapter.
      * @generated
      */

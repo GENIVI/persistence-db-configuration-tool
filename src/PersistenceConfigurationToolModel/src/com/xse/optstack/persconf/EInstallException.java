@@ -23,7 +23,6 @@ import org.eclipse.emf.common.util.Enumerator;
  * A representation of the literals of the enumeration '<em><b>EInstall Exception</b></em>',
  * and utility methods for working with them.
  * <!-- end-user-doc -->
- * 
  * @see com.xse.optstack.persconf.PersconfPackage#getEInstallException()
  * @model
  * @generated
@@ -33,7 +32,6 @@ public enum EInstallException implements Enumerator {
      * The '<em><b>UPDATE</b></em>' literal object.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #UPDATE_VALUE
      * @generated
      * @ordered
@@ -44,7 +42,6 @@ public enum EInstallException implements Enumerator {
      * The '<em><b>DONT TOUCH</b></em>' literal object.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #DONT_TOUCH_VALUE
      * @generated
      * @ordered
@@ -55,7 +52,6 @@ public enum EInstallException implements Enumerator {
      * The '<em><b>DELETE</b></em>' literal object.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @see #DELETE_VALUE
      * @generated
      * @ordered
@@ -70,7 +66,6 @@ public enum EInstallException implements Enumerator {
      * description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @see #UPDATE
      * @model literal="Update"
      * @generated
@@ -86,7 +81,6 @@ public enum EInstallException implements Enumerator {
      * description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @see #DONT_TOUCH
      * @model literal="DontTouch"
      * @generated
@@ -102,7 +96,6 @@ public enum EInstallException implements Enumerator {
      * description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @see #DELETE
      * @model literal="Delete"
      * @generated
@@ -114,7 +107,6 @@ public enum EInstallException implements Enumerator {
      * An array of all the '<em><b>EInstall Exception</b></em>' enumerators.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     private static final EInstallException[] VALUES_ARRAY = new EInstallException[] { UPDATE, DONT_TOUCH, DELETE, };
@@ -123,7 +115,6 @@ public enum EInstallException implements Enumerator {
      * A public read-only list of all the '<em><b>EInstall Exception</b></em>' enumerators.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     public static final List<EInstallException> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
@@ -132,11 +123,13 @@ public enum EInstallException implements Enumerator {
      * Returns the '<em><b>EInstall Exception</b></em>' literal with the specified literal value.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
+     * @param literal the literal.
+     * @return the matching enumerator or <code>null</code>.
      * @generated
      */
-    public static EInstallException get(final String literal) {
-        for (final EInstallException result : VALUES_ARRAY) {
+    public static EInstallException get(String literal) {
+        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+            EInstallException result = VALUES_ARRAY[i];
             if (result.toString().equals(literal)) {
                 return result;
             }
@@ -148,11 +141,13 @@ public enum EInstallException implements Enumerator {
      * Returns the '<em><b>EInstall Exception</b></em>' literal with the specified name.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
+     * @param name the name.
+     * @return the matching enumerator or <code>null</code>.
      * @generated
      */
-    public static EInstallException getByName(final String name) {
-        for (final EInstallException result : VALUES_ARRAY) {
+    public static EInstallException getByName(String name) {
+        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+            EInstallException result = VALUES_ARRAY[i];
             if (result.getName().equals(name)) {
                 return result;
             }
@@ -164,10 +159,11 @@ public enum EInstallException implements Enumerator {
      * Returns the '<em><b>EInstall Exception</b></em>' literal with the specified integer value.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
+     * @param value the integer value.
+     * @return the matching enumerator or <code>null</code>.
      * @generated
      */
-    public static EInstallException get(final int value) {
+    public static EInstallException get(int value) {
         switch (value) {
         case UPDATE_VALUE:
             return UPDATE;
@@ -182,7 +178,6 @@ public enum EInstallException implements Enumerator {
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     private final int value;
@@ -190,7 +185,6 @@ public enum EInstallException implements Enumerator {
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     private final String name;
@@ -198,7 +192,6 @@ public enum EInstallException implements Enumerator {
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     private final String literal;
@@ -207,10 +200,9 @@ public enum EInstallException implements Enumerator {
      * Only this class can construct instances.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
-    private EInstallException(final int value, final String name, final String literal) {
+    private EInstallException(int value, String name, String literal) {
         this.value = value;
         this.name = name;
         this.literal = literal;
@@ -219,46 +211,42 @@ public enum EInstallException implements Enumerator {
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public int getValue() {
-        return this.value;
+        return value;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public String getName() {
-        return this.name;
+        return name;
     }
 
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public String getLiteral() {
-        return this.literal;
+        return literal;
     }
 
     /**
      * Returns the literal value of the enumerator, which is its string representation.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public String toString() {
-        return this.literal;
+        return literal;
     }
 
 } //EInstallException

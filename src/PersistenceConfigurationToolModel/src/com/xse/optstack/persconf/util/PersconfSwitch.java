@@ -33,7 +33,6 @@ import com.xse.optstack.persconf.PersconfPackage;
  * until a non-null result is returned,
  * which is the result of the switch.
  * <!-- end-user-doc -->
- * 
  * @see com.xse.optstack.persconf.PersconfPackage
  * @generated
  */
@@ -42,7 +41,6 @@ public class PersconfSwitch<T> extends Switch<T> {
      * The cached model package
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     protected static PersconfPackage modelPackage;
@@ -51,7 +49,6 @@ public class PersconfSwitch<T> extends Switch<T> {
      * Creates an instance of the switch.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @generated
      */
     public PersconfSwitch() {
@@ -64,70 +61,62 @@ public class PersconfSwitch<T> extends Switch<T> {
      * Checks whether this is a switch for the given package.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
-     * @parameter ePackage the package in question.
+     * @param ePackage the package in question.
      * @return whether this is a switch for the given package.
      * @generated
      */
     @Override
-    protected boolean isSwitchFor(final EPackage ePackage) {
+    protected boolean isSwitchFor(EPackage ePackage) {
         return ePackage == modelPackage;
     }
 
     /**
-     * Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that
-     * result.
+     * Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that result.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
      * @return the first non-null result returned by a <code>caseXXX</code> call.
      * @generated
      */
     @Override
-    protected T doSwitch(final int classifierID, final EObject theEObject) {
+    protected T doSwitch(int classifierID, EObject theEObject) {
         switch (classifierID) {
         case PersconfPackage.EAPPLICATION_GROUP: {
-            final EApplicationGroup eApplicationGroup = (EApplicationGroup) theEObject;
-            T result = this.caseEApplicationGroup(eApplicationGroup);
-            if (result == null) {
-                result = this.defaultCase(theEObject);
-            }
+            EApplicationGroup eApplicationGroup = (EApplicationGroup) theEObject;
+            T result = caseEApplicationGroup(eApplicationGroup);
+            if (result == null)
+                result = defaultCase(theEObject);
             return result;
         }
         case PersconfPackage.EAPPLICATION: {
-            final EApplication eApplication = (EApplication) theEObject;
-            T result = this.caseEApplication(eApplication);
-            if (result == null) {
-                result = this.defaultCase(theEObject);
-            }
+            EApplication eApplication = (EApplication) theEObject;
+            T result = caseEApplication(eApplication);
+            if (result == null)
+                result = defaultCase(theEObject);
             return result;
         }
         case PersconfPackage.ECONFIGURATION: {
-            final EConfiguration eConfiguration = (EConfiguration) theEObject;
-            T result = this.caseEConfiguration(eConfiguration);
-            if (result == null) {
-                result = this.defaultCase(theEObject);
-            }
+            EConfiguration eConfiguration = (EConfiguration) theEObject;
+            T result = caseEConfiguration(eConfiguration);
+            if (result == null)
+                result = defaultCase(theEObject);
             return result;
         }
         case PersconfPackage.EDEFAULT_DATA: {
-            final EDefaultData eDefaultData = (EDefaultData) theEObject;
-            T result = this.caseEDefaultData(eDefaultData);
-            if (result == null) {
-                result = this.defaultCase(theEObject);
-            }
+            EDefaultData eDefaultData = (EDefaultData) theEObject;
+            T result = caseEDefaultData(eDefaultData);
+            if (result == null)
+                result = defaultCase(theEObject);
             return result;
         }
         case PersconfPackage.ERESOURCE: {
-            final EResource eResource = (EResource) theEObject;
-            T result = this.caseEResource(eResource);
-            if (result == null) {
-                result = this.defaultCase(theEObject);
-            }
+            EResource eResource = (EResource) theEObject;
+            T result = caseEResource(eResource);
+            if (result == null)
+                result = defaultCase(theEObject);
             return result;
         }
         default:
-            return this.defaultCase(theEObject);
+            return defaultCase(theEObject);
         }
     }
 
@@ -137,14 +126,12 @@ public class PersconfSwitch<T> extends Switch<T> {
      * This implementation returns null;
      * returning a non-null result will terminate the switch.
      * <!-- end-user-doc -->
-     * 
-     * @param object
-     *            the target of the switch.
+     * @param object the target of the switch.
      * @return the result of interpreting the object as an instance of '<em>EApplication Group</em>'.
      * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
      * @generated
      */
-    public T caseEApplicationGroup(final EApplicationGroup object) {
+    public T caseEApplicationGroup(EApplicationGroup object) {
         return null;
     }
 
@@ -154,14 +141,12 @@ public class PersconfSwitch<T> extends Switch<T> {
      * This implementation returns null;
      * returning a non-null result will terminate the switch.
      * <!-- end-user-doc -->
-     * 
-     * @param object
-     *            the target of the switch.
+     * @param object the target of the switch.
      * @return the result of interpreting the object as an instance of '<em>EApplication</em>'.
      * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
      * @generated
      */
-    public T caseEApplication(final EApplication object) {
+    public T caseEApplication(EApplication object) {
         return null;
     }
 
@@ -171,14 +156,12 @@ public class PersconfSwitch<T> extends Switch<T> {
      * This implementation returns null;
      * returning a non-null result will terminate the switch.
      * <!-- end-user-doc -->
-     * 
-     * @param object
-     *            the target of the switch.
+     * @param object the target of the switch.
      * @return the result of interpreting the object as an instance of '<em>EConfiguration</em>'.
      * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
      * @generated
      */
-    public T caseEConfiguration(final EConfiguration object) {
+    public T caseEConfiguration(EConfiguration object) {
         return null;
     }
 
@@ -188,14 +171,12 @@ public class PersconfSwitch<T> extends Switch<T> {
      * This implementation returns null;
      * returning a non-null result will terminate the switch.
      * <!-- end-user-doc -->
-     * 
-     * @param object
-     *            the target of the switch.
+     * @param object the target of the switch.
      * @return the result of interpreting the object as an instance of '<em>EDefault Data</em>'.
      * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
      * @generated
      */
-    public T caseEDefaultData(final EDefaultData object) {
+    public T caseEDefaultData(EDefaultData object) {
         return null;
     }
 
@@ -205,14 +186,12 @@ public class PersconfSwitch<T> extends Switch<T> {
      * This implementation returns null;
      * returning a non-null result will terminate the switch.
      * <!-- end-user-doc -->
-     * 
-     * @param object
-     *            the target of the switch.
+     * @param object the target of the switch.
      * @return the result of interpreting the object as an instance of '<em>EResource</em>'.
      * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
      * @generated
      */
-    public T caseEResource(final EResource object) {
+    public T caseEResource(EResource object) {
         return null;
     }
 
@@ -222,15 +201,13 @@ public class PersconfSwitch<T> extends Switch<T> {
      * This implementation returns null;
      * returning a non-null result will terminate the switch, but this is the last case anyway.
      * <!-- end-user-doc -->
-     * 
-     * @param object
-     *            the target of the switch.
+     * @param object the target of the switch.
      * @return the result of interpreting the object as an instance of '<em>EObject</em>'.
      * @see #doSwitch(org.eclipse.emf.ecore.EObject)
      * @generated
      */
     @Override
-    public T defaultCase(final EObject object) {
+    public T defaultCase(EObject object) {
         return null;
     }
 

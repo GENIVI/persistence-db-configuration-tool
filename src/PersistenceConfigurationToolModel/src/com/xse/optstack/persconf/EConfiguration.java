@@ -21,19 +21,19 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * <ul>
- * <li>{@link com.xse.optstack.persconf.EConfiguration#getPolicy <em>Policy</em>}</li>
- * <li>{@link com.xse.optstack.persconf.EConfiguration#getPermission <em>Permission</em>}</li>
- * <li>{@link com.xse.optstack.persconf.EConfiguration#getStorage <em>Storage</em>}</li>
- * <li>{@link com.xse.optstack.persconf.EConfiguration#getResponsible <em>Responsible</em>}</li>
- * <li>{@link com.xse.optstack.persconf.EConfiguration#getCustom_name <em>Custom name</em>}</li>
- * <li>{@link com.xse.optstack.persconf.EConfiguration#getCustomID <em>Custom ID</em>}</li>
- * <li>{@link com.xse.optstack.persconf.EConfiguration#getMax_size <em>Max size</em>}</li>
- * <li>{@link com.xse.optstack.persconf.EConfiguration#getType <em>Type</em>}</li>
- * <li>{@link com.xse.optstack.persconf.EConfiguration#getFactoryDefault <em>Factory Default</em>}</li>
- * <li>{@link com.xse.optstack.persconf.EConfiguration#getConfigDefault <em>Config Default</em>}</li>
- * </ul>
  * </p>
+ * <ul>
+ *   <li>{@link com.xse.optstack.persconf.EConfiguration#getPolicy <em>Policy</em>}</li>
+ *   <li>{@link com.xse.optstack.persconf.EConfiguration#getPermission <em>Permission</em>}</li>
+ *   <li>{@link com.xse.optstack.persconf.EConfiguration#getStorage <em>Storage</em>}</li>
+ *   <li>{@link com.xse.optstack.persconf.EConfiguration#getResponsible <em>Responsible</em>}</li>
+ *   <li>{@link com.xse.optstack.persconf.EConfiguration#getCustom_name <em>Custom name</em>}</li>
+ *   <li>{@link com.xse.optstack.persconf.EConfiguration#getCustomID <em>Custom ID</em>}</li>
+ *   <li>{@link com.xse.optstack.persconf.EConfiguration#getMax_size <em>Max size</em>}</li>
+ *   <li>{@link com.xse.optstack.persconf.EConfiguration#getType <em>Type</em>}</li>
+ *   <li>{@link com.xse.optstack.persconf.EConfiguration#getFactoryDefault <em>Factory Default</em>}</li>
+ *   <li>{@link com.xse.optstack.persconf.EConfiguration#getConfigDefault <em>Config Default</em>}</li>
+ * </ul>
  *
  * @see com.xse.optstack.persconf.PersconfPackage#getEConfiguration()
  * @model
@@ -49,7 +49,6 @@ public interface EConfiguration extends EObject {
      * here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @return the value of the '<em>Policy</em>' attribute.
      * @see com.xse.optstack.persconf.EPolicy
      * @see #setPolicy(EPolicy)
@@ -63,9 +62,7 @@ public interface EConfiguration extends EObject {
      * Sets the value of the '{@link com.xse.optstack.persconf.EConfiguration#getPolicy <em>Policy</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
-     * @param value
-     *            the new value of the '<em>Policy</em>' attribute.
+     * @param value the new value of the '<em>Policy</em>' attribute.
      * @see com.xse.optstack.persconf.EPolicy
      * @see #getPolicy()
      * @generated
@@ -81,7 +78,6 @@ public interface EConfiguration extends EObject {
      * here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @return the value of the '<em>Permission</em>' attribute.
      * @see com.xse.optstack.persconf.EPermission
      * @see #setPermission(EPermission)
@@ -92,13 +88,10 @@ public interface EConfiguration extends EObject {
     EPermission getPermission();
 
     /**
-     * Sets the value of the '{@link com.xse.optstack.persconf.EConfiguration#getPermission <em>Permission</em>}'
-     * attribute.
+     * Sets the value of the '{@link com.xse.optstack.persconf.EConfiguration#getPermission <em>Permission</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
-     * @param value
-     *            the new value of the '<em>Permission</em>' attribute.
+     * @param value the new value of the '<em>Permission</em>' attribute.
      * @see com.xse.optstack.persconf.EPermission
      * @see #getPermission()
      * @generated
@@ -114,7 +107,6 @@ public interface EConfiguration extends EObject {
      * here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @return the value of the '<em>Storage</em>' attribute.
      * @see com.xse.optstack.persconf.EStorage
      * @see #setStorage(EStorage)
@@ -128,9 +120,7 @@ public interface EConfiguration extends EObject {
      * Sets the value of the '{@link com.xse.optstack.persconf.EConfiguration#getStorage <em>Storage</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
-     * @param value
-     *            the new value of the '<em>Storage</em>' attribute.
+     * @param value the new value of the '<em>Storage</em>' attribute.
      * @see com.xse.optstack.persconf.EStorage
      * @see #getStorage()
      * @generated
@@ -145,7 +135,6 @@ public interface EConfiguration extends EObject {
      * here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @return the value of the '<em>Responsible</em>' attribute.
      * @see #setResponsible(String)
      * @see com.xse.optstack.persconf.PersconfPackage#getEConfiguration_Responsible()
@@ -155,13 +144,10 @@ public interface EConfiguration extends EObject {
     String getResponsible();
 
     /**
-     * Sets the value of the '{@link com.xse.optstack.persconf.EConfiguration#getResponsible <em>Responsible</em>}'
-     * attribute.
+     * Sets the value of the '{@link com.xse.optstack.persconf.EConfiguration#getResponsible <em>Responsible</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
-     * @param value
-     *            the new value of the '<em>Responsible</em>' attribute.
+     * @param value the new value of the '<em>Responsible</em>' attribute.
      * @see #getResponsible()
      * @generated
      */
@@ -175,7 +161,6 @@ public interface EConfiguration extends EObject {
      * here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @return the value of the '<em>Custom name</em>' attribute.
      * @see #setCustom_name(String)
      * @see com.xse.optstack.persconf.PersconfPackage#getEConfiguration_Custom_name()
@@ -185,13 +170,10 @@ public interface EConfiguration extends EObject {
     String getCustom_name();
 
     /**
-     * Sets the value of the '{@link com.xse.optstack.persconf.EConfiguration#getCustom_name <em>Custom name</em>}'
-     * attribute.
+     * Sets the value of the '{@link com.xse.optstack.persconf.EConfiguration#getCustom_name <em>Custom name</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
-     * @param value
-     *            the new value of the '<em>Custom name</em>' attribute.
+     * @param value the new value of the '<em>Custom name</em>' attribute.
      * @see #getCustom_name()
      * @generated
      */
@@ -205,7 +187,6 @@ public interface EConfiguration extends EObject {
      * here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @return the value of the '<em>Custom ID</em>' attribute.
      * @see #setCustomID(String)
      * @see com.xse.optstack.persconf.PersconfPackage#getEConfiguration_CustomID()
@@ -215,13 +196,10 @@ public interface EConfiguration extends EObject {
     String getCustomID();
 
     /**
-     * Sets the value of the '{@link com.xse.optstack.persconf.EConfiguration#getCustomID <em>Custom ID</em>}'
-     * attribute.
+     * Sets the value of the '{@link com.xse.optstack.persconf.EConfiguration#getCustomID <em>Custom ID</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
-     * @param value
-     *            the new value of the '<em>Custom ID</em>' attribute.
+     * @param value the new value of the '<em>Custom ID</em>' attribute.
      * @see #getCustomID()
      * @generated
      */
@@ -235,7 +213,6 @@ public interface EConfiguration extends EObject {
      * here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @return the value of the '<em>Max size</em>' attribute.
      * @see #setMax_size(String)
      * @see com.xse.optstack.persconf.PersconfPackage#getEConfiguration_Max_size()
@@ -248,9 +225,7 @@ public interface EConfiguration extends EObject {
      * Sets the value of the '{@link com.xse.optstack.persconf.EConfiguration#getMax_size <em>Max size</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
-     * @param value
-     *            the new value of the '<em>Max size</em>' attribute.
+     * @param value the new value of the '<em>Max size</em>' attribute.
      * @see #getMax_size()
      * @generated
      */
@@ -264,7 +239,6 @@ public interface EConfiguration extends EObject {
      * If the meaning of the '<em>Type</em>' attribute isn't clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @return the value of the '<em>Type</em>' attribute.
      * @see com.xse.optstack.persconf.EDefaultDataType
      * @see #setType(EDefaultDataType)
@@ -278,9 +252,7 @@ public interface EConfiguration extends EObject {
      * Sets the value of the '{@link com.xse.optstack.persconf.EConfiguration#getType <em>Type</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
-     * @param value
-     *            the new value of the '<em>Type</em>' attribute.
+     * @param value the new value of the '<em>Type</em>' attribute.
      * @see com.xse.optstack.persconf.EDefaultDataType
      * @see #getType()
      * @generated
@@ -295,7 +267,6 @@ public interface EConfiguration extends EObject {
      * of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @return the value of the '<em>Factory Default</em>' containment reference.
      * @see #setFactoryDefault(EDefaultData)
      * @see com.xse.optstack.persconf.PersconfPackage#getEConfiguration_FactoryDefault()
@@ -305,13 +276,10 @@ public interface EConfiguration extends EObject {
     EDefaultData getFactoryDefault();
 
     /**
-     * Sets the value of the '{@link com.xse.optstack.persconf.EConfiguration#getFactoryDefault
-     * <em>Factory Default</em>}' containment reference.
+     * Sets the value of the '{@link com.xse.optstack.persconf.EConfiguration#getFactoryDefault <em>Factory Default</em>}' containment reference.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
-     * @param value
-     *            the new value of the '<em>Factory Default</em>' containment reference.
+     * @param value the new value of the '<em>Factory Default</em>' containment reference.
      * @see #getFactoryDefault()
      * @generated
      */
@@ -325,7 +293,6 @@ public interface EConfiguration extends EObject {
      * a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @return the value of the '<em>Config Default</em>' containment reference.
      * @see #setConfigDefault(EDefaultData)
      * @see com.xse.optstack.persconf.PersconfPackage#getEConfiguration_ConfigDefault()
@@ -335,13 +302,10 @@ public interface EConfiguration extends EObject {
     EDefaultData getConfigDefault();
 
     /**
-     * Sets the value of the '{@link com.xse.optstack.persconf.EConfiguration#getConfigDefault <em>Config Default</em>}'
-     * containment reference.
+     * Sets the value of the '{@link com.xse.optstack.persconf.EConfiguration#getConfigDefault <em>Config Default</em>}' containment reference.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
-     * @param value
-     *            the new value of the '<em>Config Default</em>' containment reference.
+     * @param value the new value of the '<em>Config Default</em>' containment reference.
      * @see #getConfigDefault()
      * @generated
      */
