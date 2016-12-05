@@ -45,6 +45,10 @@ import com.xse.optstack.persconf.PersconfPackage;
  *   <li>{@link com.xse.optstack.persconf.impl.EApplicationImpl#getGroup <em>Group</em>}</li>
  *   <li>{@link com.xse.optstack.persconf.impl.EApplicationImpl#getInstallRule <em>Install Rule</em>}</li>
  *   <li>{@link com.xse.optstack.persconf.impl.EApplicationImpl#getSize <em>Size</em>}</li>
+ *   <li>{@link com.xse.optstack.persconf.impl.EApplicationImpl#getUserName <em>User Name</em>}</li>
+ *   <li>{@link com.xse.optstack.persconf.impl.EApplicationImpl#getGroupName <em>Group Name</em>}</li>
+ *   <li>{@link com.xse.optstack.persconf.impl.EApplicationImpl#getUserId <em>User Id</em>}</li>
+ *   <li>{@link com.xse.optstack.persconf.impl.EApplicationImpl#getGroupId <em>Group Id</em>}</li>
  * </ul>
  *
  * @generated
@@ -141,10 +145,91 @@ public class EApplicationImpl extends MinimalEObjectImpl.Container implements EA
     protected Integer size = SIZE_EDEFAULT;
 
     /**
+     * The default value of the '{@link #getUserName() <em>User Name</em>}' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see #getUserName()
+     * @generated
+     * @ordered
+     */
+    protected static final String USER_NAME_EDEFAULT = "";
+
+    /**
+     * The cached value of the '{@link #getUserName() <em>User Name</em>}' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see #getUserName()
+     * @generated
+     * @ordered
+     */
+    protected String userName = USER_NAME_EDEFAULT;
+
+    /**
+     * The default value of the '{@link #getGroupName() <em>Group Name</em>}' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see #getGroupName()
+     * @generated
+     * @ordered
+     */
+    protected static final String GROUP_NAME_EDEFAULT = "";
+
+    /**
+     * The cached value of the '{@link #getGroupName() <em>Group Name</em>}' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see #getGroupName()
+     * @generated
+     * @ordered
+     */
+    protected String groupName = GROUP_NAME_EDEFAULT;
+
+    /**
+     * The default value of the '{@link #getUserId() <em>User Id</em>}' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see #getUserId()
+     * @generated
+     * @ordered
+     */
+    protected static final Integer USER_ID_EDEFAULT = null;
+
+    /**
+     * The cached value of the '{@link #getUserId() <em>User Id</em>}' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see #getUserId()
+     * @generated
+     * @ordered
+     */
+    protected Integer userId = USER_ID_EDEFAULT;
+
+    /**
+     * The default value of the '{@link #getGroupId() <em>Group Id</em>}' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see #getGroupId()
+     * @generated
+     * @ordered
+     */
+    protected static final Integer GROUP_ID_EDEFAULT = null;
+
+    /**
+     * The cached value of the '{@link #getGroupId() <em>Group Id</em>}' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see #getGroupId()
+     * @generated
+     * @ordered
+     */
+    protected Integer groupId = GROUP_ID_EDEFAULT;
+
+    /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
+
     protected EApplicationImpl() {
         super();
     }
@@ -319,6 +404,94 @@ public class EApplicationImpl extends MinimalEObjectImpl.Container implements EA
      * <!-- end-user-doc -->
      * @generated
      */
+    public String getUserName() {
+        return userName;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public void setUserName(String newUserName) {
+        String oldUserName = userName;
+        userName = newUserName;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, PersconfPackage.EAPPLICATION__USER_NAME, oldUserName,
+                    userName));
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public String getGroupName() {
+        return groupName;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public void setGroupName(String newGroupName) {
+        String oldGroupName = groupName;
+        groupName = newGroupName;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, PersconfPackage.EAPPLICATION__GROUP_NAME,
+                    oldGroupName, groupName));
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public Integer getUserId() {
+        return userId;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public void setUserId(Integer newUserId) {
+        Integer oldUserId = userId;
+        userId = newUserId;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, PersconfPackage.EAPPLICATION__USER_ID, oldUserId,
+                    userId));
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public Integer getGroupId() {
+        return groupId;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public void setGroupId(Integer newGroupId) {
+        Integer oldGroupId = groupId;
+        groupId = newGroupId;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, PersconfPackage.EAPPLICATION__GROUP_ID, oldGroupId,
+                    groupId));
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
     @Override
     public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
         switch (featureID) {
@@ -381,6 +554,14 @@ public class EApplicationImpl extends MinimalEObjectImpl.Container implements EA
             return getInstallRule();
         case PersconfPackage.EAPPLICATION__SIZE:
             return getSize();
+        case PersconfPackage.EAPPLICATION__USER_NAME:
+            return getUserName();
+        case PersconfPackage.EAPPLICATION__GROUP_NAME:
+            return getGroupName();
+        case PersconfPackage.EAPPLICATION__USER_ID:
+            return getUserId();
+        case PersconfPackage.EAPPLICATION__GROUP_ID:
+            return getGroupId();
         }
         return super.eGet(featureID, resolve, coreType);
     }
@@ -413,6 +594,18 @@ public class EApplicationImpl extends MinimalEObjectImpl.Container implements EA
         case PersconfPackage.EAPPLICATION__SIZE:
             setSize((Integer) newValue);
             return;
+        case PersconfPackage.EAPPLICATION__USER_NAME:
+            setUserName((String) newValue);
+            return;
+        case PersconfPackage.EAPPLICATION__GROUP_NAME:
+            setGroupName((String) newValue);
+            return;
+        case PersconfPackage.EAPPLICATION__USER_ID:
+            setUserId((Integer) newValue);
+            return;
+        case PersconfPackage.EAPPLICATION__GROUP_ID:
+            setGroupId((Integer) newValue);
+            return;
         }
         super.eSet(featureID, newValue);
     }
@@ -443,6 +636,18 @@ public class EApplicationImpl extends MinimalEObjectImpl.Container implements EA
         case PersconfPackage.EAPPLICATION__SIZE:
             setSize(SIZE_EDEFAULT);
             return;
+        case PersconfPackage.EAPPLICATION__USER_NAME:
+            setUserName(USER_NAME_EDEFAULT);
+            return;
+        case PersconfPackage.EAPPLICATION__GROUP_NAME:
+            setGroupName(GROUP_NAME_EDEFAULT);
+            return;
+        case PersconfPackage.EAPPLICATION__USER_ID:
+            setUserId(USER_ID_EDEFAULT);
+            return;
+        case PersconfPackage.EAPPLICATION__GROUP_ID:
+            setGroupId(GROUP_ID_EDEFAULT);
+            return;
         }
         super.eUnset(featureID);
     }
@@ -467,6 +672,14 @@ public class EApplicationImpl extends MinimalEObjectImpl.Container implements EA
             return installRule != INSTALL_RULE_EDEFAULT;
         case PersconfPackage.EAPPLICATION__SIZE:
             return SIZE_EDEFAULT == null ? size != null : !SIZE_EDEFAULT.equals(size);
+        case PersconfPackage.EAPPLICATION__USER_NAME:
+            return USER_NAME_EDEFAULT == null ? userName != null : !USER_NAME_EDEFAULT.equals(userName);
+        case PersconfPackage.EAPPLICATION__GROUP_NAME:
+            return GROUP_NAME_EDEFAULT == null ? groupName != null : !GROUP_NAME_EDEFAULT.equals(groupName);
+        case PersconfPackage.EAPPLICATION__USER_ID:
+            return USER_ID_EDEFAULT == null ? userId != null : !USER_ID_EDEFAULT.equals(userId);
+        case PersconfPackage.EAPPLICATION__GROUP_ID:
+            return GROUP_ID_EDEFAULT == null ? groupId != null : !GROUP_ID_EDEFAULT.equals(groupId);
         }
         return super.eIsSet(featureID);
     }
@@ -490,6 +703,14 @@ public class EApplicationImpl extends MinimalEObjectImpl.Container implements EA
         result.append(installRule);
         result.append(", size: ");
         result.append(size);
+        result.append(", userName: ");
+        result.append(userName);
+        result.append(", groupName: ");
+        result.append(groupName);
+        result.append(", userId: ");
+        result.append(userId);
+        result.append(", groupId: ");
+        result.append(groupId);
         result.append(')');
         return result.toString();
     }

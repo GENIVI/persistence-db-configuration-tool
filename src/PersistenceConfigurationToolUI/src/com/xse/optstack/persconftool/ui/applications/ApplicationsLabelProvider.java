@@ -58,6 +58,14 @@ public class ApplicationsLabelProvider extends AbstractBaseLabelProvider impleme
                 }
             case 2:
                 return application.getSize() != null ? application.getSize().toString() : "";
+            case 3:
+                return application.getUserName() != null ? application.getUserName().toString() : "";
+            case 4:
+                return application.getGroupName() != null ? application.getGroupName().toString() : "";
+            case 5:
+                return application.getUserId() != null ? application.getUserId().toString() : "";
+            case 6:
+                return application.getGroupId() != null ? application.getGroupId().toString() : "";
             default:
                 return "";
             }

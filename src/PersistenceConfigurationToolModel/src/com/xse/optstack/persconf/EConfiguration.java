@@ -42,6 +42,7 @@ import org.eclipse.emf.ecore.EObject;
 public interface EConfiguration extends EObject {
     /**
      * Returns the value of the '<em><b>Policy</b></em>' attribute.
+     * The default value is <code>"NA"</code>.
      * The literals are from the enumeration {@link com.xse.optstack.persconf.EPolicy}.
      * <!-- begin-user-doc -->
      * <p>
@@ -53,7 +54,7 @@ public interface EConfiguration extends EObject {
      * @see com.xse.optstack.persconf.EPolicy
      * @see #setPolicy(EPolicy)
      * @see com.xse.optstack.persconf.PersconfPackage#getEConfiguration_Policy()
-     * @model required="true"
+     * @model default="NA" required="true"
      * @generated
      */
     EPolicy getPolicy();

@@ -70,7 +70,7 @@ public class ApplicationsTree extends AbstractTree {
         });
         comboBoxViewerCellEditor.setInput(new Object());
 
-        final TableColumn installationRuleColumn = new TableColumn("Installation Rule", 210);
+        final TableColumn installationRuleColumn = new TableColumn("Installation Rule", 140);
         installationRuleColumn.setEditingSupport(new EditingSupport(this.getViewer()) {
             @Override
             protected void setValue(final Object element, final Object value) {
@@ -136,7 +136,142 @@ public class ApplicationsTree extends AbstractTree {
             }
         });
 
-        return new TableColumn[] { new TableColumn("Name", 220), installationRuleColumn, sizeColumn };
+        final TableColumn userNameColumn = new TableColumn("User", 100);
+        userNameColumn.setEditingSupport(new EditingSupport(this.getViewer()) {
+            @Override
+            protected void setValue(final Object element, final Object value) {
+                if ((element instanceof EApplication) && (value instanceof String)) {
+                    ((EApplication) element).setUserName(String.valueOf(value));
+                }
+            }
+
+            @Override
+            protected Object getValue(final Object element) {
+                if (element instanceof EApplication) {
+                    final EApplication app = (EApplication) element;
+                	return app.getUserName();
+                }
+                return "?";
+            }
+
+            @Override
+            protected CellEditor getCellEditor(final Object element) {
+                return textCellEditor;
+            }
+
+            @Override
+            protected boolean canEdit(final Object element) {
+                return element instanceof EApplication;
+            }
+        });
+        
+        final TableColumn groupNameColumn = new TableColumn("Group", 100);
+        groupNameColumn.setEditingSupport(new EditingSupport(this.getViewer()) {
+            @Override
+            protected void setValue(final Object element, final Object value) {
+                if ((element instanceof EApplication) && (value instanceof String)) {
+                	String stringVal = String.valueOf(value);
+                    ((EApplication) element).setGroupName(stringVal);
+                }
+            }
+
+            @Override
+            protected Object getValue(final Object element) {
+                if (element instanceof EApplication) {
+                    final EApplication app = (EApplication) element;
+                    String groupName = app.getGroupName();
+                	
+                	return groupName;
+                }
+                return "?";
+            }
+
+            @Override
+            protected CellEditor getCellEditor(final Object element) {
+                return textCellEditor;
+            }
+
+            @Override
+            protected boolean canEdit(final Object element) {
+                return element instanceof EApplication;
+            }
+        });
+        
+        final TableColumn userIdColumn = new TableColumn("User ID", 100);
+        userIdColumn.setEditingSupport(new EditingSupport(this.getViewer()) {
+        	@Override
+            protected void setValue(final Object element, final Object value) {
+                if ((element instanceof EApplication) && (value instanceof String)) {
+                    if (!StringUtils.isEmpty(value.toString())) {
+                        try {
+                            ((EApplication) element).setUserId(Integer.valueOf(value.toString()));
+                        } catch (final NumberFormatException e) {
+                            // do nothing
+                        }
+                    } else {
+                        ((EApplication) element).setUserId(null);
+                    }
+                }
+            }
+
+            @Override
+            protected Object getValue(final Object element) {
+                if (element instanceof EApplication) {
+                    final EApplication app = (EApplication) element;
+                    return app.getUserId() != null ? app.getUserId().toString() : "";
+                }
+                return "";
+            }
+
+            @Override
+            protected CellEditor getCellEditor(final Object element) {
+                return textCellEditor;
+            }
+
+            @Override
+            protected boolean canEdit(final Object element) {
+                return element instanceof EApplication;
+            }
+        });
+        
+        final TableColumn groupIdColumn = new TableColumn("Group ID", 100);
+        groupIdColumn.setEditingSupport(new EditingSupport(this.getViewer()) {
+        	@Override
+            protected void setValue(final Object element, final Object value) {
+                if ((element instanceof EApplication) && (value instanceof String)) {
+                    if (!StringUtils.isEmpty(value.toString())) {
+                        try {
+                            ((EApplication) element).setGroupId(Integer.valueOf(value.toString()));
+                        } catch (final NumberFormatException e) {
+                            // do nothing
+                        }
+                    } else {
+                        ((EApplication) element).setGroupId(null);
+                    }
+                }
+            }
+
+            @Override
+            protected Object getValue(final Object element) {
+                if (element instanceof EApplication) {
+                    final EApplication app = (EApplication) element;
+                    return app.getGroupId() != null ? app.getGroupId().toString() : "";
+                }
+                return "";
+            }
+
+            @Override
+            protected CellEditor getCellEditor(final Object element) {
+                return textCellEditor;
+            }
+
+            @Override
+            protected boolean canEdit(final Object element) {
+                return element instanceof EApplication;
+            }
+        });
+
+        return new TableColumn[] { new TableColumn("Name", 220), installationRuleColumn, sizeColumn, userNameColumn, groupNameColumn, userIdColumn, groupIdColumn };
     }
 
 }

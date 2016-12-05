@@ -30,6 +30,10 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link com.xse.optstack.persconf.EApplication#getGroup <em>Group</em>}</li>
  *   <li>{@link com.xse.optstack.persconf.EApplication#getInstallRule <em>Install Rule</em>}</li>
  *   <li>{@link com.xse.optstack.persconf.EApplication#getSize <em>Size</em>}</li>
+ *   <li>{@link com.xse.optstack.persconf.EApplication#getUserName <em>User Name</em>}</li>
+ *   <li>{@link com.xse.optstack.persconf.EApplication#getGroupName <em>Group Name</em>}</li>
+ *   <li>{@link com.xse.optstack.persconf.EApplication#getUserId <em>User Id</em>}</li>
+ *   <li>{@link com.xse.optstack.persconf.EApplication#getGroupId <em>Group Id</em>}</li>
  * </ul>
  *
  * @see com.xse.optstack.persconf.PersconfPackage#getEApplication()
@@ -188,5 +192,113 @@ public interface EApplication extends EObject {
      * @generated
      */
     void setSize(Integer value);
+
+    /**
+     * Returns the value of the '<em><b>User Name</b></em>' attribute.
+     * The default value is <code>""</code>.
+     * <!-- begin-user-doc -->
+     * <p>
+     * If the meaning of the '<em>User Name</em>' attribute isn't clear,
+     * there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
+     * @return the value of the '<em>User Name</em>' attribute.
+     * @see #setUserName(String)
+     * @see com.xse.optstack.persconf.PersconfPackage#getEApplication_UserName()
+     * @model default=""
+     * @generated
+     */
+    String getUserName();
+
+    /**
+     * Sets the value of the '{@link com.xse.optstack.persconf.EApplication#getUserName <em>User Name</em>}' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @param value the new value of the '<em>User Name</em>' attribute.
+     * @see #getUserName()
+     * @generated
+     */
+    void setUserName(String value);
+
+    /**
+     * Returns the value of the '<em><b>Group Name</b></em>' attribute.
+     * The default value is <code>""</code>.
+     * <!-- begin-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Group Name</em>' attribute isn't clear,
+     * there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
+     * @return the value of the '<em>Group Name</em>' attribute.
+     * @see #setGroupName(String)
+     * @see com.xse.optstack.persconf.PersconfPackage#getEApplication_GroupName()
+     * @model default=""
+     * @generated
+     */
+    String getGroupName();
+
+    /**
+     * Sets the value of the '{@link com.xse.optstack.persconf.EApplication#getGroupName <em>Group Name</em>}' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @param value the new value of the '<em>Group Name</em>' attribute.
+     * @see #getGroupName()
+     * @generated
+     */
+    void setGroupName(String value);
+
+    /**
+     * Returns the value of the '<em><b>User Id</b></em>' attribute.
+     * The default value is <code>"0"</code>.
+     * <!-- begin-user-doc -->
+     * <p>
+     * If the meaning of the '<em>User Id</em>' attribute isn't clear,
+     * there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
+     * @return the value of the '<em>User Id</em>' attribute.
+     * @see #setUserId(Integer)
+     * @see com.xse.optstack.persconf.PersconfPackage#getEApplication_UserId()
+     * @model default="0"
+     * @generated
+     */
+    Integer getUserId();
+
+    /**
+     * Sets the value of the '{@link com.xse.optstack.persconf.EApplication#getUserId <em>User Id</em>}' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @param value the new value of the '<em>User Id</em>' attribute.
+     * @see #getUserId()
+     * @generated
+     */
+    void setUserId(Integer value);
+
+    /**
+     * Returns the value of the '<em><b>Group Id</b></em>' attribute.
+     * The default value is <code>"0"</code>.
+     * <!-- begin-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Group Id</em>' attribute isn't clear,
+     * there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
+     * @return the value of the '<em>Group Id</em>' attribute.
+     * @see #setGroupId(Integer)
+     * @see com.xse.optstack.persconf.PersconfPackage#getEApplication_GroupId()
+     * @model default="0"
+     * @generated
+     */
+    Integer getGroupId();
+
+    /**
+     * Sets the value of the '{@link com.xse.optstack.persconf.EApplication#getGroupId <em>Group Id</em>}' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @param value the new value of the '<em>Group Id</em>' attribute.
+     * @see #getGroupId()
+     * @generated
+     */
+    void setGroupId(Integer value);
 
 } // EApplication

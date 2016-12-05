@@ -33,6 +33,7 @@ import com.google.gson.ExclusionStrategy;
 import com.google.gson.FieldAttributes;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonPrimitive;
 import com.xse.eclipseui.util.Logger;
@@ -177,18 +178,68 @@ public class PersConfExport {
 
         // ################ Installation Rules
         final Gson installRulesJson = PersConfExport.createGsonBuilder().create();
-        final JsonObject obj = new JsonObject();
+        final JsonObject installRulesObj = new JsonObject();
         for (final EApplication eApplication : group.getApplications()) {
             if (eApplication.getInstallRule() != null) {
-                obj.add(eApplication.getName(), new JsonPrimitive(PersConfDefinitions.INSTALL_RULE_PREFIX
+                installRulesObj.add(eApplication.getName(), new JsonPrimitive(PersConfDefinitions.INSTALL_RULE_PREFIX
                         + eApplication.getInstallRule().getLiteral()));
             }
         }
         try (final FileWriter fileWriter = new FileWriter(new File(groupFolder.getAbsolutePath() + File.separator
                 + PersConfDefinitions.INSTALL_RULES_FILE))) {
-            fileWriter.write(installRulesJson.toJson(obj));
+            fileWriter.write(installRulesJson.toJson(installRulesObj));
         } catch (final IOException e) {
             Logger.error(Activator.PLUGIN_ID, "Error writing install rules configuration file!", e);
+        }
+        
+        // ################ Ownership Configuration
+        final Gson ownershipConfigurationJson = PersConfExport.createGsonBuilder().create();
+        final JsonObject ownershipConfigurationObj = new JsonObject();
+        for (final EApplication eApplication : group.getApplications()) {        	
+        	final JsonObject appElement = new JsonObject();
+        	
+        	boolean saveApplication = false;
+        	
+        	if(eApplication.getUserName() == null || eApplication.getUserName().equals(""))
+        		appElement.add(PersConfDefinitions.USERNAME_KEY_NAME,  new JsonPrimitive(""));
+        	else
+        	{
+            	appElement.add(PersConfDefinitions.USERNAME_KEY_NAME,  new JsonPrimitive(eApplication.getUserName()));
+        		saveApplication = true;
+        	}
+
+        	if(eApplication.getGroupName() == null || eApplication.getGroupName().equals(""))
+        		appElement.add(PersConfDefinitions.GROUPNAME_KEY_NAME,  new JsonPrimitive(""));
+        	else
+        	{
+            	appElement.add(PersConfDefinitions.GROUPNAME_KEY_NAME,  new JsonPrimitive(eApplication.getGroupName()));
+        		saveApplication = true;
+        	}
+
+        	if(eApplication.getUserId() == null)
+        		appElement.add(PersConfDefinitions.USERID_KEY_NAME,  new JsonPrimitive(""));
+        	else
+        	{
+            	appElement.add(PersConfDefinitions.USERID_KEY_NAME,  new JsonPrimitive(String.valueOf(eApplication.getUserId())));
+        		saveApplication = true;
+        	}
+
+        	if(eApplication.getGroupId() == null)
+        		appElement.add(PersConfDefinitions.GROUPID_KEY_NAME,  new JsonPrimitive(""));
+        	else
+        	{
+            	appElement.add(PersConfDefinitions.GROUPID_KEY_NAME,  new JsonPrimitive(String.valueOf(eApplication.getGroupId())));
+        		saveApplication = true;
+        	}
+            
+        	if(saveApplication)
+        		ownershipConfigurationObj.add(eApplication.getName(), appElement);
+        }
+        try (final FileWriter fileWriter = new FileWriter(new File(groupFolder.getAbsolutePath() + File.separator
+                + PersConfDefinitions.OWNERSHIP_CONFIGURATION_FILE))) {
+            fileWriter.write(ownershipConfigurationJson.toJson(ownershipConfigurationObj));
+        } catch (final IOException e) {
+            Logger.error(Activator.PLUGIN_ID, "Error writing ownership configuration file!", e);
         }
 
         for (final EApplication eApplication : group.getApplications()) {

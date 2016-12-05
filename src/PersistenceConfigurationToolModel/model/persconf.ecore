@@ -1,103 +1,342 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="persconf" nsURI="http://com/xse/optstack/persconf" nsPrefix="com.xse.optstack.persconf">
-  <eClassifiers xsi:type="ecore:EClass" name="EApplicationGroup">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="applications" upperBound="-1"
-        eType="#//EApplication" containment="true" eOpposite="#//EApplication/group"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="#//EGroupType"/>
+<ecore:EPackage
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    name="persconf"
+    nsURI="http://com/xse/optstack/persconf"
+    nsPrefix="com.xse.optstack.persconf">
+  <eClassifiers
+      xsi:type="ecore:EClass"
+      name="EApplicationGroup">
+    <eStructuralFeatures
+        xsi:type="ecore:EReference"
+        name="applications"
+        upperBound="-1"
+        eType="#//EApplication"
+        containment="true"
+        eOpposite="#//EApplication/group"/>
+    <eStructuralFeatures
+        xsi:type="ecore:EAttribute"
+        name="type"
+        lowerBound="1"
+        eType="#//EGroupType"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="EApplication">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="version" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" defaultValueLiteral="0.1.0"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="resources" upperBound="-1"
-        eType="#//EResource" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="group" lowerBound="1" eType="#//EApplicationGroup"
-        transient="true" eOpposite="#//EApplicationGroup/applications"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="installRule" eType="#//EInstallRule"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="size" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+  <eClassifiers
+      xsi:type="ecore:EClass"
+      name="EApplication">
+    <eStructuralFeatures
+        xsi:type="ecore:EAttribute"
+        name="name"
+        lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures
+        xsi:type="ecore:EAttribute"
+        name="version"
+        lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral="0.1.0"/>
+    <eStructuralFeatures
+        xsi:type="ecore:EReference"
+        name="resources"
+        upperBound="-1"
+        eType="#//EResource"
+        containment="true"/>
+    <eStructuralFeatures
+        xsi:type="ecore:EReference"
+        name="group"
+        lowerBound="1"
+        eType="#//EApplicationGroup"
+        transient="true"
+        eOpposite="#//EApplicationGroup/applications"/>
+    <eStructuralFeatures
+        xsi:type="ecore:EAttribute"
+        name="installRule"
+        eType="#//EInstallRule"/>
+    <eStructuralFeatures
+        xsi:type="ecore:EAttribute"
+        name="size"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures
+        xsi:type="ecore:EAttribute"
+        name="userName"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures
+        xsi:type="ecore:EAttribute"
+        name="groupName"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures
+        xsi:type="ecore:EAttribute"
+        name="userId"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"
+        defaultValueLiteral="0"/>
+    <eStructuralFeatures
+        xsi:type="ecore:EAttribute"
+        name="groupId"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"
+        defaultValueLiteral="0"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="EGroupType">
-    <eLiterals name="APPLICATION" literal="Apps"/>
-    <eLiterals name="SHARED" value="1" literal="Groups"/>
-    <eLiterals name="PUBLIC" value="2" literal="Public"/>
+  <eClassifiers
+      xsi:type="ecore:EEnum"
+      name="EGroupType">
+    <eLiterals
+        name="APPLICATION"
+        literal="Apps"/>
+    <eLiterals
+        name="SHARED"
+        value="1"
+        literal="Groups"/>
+    <eLiterals
+        name="PUBLIC"
+        value="2"
+        literal="Public"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="EPolicy">
-    <eLiterals name="NA"/>
-    <eLiterals name="CACHED" value="1" literal="cached"/>
-    <eLiterals name="WRITETHROUGH" value="2" literal="writethrough"/>
+  <eClassifiers
+      xsi:type="ecore:EEnum"
+      name="EPolicy">
+    <eLiterals
+        name="NA"/>
+    <eLiterals
+        name="CACHED"
+        value="1"
+        literal="cached"/>
+    <eLiterals
+        name="WRITETHROUGH"
+        value="2"
+        literal="writethrough"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="EPermission">
-    <eLiterals name="WO"/>
-    <eLiterals name="RO" value="1"/>
-    <eLiterals name="RW" value="2"/>
+  <eClassifiers
+      xsi:type="ecore:EEnum"
+      name="EPermission">
+    <eLiterals
+        name="WO"/>
+    <eLiterals
+        name="RO"
+        value="1"/>
+    <eLiterals
+        name="RW"
+        value="2"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="EStorage">
-    <eLiterals name="LOCAL" literal="local"/>
-    <eLiterals name="SHARED" value="1" literal="shared"/>
-    <eLiterals name="HWINFO" value="2" literal="hwinfo"/>
-    <eLiterals name="EARLY" value="3" literal="early"/>
-    <eLiterals name="EMERGENCY" value="4" literal="emergency"/>
-    <eLiterals name="SECURE" value="5" literal="secure"/>
-    <eLiterals name="CUSTOM1" value="6" literal="custom1"/>
-    <eLiterals name="CUSTOM2" value="7" literal="custom2"/>
-    <eLiterals name="CUSTOM3" value="8" literal="custom3"/>
+  <eClassifiers
+      xsi:type="ecore:EEnum"
+      name="EStorage">
+    <eLiterals
+        name="LOCAL"
+        literal="local"/>
+    <eLiterals
+        name="SHARED"
+        value="1"
+        literal="shared"/>
+    <eLiterals
+        name="HWINFO"
+        value="2"
+        literal="hwinfo"/>
+    <eLiterals
+        name="EARLY"
+        value="3"
+        literal="early"/>
+    <eLiterals
+        name="EMERGENCY"
+        value="4"
+        literal="emergency"/>
+    <eLiterals
+        name="SECURE"
+        value="5"
+        literal="secure"/>
+    <eLiterals
+        name="CUSTOM1"
+        value="6"
+        literal="custom1"/>
+    <eLiterals
+        name="CUSTOM2"
+        value="7"
+        literal="custom2"/>
+    <eLiterals
+        name="CUSTOM3"
+        value="8"
+        literal="custom3"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="EConfiguration">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="policy" lowerBound="1"
-        eType="#//EPolicy" defaultValueLiteral="NA"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="permission" lowerBound="1"
+  <eClassifiers
+      xsi:type="ecore:EClass"
+      name="EConfiguration">
+    <eStructuralFeatures
+        xsi:type="ecore:EAttribute"
+        name="policy"
+        lowerBound="1"
+        eType="#//EPolicy"
+        defaultValueLiteral="NA"/>
+    <eStructuralFeatures
+        xsi:type="ecore:EAttribute"
+        name="permission"
+        lowerBound="1"
         eType="#//EPermission"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="storage" lowerBound="1"
+    <eStructuralFeatures
+        xsi:type="ecore:EAttribute"
+        name="storage"
+        lowerBound="1"
         eType="#//EStorage"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="responsible" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="custom_name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="customID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="max_size" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="#//EDefaultDataType"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="factoryDefault" eType="#//EDefaultData"
+    <eStructuralFeatures
+        xsi:type="ecore:EAttribute"
+        name="responsible"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures
+        xsi:type="ecore:EAttribute"
+        name="custom_name"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures
+        xsi:type="ecore:EAttribute"
+        name="customID"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures
+        xsi:type="ecore:EAttribute"
+        name="max_size"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures
+        xsi:type="ecore:EAttribute"
+        name="type"
+        lowerBound="1"
+        eType="#//EDefaultDataType"/>
+    <eStructuralFeatures
+        xsi:type="ecore:EReference"
+        name="factoryDefault"
+        eType="#//EDefaultData"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="configDefault" eType="#//EDefaultData"
+    <eStructuralFeatures
+        xsi:type="ecore:EReference"
+        name="configDefault"
+        eType="#//EDefaultData"
         containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="EDefaultData">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="size" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="data" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="localResourcePath" unique="false"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" transient="true"/>
+  <eClassifiers
+      xsi:type="ecore:EClass"
+      name="EDefaultData">
+    <eStructuralFeatures
+        xsi:type="ecore:EAttribute"
+        name="size"
+        lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures
+        xsi:type="ecore:EAttribute"
+        name="data"
+        lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures
+        xsi:type="ecore:EAttribute"
+        name="localResourcePath"
+        unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        transient="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="EResource">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="configuration" eType="#//EConfiguration"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="installException" eType="#//EInstallExceptionObject"/>
+  <eClassifiers
+      xsi:type="ecore:EClass"
+      name="EResource">
+    <eStructuralFeatures
+        xsi:type="ecore:EAttribute"
+        name="name"
+        lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures
+        xsi:type="ecore:EReference"
+        name="configuration"
+        eType="#//EConfiguration"/>
+    <eStructuralFeatures
+        xsi:type="ecore:EAttribute"
+        name="installException"
+        eType="#//EInstallExceptionObject"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="EInstallRule">
-    <eLiterals name="NEW_INSTALL" literal="NewInstall"/>
-    <eLiterals name="UNINSTALL" value="1" literal="Uninstall"/>
-    <eLiterals name="DONT_TOUCH" value="2" literal="DontTouch"/>
-    <eLiterals name="UPDATE_ALL" value="3" literal="UpdateAll"/>
-    <eLiterals name="UPDATE_ALL_SKIP_DEFAULT_FACTORY" value="4" literal="UpdateAllSkipDefaultFactory"/>
-    <eLiterals name="UPDATE_ALL_SKIP_DEFAULT_CONFIG" value="5" literal="UpdateAllSkipDefaultConfig"/>
-    <eLiterals name="UPDATE_ALL_SKIP_DEFAULT_ALL" value="6" literal="UpdateAllSkipDefaultAll"/>
-    <eLiterals name="UPDATE_DEFAULT_FACTORY" value="7" literal="UpdateDefaultFactory"/>
-    <eLiterals name="UPDATE_DEFAULT_CONFIG" value="8" literal="UpdateDefaultConfig"/>
-    <eLiterals name="UPDATE_DEFAULT_ALL" value="9" literal="UpdateDefaultAll"/>
-    <eLiterals name="UNINSTALL_NON_DEFAULT" value="10" literal="UninstallNonDefault"/>
-    <eLiterals name="UPDATES_SET_OF_RESOURCES" value="11" literal="UpdateSetOfResources"/>
+  <eClassifiers
+      xsi:type="ecore:EEnum"
+      name="EInstallRule">
+    <eLiterals
+        name="NEW_INSTALL"
+        literal="NewInstall"/>
+    <eLiterals
+        name="UNINSTALL"
+        value="1"
+        literal="Uninstall"/>
+    <eLiterals
+        name="DONT_TOUCH"
+        value="2"
+        literal="DontTouch"/>
+    <eLiterals
+        name="UPDATE_ALL"
+        value="3"
+        literal="UpdateAll"/>
+    <eLiterals
+        name="UPDATE_ALL_SKIP_DEFAULT_FACTORY"
+        value="4"
+        literal="UpdateAllSkipDefaultFactory"/>
+    <eLiterals
+        name="UPDATE_ALL_SKIP_DEFAULT_CONFIG"
+        value="5"
+        literal="UpdateAllSkipDefaultConfig"/>
+    <eLiterals
+        name="UPDATE_ALL_SKIP_DEFAULT_ALL"
+        value="6"
+        literal="UpdateAllSkipDefaultAll"/>
+    <eLiterals
+        name="UPDATE_DEFAULT_FACTORY"
+        value="7"
+        literal="UpdateDefaultFactory"/>
+    <eLiterals
+        name="UPDATE_DEFAULT_CONFIG"
+        value="8"
+        literal="UpdateDefaultConfig"/>
+    <eLiterals
+        name="UPDATE_DEFAULT_ALL"
+        value="9"
+        literal="UpdateDefaultAll"/>
+    <eLiterals
+        name="UNINSTALL_NON_DEFAULT"
+        value="10"
+        literal="UninstallNonDefault"/>
+    <eLiterals
+        name="UPDATES_SET_OF_RESOURCES"
+        value="11"
+        literal="UpdateSetOfResources"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="EInstallException">
-    <eLiterals name="UPDATE" literal="Update"/>
-    <eLiterals name="DONT_TOUCH" value="1" literal="DontTouch"/>
-    <eLiterals name="DELETE" value="2" literal="Delete"/>
+  <eClassifiers
+      xsi:type="ecore:EEnum"
+      name="EInstallException">
+    <eLiterals
+        name="UPDATE"
+        literal="Update"/>
+    <eLiterals
+        name="DONT_TOUCH"
+        value="1"
+        literal="DontTouch"/>
+    <eLiterals
+        name="DELETE"
+        value="2"
+        literal="Delete"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EDataType" name="EInstallExceptionObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
-    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-      <details key="baseType" value="EInstallException"/>
+  <eClassifiers
+      xsi:type="ecore:EDataType"
+      name="EInstallExceptionObject"
+      instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations
+        source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details
+          key="baseType"
+          value="EInstallException"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="EDefaultDataType">
-    <eLiterals name="FILE" literal="file"/>
-    <eLiterals name="KEY_VALUE" value="1" literal="key"/>
-    <eLiterals name="NA" value="2" literal="na"/>
+  <eClassifiers
+      xsi:type="ecore:EEnum"
+      name="EDefaultDataType">
+    <eLiterals
+        name="FILE"
+        literal="file"/>
+    <eLiterals
+        name="KEY_VALUE"
+        value="1"
+        literal="key"/>
+    <eLiterals
+        name="NA"
+        value="2"
+        literal="na"/>
   </eClassifiers>
 </ecore:EPackage>

@@ -28,6 +28,7 @@ public class PersConfDefinitions {
     public static final String INSTALL_EXCEPTION_PREFIX = "PersAdminCfgInstallExceptions_";
 
     public static final String INSTALL_RULES_FILE = "installRules.json";
+    public static final String OWNERSHIP_CONFIGURATION_FILE = "ownershipConfiguration.json";
     public static final String RESOURCE_CONFIGURATION_FILE = "resourceconfiguration.json";
     public static final String INSTALL_EXCEPTIONS_FILE = "installExceptions.json";
     public static final String FACTORY_DEFAULTS_FILE = "factoryDefaultData.json";
@@ -41,6 +42,11 @@ public class PersConfDefinitions {
     public static final String VERSION_KEY_NAME = "version";
     public static final String CONFIG_APPL_KEY_NAME = "config_appl";
     public static final String CONFIG_SHARED_VALUE = "shared";
+
+    public static final String USERNAME_KEY_NAME = "user";
+    public static final String GROUPNAME_KEY_NAME = "group";
+    public static final String USERID_KEY_NAME = "userID";
+    public static final String GROUPID_KEY_NAME = "groupID";
 
     public static final String CONFIG_DEFAULT_PUBLIC_KEY = "config_public";
     public static final String CONFIG_DEFAULT_PUBLIC_VALUE = "public";

@@ -228,6 +228,88 @@ public class PersConfImport {
                             }
                         }
                     }
+                    
+                    final File ownershipConfigurationFile = new File(groupFile + File.separator + PersConfDefinitions.OWNERSHIP_CONFIGURATION_FILE);
+                    if (ownershipConfigurationFile.exists() && ownershipConfigurationFile.canRead()) {
+                        final GsonBuilder gsonBuilder = new GsonBuilder();
+                        final Gson gson = gsonBuilder.create();
+                        
+                        try (final FileReader reader = new FileReader(ownershipConfigurationFile.getAbsolutePath())) {
+                            final JsonObject fromJson = gson.fromJson(reader, JsonObject.class);
+                            
+                            for (final Entry<String, JsonElement> applicationEntry : fromJson.entrySet()) {
+                                final String applicationName = applicationEntry.getKey();
+                                
+                                // Find application by name:
+                                final EApplication application = applicationMap.get(applicationName);
+                                if(application == null)
+                                    continue;
+                                
+                                try {
+                                    for (final Entry<String, JsonElement> ownershipEntry : applicationEntry.getValue().getAsJsonObject().entrySet()) {
+                                        final String ownershipTypeName = ownershipEntry.getKey();
+                                        final String ownershipValueString = String.valueOf(ownershipEntry.getValue()).replaceAll("\"", "");
+                                        
+                                        switch (ownershipTypeName) {
+                                        case PersConfDefinitions.USERNAME_KEY_NAME:
+                                            application.setUserName(ownershipValueString);
+                                            break;
+                                        case PersConfDefinitions.GROUPNAME_KEY_NAME:
+                                            application.setGroupName(ownershipValueString);
+                                            break;
+                                        case PersConfDefinitions.USERID_KEY_NAME:
+                                            if(ownershipValueString.equals(""))
+                                                application.setUserId(null);
+                                            else
+                                            {
+                                                try {
+                                                    final Integer ownerShipValue = Integer.valueOf(ownershipValueString);
+                                                    application.setUserId(ownerShipValue);
+                                                }
+                                                catch (NumberFormatException e) {
+                                                    Logger.warn(Activator.PLUGIN_ID, "Cannot read ownership configuration entry: Value for UserID cannot be parsed as integer: " + ownershipValueString);
+                                                    hasWarnings = true;
+                                                }
+                                            }
+                                            break;
+                                        case PersConfDefinitions.GROUPID_KEY_NAME:
+                                            if(ownershipValueString.equals(""))
+                                                application.setGroupId(null);
+                                            else
+                                            {
+                                                try {
+                                                    final Integer ownerShipValue = Integer.valueOf(ownershipValueString);
+                                                    application.setGroupId(ownerShipValue);
+                                                }
+                                                catch (NumberFormatException e) {
+                                                    Logger.warn(Activator.PLUGIN_ID, "Cannot read ownership configuration entry: Value for GroupID cannot be parsed as integer: " + ownershipValueString);
+                                                    hasWarnings = true;
+                                                }
+                                            }
+                                            break;
+                                        default:
+                                            Logger.warn(Activator.PLUGIN_ID, "Unknown identifier in ownership configuration file: " + ownershipTypeName);
+                                            hasWarnings = true;
+                                            break;
+                                        }
+                                    }
+                                }
+                                catch (IllegalStateException e) {
+                                    Logger.warn(Activator.PLUGIN_ID, "Error while parsing the ownership configuration file: Cannot read sub-entries of application " + applicationName);
+                                }
+                            }
+                        } catch (final Exception e) {
+                            Logger.error(
+                                    Activator.PLUGIN_ID,
+                                    "Error parsing ownership configuration file. Does that file contain valid JSON (e.g. no trailing commas)?", e
+                            );
+                            hasErrors = true;
+                        }
+                    } else {
+                        Logger.warn(Activator.PLUGIN_ID, "Unable to read resource configuration file: "
+                                + ownershipConfigurationFile.getName());
+                        hasWarnings = true;
+                    }
                 } else {
                     // add missing application groups
                     final EApplicationGroup applicationGroup = PersconfFactory.eINSTANCE.createEApplicationGroup();

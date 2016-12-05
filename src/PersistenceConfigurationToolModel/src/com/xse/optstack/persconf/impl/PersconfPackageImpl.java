@@ -270,6 +270,42 @@ public class PersconfPackageImpl extends EPackageImpl implements PersconfPackage
      * <!-- end-user-doc -->
      * @generated
      */
+    public EAttribute getEApplication_UserName() {
+        return (EAttribute) eApplicationEClass.getEStructuralFeatures().get(6);
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EAttribute getEApplication_GroupName() {
+        return (EAttribute) eApplicationEClass.getEStructuralFeatures().get(7);
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EAttribute getEApplication_UserId() {
+        return (EAttribute) eApplicationEClass.getEStructuralFeatures().get(8);
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EAttribute getEApplication_GroupId() {
+        return (EAttribute) eApplicationEClass.getEStructuralFeatures().get(9);
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
     @Override
     public EClass getEConfiguration() {
         return eConfigurationEClass;
@@ -606,6 +642,10 @@ public class PersconfPackageImpl extends EPackageImpl implements PersconfPackage
         createEReference(eApplicationEClass, EAPPLICATION__GROUP);
         createEAttribute(eApplicationEClass, EAPPLICATION__INSTALL_RULE);
         createEAttribute(eApplicationEClass, EAPPLICATION__SIZE);
+        createEAttribute(eApplicationEClass, EAPPLICATION__USER_NAME);
+        createEAttribute(eApplicationEClass, EAPPLICATION__GROUP_NAME);
+        createEAttribute(eApplicationEClass, EAPPLICATION__USER_ID);
+        createEAttribute(eApplicationEClass, EAPPLICATION__GROUP_ID);
 
         eConfigurationEClass = createEClass(ECONFIGURATION);
         createEAttribute(eConfigurationEClass, ECONFIGURATION__POLICY);
@@ -699,10 +739,21 @@ public class PersconfPackageImpl extends EPackageImpl implements PersconfPackage
                 !IS_DERIVED, IS_ORDERED);
         initEAttribute(getEApplication_Size(), ecorePackage.getEIntegerObject(), "size", null, 0, 1, EApplication.class,
                 !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        initEAttribute(getEApplication_UserName(), ecorePackage.getEString(), "userName", "", 0, 1, EApplication.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        initEAttribute(getEApplication_GroupName(), ecorePackage.getEString(), "groupName", "", 0, 1,
+                EApplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
+        initEAttribute(getEApplication_UserId(), ecorePackage.getEIntegerObject(), "userId", "0", 0, 1,
+                EApplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
+        initEAttribute(getEApplication_GroupId(), ecorePackage.getEIntegerObject(), "groupId", "0", 0, 1,
+                EApplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
 
         initEClass(eConfigurationEClass, EConfiguration.class, "EConfiguration", !IS_ABSTRACT, !IS_INTERFACE,
                 IS_GENERATED_INSTANCE_CLASS);
-        initEAttribute(getEConfiguration_Policy(), this.getEPolicy(), "policy", null, 1, 1, EConfiguration.class,
+        initEAttribute(getEConfiguration_Policy(), this.getEPolicy(), "policy", "NA", 1, 1, EConfiguration.class,
                 !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         initEAttribute(getEConfiguration_Permission(), this.getEPermission(), "permission", null, 1, 1,
                 EConfiguration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,

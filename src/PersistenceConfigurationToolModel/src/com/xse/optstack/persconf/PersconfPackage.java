@@ -199,13 +199,49 @@ public interface PersconfPackage extends EPackage {
     int EAPPLICATION__SIZE = 5;
 
     /**
+     * The feature id for the '<em><b>User Name</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int EAPPLICATION__USER_NAME = 6;
+
+    /**
+     * The feature id for the '<em><b>Group Name</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int EAPPLICATION__GROUP_NAME = 7;
+
+    /**
+     * The feature id for the '<em><b>User Id</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int EAPPLICATION__USER_ID = 8;
+
+    /**
+     * The feature id for the '<em><b>Group Id</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int EAPPLICATION__GROUP_ID = 9;
+
+    /**
      * The number of structural features of the '<em>EApplication</em>' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-    int EAPPLICATION_FEATURE_COUNT = 6;
+    int EAPPLICATION_FEATURE_COUNT = 10;
 
     /**
      * The feature id for the '<em><b>Policy</b></em>' attribute.
@@ -533,6 +569,50 @@ public interface PersconfPackage extends EPackage {
      * @generated
      */
     EAttribute getEApplication_Size();
+
+    /**
+     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EApplication#getUserName <em>User Name</em>}'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return the meta object for the attribute '<em>User Name</em>'.
+     * @see com.xse.optstack.persconf.EApplication#getUserName()
+     * @see #getEApplication()
+     * @generated
+     */
+    EAttribute getEApplication_UserName();
+
+    /**
+     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EApplication#getGroupName <em>Group Name</em>}'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return the meta object for the attribute '<em>Group Name</em>'.
+     * @see com.xse.optstack.persconf.EApplication#getGroupName()
+     * @see #getEApplication()
+     * @generated
+     */
+    EAttribute getEApplication_GroupName();
+
+    /**
+     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EApplication#getUserId <em>User Id</em>}'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return the meta object for the attribute '<em>User Id</em>'.
+     * @see com.xse.optstack.persconf.EApplication#getUserId()
+     * @see #getEApplication()
+     * @generated
+     */
+    EAttribute getEApplication_UserId();
+
+    /**
+     * Returns the meta object for the attribute '{@link com.xse.optstack.persconf.EApplication#getGroupId <em>Group Id</em>}'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return the meta object for the attribute '<em>Group Id</em>'.
+     * @see com.xse.optstack.persconf.EApplication#getGroupId()
+     * @see #getEApplication()
+     * @generated
+     */
+    EAttribute getEApplication_GroupId();
 
     /**
      * Returns the meta object for class '{@link com.xse.optstack.persconf.EConfiguration <em>EConfiguration</em>}'.
@@ -933,6 +1013,38 @@ public interface PersconfPackage extends EPackage {
          * @generated
          */
         EAttribute EAPPLICATION__SIZE = eINSTANCE.getEApplication_Size();
+
+        /**
+         * The meta object literal for the '<em><b>User Name</b></em>' attribute feature.
+         * <!-- begin-user-doc -->
+         * <!-- end-user-doc -->
+         * @generated
+         */
+        EAttribute EAPPLICATION__USER_NAME = eINSTANCE.getEApplication_UserName();
+
+        /**
+         * The meta object literal for the '<em><b>Group Name</b></em>' attribute feature.
+         * <!-- begin-user-doc -->
+         * <!-- end-user-doc -->
+         * @generated
+         */
+        EAttribute EAPPLICATION__GROUP_NAME = eINSTANCE.getEApplication_GroupName();
+
+        /**
+         * The meta object literal for the '<em><b>User Id</b></em>' attribute feature.
+         * <!-- begin-user-doc -->
+         * <!-- end-user-doc -->
+         * @generated
+         */
+        EAttribute EAPPLICATION__USER_ID = eINSTANCE.getEApplication_UserId();
+
+        /**
+         * The meta object literal for the '<em><b>Group Id</b></em>' attribute feature.
+         * <!-- begin-user-doc -->
+         * <!-- end-user-doc -->
+         * @generated
+         */
+        EAttribute EAPPLICATION__GROUP_ID = eINSTANCE.getEApplication_GroupId();
 
         /**
          * The meta object literal for the '{@link com.xse.optstack.persconf.impl.EConfigurationImpl <em>EConfiguration</em>}' class.
