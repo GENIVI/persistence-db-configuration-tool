@@ -18,7 +18,7 @@ For more details see Persistence_DBConTool_User_Guide.pdf in the doc folder
 
 ## License and Copyright
 
-Copyright (c) 2016 Continental Corporation
+Copyright (c) 2016 Mentor Automotive   
 
 The source code included here is licensed under the MPL 2.0. Please see the "LICENSE" file for more information. 
 Text documents are licensed under creative commons 4.0
